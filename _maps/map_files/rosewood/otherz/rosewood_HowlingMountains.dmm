@@ -1296,8 +1296,7 @@
 "jz" = (
 /obj/item/clothing/armor/medium/scale{
 	name = "Drakeleaf Scalemail";
-	desc = "This scalemail is woven with dragon scales... it's heat from the red dragon can still be felt. No doubt you will be insurmountable wearing this.";
-	armor = list("blunt" = 85, "slash" = 85, "stab" = 60, "piercing" = 60, "fire" = 85, "acid" = 0)
+	desc = "This scalemail is woven with dragon scales... it's heat from the red dragon can still be felt. No doubt you will be insurmountable wearing this."
 	},
 /turf/open/floor/naturalstone,
 /area/rogue/under/mountains/anvil/dungeon)
