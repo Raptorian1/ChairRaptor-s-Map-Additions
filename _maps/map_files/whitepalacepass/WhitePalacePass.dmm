@@ -4632,8 +4632,8 @@
 /obj/structure/door/violet{
 	name = "GateKeeper Tower"
 	},
-/obj/effect/mapping_helpers/access/keyset/garrison/gate,
 /obj/effect/mapping_helpers/access/locker,
+/obj/effect/mapping_helpers/access/keyset/garrison/general,
 /turf/open/floor/concrete,
 /area/rogue/indoors/villagegarrison)
 "eCg" = (
@@ -10629,8 +10629,8 @@
 /obj/structure/door/violet{
 	name = "Gatekeeper's Checkpoint"
 	},
-/obj/effect/mapping_helpers/access/keyset/garrison/gate,
 /obj/effect/mapping_helpers/access/locker,
+/obj/effect/mapping_helpers/access/keyset/garrison/general,
 /turf/open/floor/concrete,
 /area/rogue/indoors/villagegarrison)
 "kAz" = (
@@ -13263,8 +13263,8 @@
 /obj/structure/door/violet{
 	name = "GateKeeper Tower"
 	},
-/obj/effect/mapping_helpers/access/keyset/garrison/gate,
 /obj/effect/mapping_helpers/access/locker,
+/obj/effect/mapping_helpers/access/keyset/garrison/general,
 /turf/open/floor/ruinedwood,
 /area/rogue/indoors/villagegarrison)
 "nbW" = (
@@ -13613,8 +13613,8 @@
 /obj/structure/door/violet{
 	name = "GateKeeper"
 	},
-/obj/effect/mapping_helpers/access/keyset/garrison/gate,
 /obj/effect/mapping_helpers/access/locker,
+/obj/effect/mapping_helpers/access/keyset/garrison/general,
 /turf/open/floor/concrete,
 /area/rogue/indoors/villagegarrison)
 "noy" = (
