@@ -3851,6 +3851,16 @@
 	},
 /turf/open/floor/ruinedwood,
 /area/rogue/indoors/town/orphanage)
+"dGZ" = (
+/obj/structure/table/wood/plain,
+/obj/structure/fluff/customsign{
+	pixel_x = 0;
+	pixel_y = -10;
+	desc = "A Merchant will visit this location";
+	name = "Traveling Merchant's Stall"
+	},
+/turf/open/floor/cobble,
+/area/rogue/outdoors/rtfield/safe)
 "dHd" = (
 /obj/item/restraints/legcuffs/beartrap/armed/camouflage,
 /turf/open/floor/grass/cold,
@@ -4337,8 +4347,8 @@
 /turf/open/floor/ruinedwood,
 /area/rogue/indoors/town/manorgate)
 "ehe" = (
-/obj/structure/table/wood{
-	icon_state = "map5"
+/obj/structure/table/map/rosewood{
+	dir = 1
 	},
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/merc_guild)
@@ -6093,6 +6103,10 @@
 /obj/effect/mapping_helpers/access/locker,
 /turf/open/floor/ruinedwood,
 /area/rogue/indoors/town/bath)
+"fTF" = (
+/obj/structure/table/wood/plain,
+/turf/open/floor/cobblerock,
+/area/rogue/outdoors/rtfield/safe)
 "fTJ" = (
 /obj/machinery/anvil/crafted,
 /turf/open/floor/grass/yel,
@@ -6868,7 +6882,7 @@
 /turf/open/floor/cobblerock,
 /area/rogue/under/cavewet)
 "gBd" = (
-/obj/effect/spawner/map_spawner/hauntz_random,
+/obj/structure/table/wood/plain,
 /turf/open/floor/cobble,
 /area/rogue/outdoors/rtfield/safe)
 "gBt" = (
@@ -9331,8 +9345,8 @@
 /turf/open/floor/cobble,
 /area/rogue/indoors/town/clocktower)
 "iOR" = (
-/obj/structure/table/wood{
-	icon_state = "map1"
+/obj/structure/table/map/rosewood{
+	dir = 10
 	},
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/merc_guild)
@@ -13496,9 +13510,7 @@
 /turf/open/floor/dirt,
 /area/rogue/outdoors/rtfield/safe)
 "mPD" = (
-/obj/structure/table/wood{
-	icon_state = "map2"
-	},
+/obj/structure/table/map/rosewood,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/merc_guild)
 "mPN" = (
@@ -23296,8 +23308,8 @@
 /turf/open/floor/cobblerock/alt,
 /area/rogue/outdoors/rtfield/safe)
 "vPy" = (
-/obj/structure/table/wood{
-	icon_state = "map3"
+/obj/structure/table/map/rosewood{
+	dir = 6
 	},
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/merc_guild)
@@ -24913,8 +24925,8 @@
 /turf/open/floor/ruinedwood,
 /area/rogue/indoors/lich)
 "xom" = (
-/obj/structure/table/wood{
-	icon_state = "map4"
+/obj/structure/table/map/rosewood{
+	dir = 5
 	},
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/merc_guild)
@@ -25757,8 +25769,8 @@
 /turf/open/water/bath,
 /area/rogue/indoors/town/church)
 "ybu" = (
-/obj/structure/table/wood{
-	icon_state = "map6"
+/obj/structure/table/map/rosewood{
+	dir = 9
 	},
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/merc_guild)
@@ -86570,11 +86582,11 @@ lOE
 lOE
 jvu
 qiK
-gbu
-eDF
+fTF
 gBd
+dGZ
 gbu
-gbu
+lvg
 gbu
 szX
 xWp
@@ -86772,9 +86784,9 @@ nvo
 liT
 gbu
 qiK
-gbu
-qiK
-qiK
+fTF
+eDF
+gBd
 gbu
 gbu
 qiK
