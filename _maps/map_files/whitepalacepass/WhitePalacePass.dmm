@@ -2048,6 +2048,10 @@
 	},
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/river)
+"bRr" = (
+/obj/structure/door/swing,
+/turf/open/floor/dirt/road,
+/area/rogue/indoors/town/manor)
 "bRD" = (
 /obj/structure/flora/newtree/snow,
 /turf/open/floor/grass/cold,
@@ -2532,6 +2536,10 @@
 /obj/machinery/light/fueled/wallfire/candle,
 /turf/open/floor/ruinedwood/spiralfade,
 /area/rogue/indoors/town/manor)
+"cre" = (
+/obj/structure/door/swing,
+/turf/open/floor/grass/yel,
+/area/rogue/outdoors/rtfield)
 "cri" = (
 /obj/structure/fluff/walldeco/med3,
 /turf/closed/wall/mineral/wooddark/horizontal,
@@ -4218,6 +4226,10 @@
 /obj/item/paper,
 /turf/open/floor/herringbone,
 /area/rogue/indoors/town/clinic_large)
+"dXR" = (
+/obj/structure/door/swing,
+/turf/open/floor/ruinedwood/darker,
+/area/rogue/indoors/town/tavern)
 "dXT" = (
 /turf/open/floor/grass/cold,
 /area/rogue/indoors/lich)
@@ -5484,6 +5496,10 @@
 	},
 /turf/open/floor/ruinedwood/spiral,
 /area/rogue/indoors/town/manor)
+"fpf" = (
+/obj/structure/door/swing,
+/turf/open/floor/dirt,
+/area/rogue/outdoors/rtfield)
 "fpl" = (
 /mob/living/carbon/human/species/zizombie/npc/militiamen,
 /turf/open/water/swamp,
@@ -15175,7 +15191,7 @@
 /turf/open/floor/ruinedwood/darker,
 /area/rogue/indoors/town/smithy)
 "ole" = (
-/obj/effect/mapping_helpers/access/keyset/manor/general,
+/obj/structure/door/swing,
 /turf/open/floor/tile/checker,
 /area/rogue/indoors/town/manor)
 "olg" = (
@@ -89542,7 +89558,7 @@ tiH
 nIJ
 nIJ
 tiH
-gCz
+dXR
 kJb
 tLk
 bVB
@@ -90429,7 +90445,7 @@ hel
 czS
 iPE
 iPE
-qof
+fpf
 rIZ
 qof
 mbw
@@ -91641,7 +91657,7 @@ mDa
 iPE
 mDa
 iPE
-qof
+fpf
 mDa
 len
 tzZ
@@ -92852,7 +92868,7 @@ cRv
 cRv
 mDa
 iPE
-qof
+fpf
 mDa
 qof
 qof
@@ -94064,7 +94080,7 @@ mpb
 gRg
 mDa
 len
-mDa
+cre
 mDa
 len
 mDa
@@ -172531,7 +172547,7 @@ fNh
 wtI
 qXR
 mid
-qXR
+bRr
 nse
 iJC
 nse
