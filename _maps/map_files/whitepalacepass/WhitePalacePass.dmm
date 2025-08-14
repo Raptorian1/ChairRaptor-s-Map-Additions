@@ -2162,10 +2162,6 @@
 /obj/effect/mapping_helpers/access/locker,
 /turf/open/floor/ruinedwood/darker,
 /area/rogue/indoors/town/clocktower)
-"bWA" = (
-/obj/structure/door/swing,
-/turf/open/floor/tile,
-/area/rogue/indoors/town)
 "bWB" = (
 /turf/open/floor/ruinedwood/spiral,
 /area/rogue/indoors/town/manor)
@@ -3356,10 +3352,6 @@
 /obj/structure/grindwheel,
 /turf/open/floor/dirt/road,
 /area/rogue/outdoors/rtfield/safe)
-"doy" = (
-/obj/structure/door/swing,
-/turf/open/floor/dirt/road,
-/area/rogue/indoors/town/manor)
 "doP" = (
 /turf/open/floor/carpet/lord/left,
 /area/rogue/indoors/town/manor)
@@ -3482,10 +3474,6 @@
 /obj/effect/mapping_helpers/access/locker,
 /turf/open/floor/tile/masonic/single,
 /area/rogue/indoors/town/manor)
-"duw" = (
-/obj/structure/door/swing,
-/turf/open/floor/ruinedwood/darker,
-/area/rogue/indoors/town/tavern)
 "duz" = (
 /obj/structure/fluff/walldeco/vinez/blue{
 	dir = 6
@@ -4725,10 +4713,6 @@
 /obj/structure/flora/grass/water/reeds,
 /turf/open/water/swamp,
 /area/rogue/outdoors/river)
-"eye" = (
-/obj/structure/door/swing,
-/turf/open/floor/grass/yel,
-/area/rogue/outdoors/rtfield)
 "eyf" = (
 /obj/structure/trap/mine,
 /turf/open/floor/grass/yel,
@@ -14354,14 +14338,6 @@
 "nxi" = (
 /turf/open/floor/ruinedwood,
 /area/rogue/indoors/villagegarrison)
-"nxt" = (
-/obj/structure/fluff/railing/wood{
-	dir = 8;
-	pixel_y = -1
-	},
-/obj/structure/door/swing,
-/turf/open/floor/grass/yel,
-/area/rogue/indoors/lich)
 "nxM" = (
 /obj/structure/window/openclose{
 	dir = 8
@@ -15199,7 +15175,6 @@
 /turf/open/floor/ruinedwood/darker,
 /area/rogue/indoors/town/smithy)
 "ole" = (
-/obj/structure/door/swing,
 /obj/effect/mapping_helpers/access/keyset/manor/general,
 /turf/open/floor/tile/checker,
 /area/rogue/indoors/town/manor)
@@ -16873,10 +16848,6 @@
 	},
 /turf/open/floor/ruinedwood,
 /area/rogue/indoors/town/shop)
-"pOI" = (
-/obj/structure/door/swing,
-/turf/open/floor/dirt,
-/area/rogue/outdoors/rtfield)
 "pOO" = (
 /obj/structure/closet/crate/chest/crate,
 /turf/open/floor/metal,
@@ -81628,7 +81599,7 @@ xVo
 kHF
 enH
 enH
-nxt
+enH
 nhs
 nhs
 nhs
@@ -89571,7 +89542,7 @@ tiH
 nIJ
 nIJ
 tiH
-duw
+gCz
 kJb
 tLk
 bVB
@@ -90458,7 +90429,7 @@ hel
 czS
 iPE
 iPE
-pOI
+qof
 rIZ
 qof
 mbw
@@ -91670,7 +91641,7 @@ mDa
 iPE
 mDa
 iPE
-pOI
+qof
 mDa
 len
 tzZ
@@ -92881,7 +92852,7 @@ cRv
 cRv
 mDa
 iPE
-pOI
+qof
 mDa
 qof
 qof
@@ -94093,7 +94064,7 @@ mpb
 gRg
 mDa
 len
-eye
+mDa
 mDa
 len
 mDa
@@ -114626,7 +114597,7 @@ vKI
 vKI
 vKI
 vKI
-bWA
+mEs
 vKI
 vKI
 jxa
@@ -172560,7 +172531,7 @@ fNh
 wtI
 qXR
 mid
-doy
+qXR
 nse
 iJC
 nse
