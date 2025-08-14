@@ -2164,8 +2164,6 @@
 /area/rogue/indoors/town/clocktower)
 "bWA" = (
 /obj/structure/door/swing,
-/obj/effect/mapping_helpers/access/keyset/manor/general,
-/obj/effect/mapping_helpers/access/locker,
 /turf/open/floor/tile,
 /area/rogue/indoors/town)
 "bWB" = (
@@ -3486,8 +3484,6 @@
 /area/rogue/indoors/town/manor)
 "duw" = (
 /obj/structure/door/swing,
-/obj/effect/mapping_helpers/access/keyset/town/inn,
-/obj/effect/mapping_helpers/access/locker,
 /turf/open/floor/ruinedwood/darker,
 /area/rogue/indoors/town/tavern)
 "duz" = (
@@ -15205,7 +15201,6 @@
 "ole" = (
 /obj/structure/door/swing,
 /obj/effect/mapping_helpers/access/keyset/manor/general,
-/obj/effect/mapping_helpers/access/locker,
 /turf/open/floor/tile/checker,
 /area/rogue/indoors/town/manor)
 "olg" = (
