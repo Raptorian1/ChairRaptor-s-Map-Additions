@@ -2103,6 +2103,10 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/blocks,
 /area/rogue/indoors/town/clinic_large)
+"bVD" = (
+/obj/effect/spawner/map_spawner/hauntz_random,
+/turf/open/floor/carpet/red,
+/area/rogue/indoors/town/tavern)
 "bVH" = (
 /obj/item/ore/iron{
 	pixel_x = -8;
@@ -2225,7 +2229,7 @@
 /obj/structure/stairs{
 	dir = 1
 	},
-/turf/closed/basic,
+/turf/open/floor/cobble,
 /area/rogue/indoors/town/tavern)
 "caO" = (
 /obj/structure/table/wood/reinf_long{
@@ -7929,6 +7933,10 @@
 /obj/item/clothing/head/wizhat/gen,
 /turf/open/floor/ruinedwood/turned/darker,
 /area/rogue/indoors/town/magician)
+"hwB" = (
+/obj/machinery/light/fueled/wallfire/candle/l,
+/turf/open/floor/ruinedwood/spiral,
+/area/rogue/indoors/town/tavern)
 "hwH" = (
 /obj/structure/closet/crate/crafted_closet/inn,
 /obj/item/broom,
@@ -7947,6 +7955,10 @@
 /obj/item/natural/cloth,
 /turf/open/floor/ruinedwood/turned,
 /area/rogue/under/town/basement)
+"hxn" = (
+/obj/machinery/light/fueled/wallfire/candle/l,
+/turf/open/floor/carpet/red,
+/area/rogue/indoors/town/tavern)
 "hxx" = (
 /obj/machinery/light/fueled/wallfire/candle/skull/l,
 /turf/open/floor/naturalstone,
@@ -9378,7 +9390,7 @@
 	},
 /obj/effect/mapping_helpers/access/keyset/town/inn,
 /obj/effect/mapping_helpers/access/locker,
-/turf/open/floor/ruinedwood/turned/darker,
+/turf/open/floor/ruinedwood/spiral,
 /area/rogue/indoors/town/tavern)
 "iXf" = (
 /obj/effect/decal/cleanable/blood/splatter,
@@ -9751,6 +9763,10 @@
 /obj/structure/chair/stool,
 /turf/open/floor/ruinedwood/spiral,
 /area/rogue/indoors/soilsons)
+"jso" = (
+/obj/structure/fake_machine/hailerboard,
+/turf/open/floor/cobblerock,
+/area/rogue/outdoors/rtfield/safe)
 "jsC" = (
 /obj/structure/table/wood/reinf_long{
 	dir = 1
@@ -14064,6 +14080,10 @@
 "nse" = (
 /turf/open/floor/dirt/road,
 /area/rogue/outdoors/rtfield/safe)
+"nsn" = (
+/obj/item/bouquet/rosa,
+/turf/open/floor/ruinedwood/spiral,
+/area/rogue/indoors/town/tavern)
 "nsB" = (
 /obj/structure/closet/crate/chest/wicker,
 /turf/open/floor/ruinedwood,
@@ -14298,7 +14318,7 @@
 /obj/effect/landmark/start/villager{
 	dir = 8
 	},
-/turf/open/floor/ruinedwood,
+/turf/open/floor/carpet/red,
 /area/rogue/indoors/town/tavern)
 "nCY" = (
 /obj/structure/window/solid,
@@ -14820,7 +14840,7 @@
 /obj/structure/stairs{
 	dir = 4
 	},
-/turf/closed/basic,
+/turf/open/floor/cobble,
 /area/rogue/indoors/town/tavern)
 "oef" = (
 /obj/effect/landmark/hammer/dev_text{
@@ -14946,7 +14966,7 @@
 /area/rogue/outdoors/rtfield/safe)
 "ohw" = (
 /obj/structure/fireaxecabinet/south,
-/turf/open/floor/ruinedwood/darker,
+/turf/open/floor/ruinedwood/spiral,
 /area/rogue/indoors/town/tavern)
 "ohQ" = (
 /obj/item/reagent_containers/powder/manabloom{
@@ -15453,7 +15473,7 @@
 /area/rogue/under/town/basement)
 "oEU" = (
 /obj/effect/landmark/start/tapster,
-/turf/open/floor/ruinedwood,
+/turf/open/floor/ruinedwood/spiral,
 /area/rogue/indoors/town/tavern)
 "oFc" = (
 /obj/structure/fluff/walldeco/vinez/blue{
@@ -16400,7 +16420,7 @@
 	pixel_x = 0;
 	pixel_y = 32
 	},
-/turf/open/floor/ruinedwood,
+/turf/open/floor/ruinedwood/spiral,
 /area/rogue/indoors/town/tavern)
 "pzg" = (
 /obj/structure/fake_machine/scomm/r,
@@ -16993,7 +17013,8 @@
 	pixel_x = 5;
 	pixel_y = -3
 	},
-/turf/open/floor/ruinedwood/darker,
+/obj/structure/fluff/railing/border,
+/turf/open/floor/ruinedwood/turned/darker,
 /area/rogue/indoors/town/tavern)
 "pZX" = (
 /obj/structure/chair/wood/alt,
@@ -18989,7 +19010,7 @@
 /area/rogue/indoors/town)
 "rTH" = (
 /obj/structure/closet/crate/chest/wicker,
-/turf/open/floor/ruinedwood,
+/turf/open/floor/ruinedwood/spiral,
 /area/rogue/indoors/town/tavern)
 "rUg" = (
 /obj/structure/stairs/stone{
@@ -20816,7 +20837,8 @@
 	pixel_x = -3;
 	pixel_y = -4
 	},
-/turf/open/floor/ruinedwood,
+/obj/structure/fluff/railing/border,
+/turf/open/floor/ruinedwood/turned/darker,
 /area/rogue/indoors/town/tavern)
 "tGu" = (
 /obj/structure/table/wood/plain_alt,
@@ -22296,7 +22318,7 @@
 /area/rogue/indoors/town/orphanage)
 "vic" = (
 /obj/structure/table/wood/counter,
-/turf/open/floor/ruinedwood/darker,
+/turf/open/floor/ruinedwood/spiral,
 /area/rogue/indoors/town/tavern)
 "vih" = (
 /obj/effect/falling_sakura,
@@ -22617,7 +22639,7 @@
 	pixel_x = -8;
 	pixel_y = 1
 	},
-/turf/open/floor/ruinedwood/darker,
+/turf/open/floor/ruinedwood/spiral,
 /area/rogue/indoors/town/tavern)
 "vxz" = (
 /obj/structure/window/openclose{
@@ -23675,7 +23697,7 @@
 	dir = 1
 	},
 /obj/item/reagent_containers/glass/cup/wooden,
-/turf/open/floor/ruinedwood/darker,
+/turf/open/floor/ruinedwood/spiral,
 /area/rogue/indoors/town/tavern)
 "wqL" = (
 /obj/machinery/light/fueled/wallfire/candle/r,
@@ -23752,7 +23774,8 @@
 	pixel_x = 9;
 	pixel_y = 9
 	},
-/turf/open/floor/ruinedwood,
+/obj/structure/fluff/railing/border,
+/turf/open/floor/ruinedwood/turned/darker,
 /area/rogue/indoors/town/tavern)
 "wte" = (
 /obj/item/statue/steel,
@@ -24491,7 +24514,7 @@
 /obj/structure/table/wood/counter{
 	dir = 1
 	},
-/turf/open/floor/ruinedwood/darker,
+/turf/open/floor/ruinedwood/spiral,
 /area/rogue/indoors/town/tavern)
 "xhp" = (
 /obj/structure/closet/crate/crafted_closet/inn,
@@ -24656,7 +24679,7 @@
 /obj/effect/landmark/start/tapster{
 	dir = 4
 	},
-/turf/open/floor/ruinedwood,
+/turf/open/floor/ruinedwood/spiral,
 /area/rogue/indoors/town/tavern)
 "xlm" = (
 /obj/structure/table/wood/crafted,
@@ -25290,7 +25313,7 @@
 /obj/effect/landmark/hammer/dev_text{
 	name = "INN"
 	},
-/turf/open/floor/ruinedwood,
+/turf/open/floor/ruinedwood/spiral,
 /area/rogue/indoors/town/tavern)
 "xQl" = (
 /obj/structure/stairs/stone/church{
@@ -49342,21 +49365,21 @@ nJJ
 nJJ
 nJJ
 nJJ
-odL
-odL
-odL
-odL
-odL
-odL
-odL
-odL
-odL
-odL
-odL
-odL
-odL
-odL
-odL
+nJJ
+nJJ
+nJJ
+nJJ
+nJJ
+nJJ
+nJJ
+nJJ
+nJJ
+nJJ
+nJJ
+nJJ
+nJJ
+nJJ
+nJJ
 nJJ
 nJJ
 nJJ
@@ -87525,7 +87548,7 @@ elb
 jHA
 tiH
 ohw
-kRc
+hwB
 rTH
 iMq
 uJP
@@ -87726,9 +87749,9 @@ ivY
 elb
 tiH
 tiH
-vTy
-vTy
-vTy
+cSl
+cSl
+cSl
 vxx
 pGe
 gCz
@@ -87928,8 +87951,8 @@ iJC
 nam
 xZL
 tGj
-vTy
-gCz
+cSl
+cSl
 oEU
 wqs
 ydE
@@ -88130,9 +88153,9 @@ kxC
 kxK
 xZL
 wsT
-vTy
+cSl
 xQf
-vTy
+cSl
 xgE
 pGe
 gCz
@@ -88332,8 +88355,8 @@ nam
 kTb
 xZL
 pZy
-vTy
-gCz
+cSl
+cSl
 xkA
 wqs
 pGe
@@ -88736,11 +88759,11 @@ lNN
 elb
 gtG
 kdj
-vTy
-kRc
+uJP
+hxn
 nCD
-gCz
-oia
+uJP
+bVD
 vTy
 vTy
 vTy
@@ -89144,7 +89167,7 @@ dzO
 cvS
 hrX
 qHN
-cSl
+nsn
 lEG
 sQi
 wtw
@@ -89354,7 +89377,7 @@ dHp
 dHp
 dHp
 tiH
-gbu
+jso
 gbu
 sdO
 cgC
