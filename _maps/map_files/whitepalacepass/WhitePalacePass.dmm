@@ -1147,7 +1147,7 @@
 /area/rogue/indoors/town/manor)
 "baZ" = (
 /obj/structure/stairs/stone/church,
-/turf/open/floor/churchrough,
+/turf/open/floor/church,
 /area/rogue/indoors/town/church)
 "bbK" = (
 /obj/structure/fluff/railing/border,
@@ -7929,12 +7929,6 @@
 /obj/item/clothing/head/wizhat/gen,
 /turf/open/floor/ruinedwood/turned/darker,
 /area/rogue/indoors/town/magician)
-"hwB" = (
-/obj/structure/stairs/stone/church{
-	dir = 8
-	},
-/turf/open/transparent/openspace,
-/area/rogue/indoors/town/church)
 "hwH" = (
 /obj/structure/closet/crate/crafted_closet/inn,
 /obj/item/broom,
@@ -9757,12 +9751,6 @@
 /obj/structure/chair/stool,
 /turf/open/floor/ruinedwood/spiral,
 /area/rogue/indoors/soilsons)
-"jso" = (
-/obj/structure/stairs/stone/church{
-	dir = 4
-	},
-/turf/open/transparent/openspace,
-/area/rogue/indoors/town/church)
 "jsC" = (
 /obj/structure/table/wood/reinf_long{
 	dir = 1
@@ -119274,8 +119262,8 @@ bGm
 fHb
 jRU
 dXv
-hwB
-hwB
+fNP
+fNP
 xXK
 ijI
 ijI
@@ -122102,8 +122090,8 @@ bGm
 fHb
 jRU
 lCM
-jso
-jso
+qzo
+qzo
 xXK
 ijI
 ijI
