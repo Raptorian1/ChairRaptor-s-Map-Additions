@@ -16616,6 +16616,10 @@
 "pAT" = (
 /turf/open/floor/ruinedwood/spiral,
 /area/rogue/indoors/town)
+"pAU" = (
+/obj/machinery/tanningrack,
+/turf/open/floor/blocks,
+/area/rogue/under/town/basement)
 "pBq" = (
 /obj/structure/rack/shelf/biggest,
 /obj/effect/decal/cleanable/dirt/cobweb,
@@ -47374,7 +47378,7 @@ aHf
 jfm
 oBd
 oBd
-oBd
+pAU
 aHf
 nJJ
 nJJ
