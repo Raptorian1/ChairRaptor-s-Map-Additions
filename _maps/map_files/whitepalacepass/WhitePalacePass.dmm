@@ -4148,6 +4148,18 @@
 /obj/effect/mapping_helpers/access/locker,
 /turf/open/floor/cobblerock,
 /area/rogue/indoors/town/church/inquisition)
+"dWz" = (
+/obj/structure/cannon{
+	dir = 1
+	},
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_x = 0;
+	pixel_y = 0
+	},
+/turf/open/floor/cobblerock,
+/area/rogue/indoors/lich)
 "dWH" = (
 /obj/structure/trap/wall_projectile{
 	dir = 8
@@ -7096,6 +7108,15 @@
 	dir = 1
 	},
 /area/rogue/under/tomb/indoors/church)
+"gMD" = (
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_x = 0;
+	pixel_y = 0
+	},
+/turf/open/floor/dirt/road,
+/area/rogue/indoors/lich)
 "gNa" = (
 /obj/machinery/light/fueled/wallfire/candle/blue/l,
 /turf/open/floor/ruinedwood/darker,
@@ -16520,6 +16541,15 @@
 	},
 /turf/open/floor/cobble,
 /area/rogue/under/cave)
+"pxL" = (
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_x = 0;
+	pixel_y = 0
+	},
+/turf/open/floor/cobblerock,
+/area/rogue/indoors/lich)
 "pxR" = (
 /obj/structure/fluff/walldeco/vinez/blue{
 	dir = 1
@@ -19880,6 +19910,15 @@
 	dir = 4
 	},
 /area/rogue/outdoors/town/roofs)
+"szw" = (
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_x = 0;
+	pixel_y = 0
+	},
+/turf/open/floor/grass/yel,
+/area/rogue/indoors/lich)
 "szX" = (
 /turf/closed/wall/mineral/decorstone{
 	climbdiff = 3
@@ -22094,6 +22133,15 @@
 	},
 /turf/open/floor/cobble,
 /area/rogue/indoors/town/magician)
+"uMa" = (
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_x = 0;
+	pixel_y = 0
+	},
+/turf/open/floor/cobble,
+/area/rogue/indoors/lich)
 "uMn" = (
 /obj/structure/table/wood/fancy/royalblue,
 /obj/machinery/light/fueled/wallfire/candle/blue/r,
@@ -84827,10 +84875,10 @@ qhM
 vUa
 ucR
 ucR
+vlv
+gMD
 nhs
-nhs
-nhs
-xVo
+szw
 qif
 ucR
 ucR
@@ -85032,7 +85080,7 @@ vZP
 vZP
 qhM
 vZP
-qhM
+uMa
 vZP
 vZP
 vZP
@@ -85234,7 +85282,7 @@ qhM
 vZP
 vZP
 vZP
-vZP
+dWz
 qhM
 vZP
 vZP
@@ -85436,7 +85484,7 @@ qhM
 qhM
 vZP
 vZP
-vZP
+pxL
 qhM
 qhM
 qhM
@@ -85635,10 +85683,10 @@ qhM
 rfz
 ucR
 ucR
+ppc
+gMD
 nhs
-nhs
-nhs
-xVo
+szw
 xVo
 xVo
 uOP
