@@ -1266,14 +1266,18 @@ GLOBAL_LIST_EMPTY(patreon_races)
 			H.apply_status_effect(/datum/status_effect/debuff/hungryt1)
 			H.remove_status_effect(/datum/status_effect/debuff/hungryt2)
 			H.remove_status_effect(/datum/status_effect/debuff/hungryt3)
+			H.remove_status_effect(/datum/status_effect/debuff/hungryt4)
 		if(NUTRITION_LEVEL_STARVING to NUTRITION_LEVEL_HUNGRY)
 			H.apply_status_effect(/datum/status_effect/debuff/hungryt2)
 			H.remove_status_effect(/datum/status_effect/debuff/hungryt1)
 			H.remove_status_effect(/datum/status_effect/debuff/hungryt3)
+			H.remove_status_effect(/datum/status_effect/debuff/hungryt4)
 		if(0 to NUTRITION_LEVEL_STARVING)
 			H.apply_status_effect(/datum/status_effect/debuff/hungryt3)
 			H.remove_status_effect(/datum/status_effect/debuff/hungryt1)
 			H.remove_status_effect(/datum/status_effect/debuff/hungryt2)
+			if(CONFIG_GET(flag/starvation_death))
+				H.apply_status_effect(/datum/status_effect/debuff/hungryt4)
 			if(prob(3))
 				playsound(get_turf(H), pick('sound/vo/hungry1.ogg','sound/vo/hungry2.ogg','sound/vo/hungry3.ogg'), 100, TRUE, -1)
 
@@ -1284,15 +1288,18 @@ GLOBAL_LIST_EMPTY(patreon_races)
 			H.apply_status_effect(/datum/status_effect/debuff/thirstyt1)
 			H.remove_status_effect(/datum/status_effect/debuff/thirstyt2)
 			H.remove_status_effect(/datum/status_effect/debuff/thirstyt3)
+			H.remove_status_effect(/datum/status_effect/debuff/thirstyt4)
 		if(HYDRATION_LEVEL_DEHYDRATED to HYDRATION_LEVEL_THIRSTY)
 			H.apply_status_effect(/datum/status_effect/debuff/thirstyt2)
 			H.remove_status_effect(/datum/status_effect/debuff/thirstyt1)
 			H.remove_status_effect(/datum/status_effect/debuff/thirstyt3)
+			H.remove_status_effect(/datum/status_effect/debuff/thirstyt4)
 		if(0 to HYDRATION_LEVEL_DEHYDRATED)
 			H.apply_status_effect(/datum/status_effect/debuff/thirstyt3)
 			H.remove_status_effect(/datum/status_effect/debuff/thirstyt1)
 			H.remove_status_effect(/datum/status_effect/debuff/thirstyt2)
-
+			if(CONFIG_GET(flag/dehydration_death))
+				H.apply_status_effect(/datum/status_effect/debuff/thirstyt4)
 
 /datum/species/proc/update_health_hud(mob/living/carbon/human/H)
 	return 0
@@ -1466,6 +1473,7 @@ GLOBAL_LIST_EMPTY(patreon_races)
 		if(target.mind)
 			target.mind.attackedme[user.real_name] = world.time
 		target.lastattackerckey = user.ckey
+		target.lastattacker_weakref = WEAKREF(user)
 		user.dna.species.spec_unarmedattacked(user, target)
 
 		user.do_attack_animation(target, visual_effect_icon = user.used_intent.animname, used_item = FALSE, atom_bounce = TRUE)
@@ -1671,6 +1679,7 @@ GLOBAL_LIST_EMPTY(patreon_races)
 		if(!stander)
 			target.lastattacker = user.real_name
 			target.lastattackerckey = user.ckey
+			target.lastattacker_weakref = WEAKREF(user)
 			if(target.mind)
 				target.mind.attackedme[user.real_name] = world.time
 			var/selzone = accuracy_check(user.zone_selected, user, target, /datum/skill/combat/unarmed, user.used_intent)
@@ -1795,6 +1804,7 @@ GLOBAL_LIST_EMPTY(patreon_races)
 		playsound(target, 'sound/combat/hits/kick/kick.ogg', 100, TRUE, -1)
 		target.lastattacker = user.real_name
 		target.lastattackerckey = user.ckey
+		target.lastattacker_weakref = WEAKREF(user)
 		if(target.mind)
 			target.mind.attackedme[user.real_name] = world.time
 		user.adjust_stamina(15)
@@ -1901,6 +1911,7 @@ GLOBAL_LIST_EMPTY(patreon_races)
 					user.put_in_hands(I)
 					H.emote("pain", TRUE)
 					playsound(H.loc, 'sound/foley/flesh_rem.ogg', 100, TRUE, -2)
+			I.do_special_attack_effect(user, affecting, intent, H, selzone)
 			if(istype(user.used_intent, /datum/intent/effect) && selzone)
 				var/datum/intent/effect/effect_intent = user.used_intent
 				if(LAZYLEN(effect_intent.target_parts))
