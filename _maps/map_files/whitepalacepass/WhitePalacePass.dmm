@@ -7008,7 +7008,7 @@
 /obj/structure/table/wood/plain,
 /obj/item/recipe_book/underworld{
 	pixel_x = 5;
-	pixel_y = -2
+	pixel_y = 3
 	},
 /obj/item/recipe_book/alchemy{
 	pixel_x = -7;
@@ -7321,7 +7321,6 @@
 /turf/closed/wall/mineral/decorstone,
 /area/rogue/indoors/town/manor)
 "gUg" = (
-/obj/structure/table/wood/plain,
 /obj/machinery/essence/reservoir{
 	pixel_y = 12;
 	pixel_x = 5
@@ -7333,6 +7332,7 @@
 /obj/machinery/light/fueled/wallfire/candle/lamp{
 	pixel_y = -32
 	},
+/obj/structure/table/wood/plain,
 /turf/open/floor/metal/alt,
 /area/rogue/indoors/town/bath)
 "gUu" = (
@@ -13301,15 +13301,7 @@
 /turf/open/floor/ruinedwood,
 /area/rogue/indoors/town)
 "mHi" = (
-/obj/structure/table/wood/plain,
-/obj/item/reagent_containers/glass/bucket/wooden{
-	pixel_x = -4;
-	pixel_y = 6
-	},
-/obj/item/reagent_containers/glass/bucket/wooden{
-	pixel_x = 8;
-	pixel_y = 16
-	},
+/obj/machinery/essence/enchantment_altar,
 /turf/open/floor/metal,
 /area/rogue/indoors/town/bath)
 "mHs" = (
@@ -24583,7 +24575,6 @@
 /turf/closed/wall/mineral/decorstone,
 /area/rogue/indoors/town/manor)
 "wYg" = (
-/obj/structure/table/wood/plain,
 /obj/machinery/essence/reservoir{
 	pixel_y = 11;
 	pixel_x = -4
@@ -24592,6 +24583,7 @@
 	pixel_y = 3;
 	pixel_x = 4
 	},
+/obj/structure/table/wood/plain,
 /turf/open/floor/metal/alt,
 /area/rogue/indoors/town/bath)
 "wYi" = (
@@ -25072,7 +25064,8 @@
 /turf/open/floor/ruinedwood/turned/darker,
 /area/rogue/indoors/town)
 "xwJ" = (
-/obj/machinery/essence/enchantment_altar,
+/obj/machinery/essence/infuser,
+/obj/structure/table/wood/plain,
 /turf/open/floor/metal/barograte,
 /area/rogue/indoors/town/bath)
 "xxj" = (
