@@ -593,15 +593,11 @@
 "io" = (
 /obj/structure/rack/shelf/biggest,
 /obj/item/fishingrod,
-/obj/item/fishing/bait/meat,
-/obj/item/fishing/bait/meat,
-/obj/item/fishing/bait/meat,
-/obj/item/fishing/bait/meat,
-/obj/item/fishing/bait/meat,
-/obj/item/fishing/bait/meat,
-/obj/item/fishing/bait/meat,
-/obj/item/fishing/bait/meat,
-/obj/item/fishing/bait/meat,
+/obj/item/fishing/lure/meat,
+/obj/item/fishing/lure/meat,
+/obj/item/fishing/lure/meat,
+/obj/item/fishing/lure/meat,
+/obj/item/fishing/lure/meat,
 /turf/open/floor/twig,
 /area/rogue/outdoors/woods)
 "ip" = (
