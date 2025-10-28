@@ -236,11 +236,6 @@
 /obj/structure/chair/bench/ancientlog,
 /turf/open/floor/grass,
 /area/rogue/outdoors/woods)
-"dY" = (
-/obj/structure/stairs/stone,
-/obj/structure/stairs/stone,
-/turf/open/floor/herringbone,
-/area/rogue/outdoors/mountains)
 "dZ" = (
 /obj/structure/fluff/traveltile{
 	aportalgoesto = "vanderlin-forest_town-town";
@@ -70854,7 +70849,7 @@ Xt
 kw
 kw
 lC
-dY
+hs
 GW
 rU
 rU
