@@ -189,32 +189,32 @@
 
 /obj/structure/flora/rock/water
 	name = "boulder"
-	icon_state = "boulder"
+	icon_state = "boulder-1"
 	icon = 'icons/delver/abyss_objects.dmi'
 
 /obj/structure/flora/rock/water/Initialize()
 	. = ..()
-	icon_state = "[initial(icon_state)]-[rand(1,6)]"
+	icon_state = "boulder-[rand(1,6)]"
 
 /obj/structure/flora/rock/coral
 	name = "coral"
-	icon_state = "coral"
+	icon_state = "coral-1"
 	icon = 'icons/delver/abyss_objects.dmi'
 
 /obj/structure/flora/rock/coral/Initialize()
 	. = ..()
-	icon_state = "[initial(icon_state)]-[rand(1,32)]"
+	icon_state = "coral-[rand(1,32)]"
 
 /obj/structure/flora/pillar
 	name = "pillar"
-	icon_state = "pillar"
+	icon_state = "pillar1"
 	icon = 'icons/delver/abyss_objects.dmi'
 	resistance_flags = FIRE_PROOF
 	density = TRUE
 
 /obj/structure/flora/pillar/Initialize()
 	. = ..()
-	icon_state = "[initial(icon_state)][rand(1,5)]"
+	icon_state = "pillar[rand(1,5)]"
 
 //Jungle rocks
 
