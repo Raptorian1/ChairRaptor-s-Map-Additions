@@ -4555,6 +4555,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/tile/kitchen,
 /area/rogue/indoors/town/tavern)
+"Zw" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/mob/living/simple_animal/hostile/retaliate/direbear,
+/turf/open/floor/naturalstone,
+/area/rogue/indoors/cave)
 "Zz" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/cobblerock,
@@ -6427,8 +6432,8 @@ Uj
 Uj
 Uj
 ID
-Rs
-DA
+Zw
+ID
 Uj
 Uj
 ID
