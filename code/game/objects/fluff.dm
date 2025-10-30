@@ -286,6 +286,6 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/desert_window/open, 32)
 	resistance_flags = FIRE_PROOF
 	density = TRUE
 
-/obj/structure/flora/astrata/Initialize()
+/obj/structure/flora/kelp/Initialize()
 	. = ..()
 	icon_state = "kelp-[rand(1,4)]"
