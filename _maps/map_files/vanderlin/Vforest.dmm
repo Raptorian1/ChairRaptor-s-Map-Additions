@@ -604,7 +604,7 @@
 	},
 /obj/item/weapon/sword/sabre/mulyeog/rumacaptain{
 	name = "Astrata's Will";
-	desc = "A gold-stained with cloud patterns, it seems to be a highly sacred relic."
+	desc = "A gold-stained sword with cloud patterns, it seems to be a highly sacred relic."
 	},
 /turf/open/floor/sandstone_tile/five,
 /area/rogue/indoors/dungeon)
