@@ -654,12 +654,6 @@
 /obj/structure/fluff/walldeco/bath/wallrope,
 /turf/closed/wall/mineral/tent,
 /area/rogue/indoors/shelter/bog)
-"bU" = (
-/turf/closed/wall/mineral/abyssal{
-	color = "#406379";
-	desc = "A Hard to destroy wall stands before you with the godly might of Abyssor coursing through it."
-	},
-/area/rogue/outdoors/bog)
 "bV" = (
 /obj/structure/fluff/walldeco/church/line{
 	dir = 4
@@ -1227,12 +1221,6 @@
 	color = "#29404E"
 	},
 /area/rogue/under/cavewet)
-"dE" = (
-/mob/living/simple_animal/hostile/deepone/elite{
-	faction = list("Hostile")
-	},
-/turf/closed/sea_fog,
-/area/rogue/outdoors/bog)
 "dF" = (
 /mob/living/simple_animal/hostile/deepone/arm{
 	faction = list("Hostile")
@@ -1748,10 +1736,6 @@
 	dir = 4
 	},
 /area/rogue/outdoors/bog)
-"fe" = (
-/obj/item/clothing/head/padded/abyssor,
-/turf/closed/sea_fog,
-/area/rogue/outdoors/bog)
 "ff" = (
 /obj/structure/flora/grass/water,
 /turf/open/floor/grass,
@@ -1853,10 +1837,6 @@
 	},
 /turf/open/floor/metal,
 /area/rogue/indoors/town/clocktower)
-"fu" = (
-/obj/item/clothing/head/helmet/heavy/necked/abyssor,
-/turf/closed/sea_fog,
-/area/rogue/outdoors/bog)
 "fv" = (
 /obj/structure/table/wood/bar,
 /obj/item/dice_cup/wooden{
@@ -4185,13 +4165,6 @@
 	color = "#29404E"
 	},
 /area/rogue/under/cavewet)
-"lA" = (
-/obj/structure/window/stained/zizo,
-/obj/structure/window/stained/zizo,
-/obj/structure/curtain/bounty,
-/obj/effect/mapping_helpers/structure/breaker,
-/turf/open/floor/herringbone,
-/area/rogue/indoors/town/clocktower)
 "lC" = (
 /obj/structure/fluff/railing/stonehedge{
 	color = "#7D9BAE"
@@ -4273,10 +4246,6 @@
 /obj/machinery/light/fueled/wallfire/candle/lamp,
 /turf/open/water/bath,
 /area/rogue/indoors/town/clocktower)
-"lO" = (
-/obj/item/clothing/cloak/stabard/templar/abyssor,
-/turf/closed/sea_fog,
-/area/rogue/outdoors/bog)
 "lP" = (
 /turf/open/floor/abyss_tile/two{
 	color = "#547285"
@@ -4288,10 +4257,6 @@
 	color = "#7D9BAE"
 	},
 /area/rogue/under/cavewet)
-"lR" = (
-/obj/item/clothing/neck/mercmedal/abyssal,
-/turf/closed/sea_fog,
-/area/rogue/outdoors/bog)
 "lS" = (
 /obj/item/natural/stone,
 /turf/open/floor/abyss_tile/two,
@@ -5368,10 +5333,6 @@
 	},
 /turf/open/floor/cobble,
 /area/rogue/outdoors/bog)
-"oM" = (
-/obj/item/fishingrod/abyssor_trident,
-/turf/closed/sea_fog,
-/area/rogue/outdoors/bog)
 "oN" = (
 /obj/structure/fluff/walldeco/psybanner,
 /turf/closed/wall/mineral/underbrick{
@@ -6138,10 +6099,6 @@
 	color = "#547285"
 	},
 /area/rogue/under/tomb/indoors/magic)
-"qR" = (
-/obj/structure/abyss_window,
-/turf/closed/sea_fog,
-/area/rogue/outdoors/bog)
 "qT" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -6255,12 +6212,6 @@
 	color = "#547285"
 	},
 /area/rogue/under/cavewet)
-"rl" = (
-/mob/living/simple_animal/hostile/deepone{
-	faction = list("Hostile")
-	},
-/turf/closed/sea_fog,
-/area/rogue/outdoors/bog)
 "rm" = (
 /obj/structure/lever/hidden{
 	redstone_id = "bog4"
@@ -6787,10 +6738,6 @@
 /obj/structure/fluff/clock/zizoclock,
 /turf/open/floor/metal/alt,
 /area/rogue/indoors/town/clocktower)
-"sO" = (
-/obj/item/clothing/armor/brigandine/abyssor,
-/turf/closed/sea_fog,
-/area/rogue/outdoors/bog)
 "sP" = (
 /turf/open/water/river/blood{
 	dir = 8
@@ -7045,10 +6992,6 @@
 /obj/structure/flora/grass/water/reeds,
 /obj/structure/flora/grass/water,
 /turf/open/water/swamp/deep,
-/area/rogue/outdoors/bog)
-"tx" = (
-/obj/item/clothing/shirt/robe/abyssor,
-/turf/closed/sea_fog,
 /area/rogue/outdoors/bog)
 "ty" = (
 /obj/structure/easel,
@@ -7308,14 +7251,6 @@
 	color = "#7D9BAE"
 	},
 /area/rogue/under/cavewet)
-"ui" = (
-/obj/item/reagent_containers/food/snacks/cooked/egg{
-	icon = 'icons/obj/broodmother_32x.dmi';
-	icon_state = "goblin_egg";
-	color = "#547285"
-	},
-/turf/open/floor/abyss_sand/path,
-/area/rogue/outdoors/bog)
 "uk" = (
 /obj/structure/flora/grass/water/reeds,
 /turf/open/water/swamp,
@@ -7608,13 +7543,6 @@
 /obj/machinery/light/fueled/oven/west,
 /turf/open/floor/tile,
 /area/rogue/indoors/town/clocktower)
-"vb" = (
-/turf/closed/wall/mineral/underbrick{
-	color = "#4B758F";
-	name = "abyssal wall";
-	desc = "A Hard to destroy wall stands before you with the godly might of Abyssor coursing through it."
-	},
-/area/rogue/outdoors/bog)
 "vd" = (
 /obj/structure/flora/pillar,
 /turf/open/floor/abyss_tile/three{
@@ -7796,10 +7724,6 @@
 /obj/structure/bookcase/random,
 /turf/open/floor/ruinedwood/spiral,
 /area/rogue/indoors/ship)
-"vJ" = (
-/obj/item/weapon/polearm/spear/hoplite/abyssal,
-/turf/closed/sea_fog,
-/area/rogue/outdoors/bog)
 "vK" = (
 /obj/effect/decal/cleanable/food/salt,
 /turf/open/floor/abyss_tile{
@@ -8408,12 +8332,6 @@
 	color = "#547285"
 	},
 /area/rogue/under/cavewet)
-"xv" = (
-/obj/structure/window/stained/zizo,
-/obj/structure/window/stained/zizo,
-/obj/structure/curtain/bounty,
-/turf/open/floor/herringbone,
-/area/rogue/indoors/town/clocktower)
 "xw" = (
 /obj/structure/fluff/railing/stonehedge{
 	color = "#7D9BAE"
@@ -9307,10 +9225,6 @@
 	color = "#314C5D"
 	},
 /area/rogue/under/cavewet)
-"zO" = (
-/obj/item/weapon/polearm/spear/abyssor,
-/turf/closed/sea_fog,
-/area/rogue/outdoors/bog)
 "zP" = (
 /obj/structure/fluff/railing/tall/palisade{
 	dir = 4
@@ -9647,11 +9561,6 @@
 	color = "#7D9BAE"
 	},
 /area/rogue/under/cavewet)
-"AJ" = (
-/turf/open/floor/abyss_tile{
-	color = "#7D9BAE"
-	},
-/area/rogue/outdoors/bog)
 "AK" = (
 /obj/structure/chair/wood/alt{
 	dir = 8
@@ -9781,12 +9690,6 @@
 	color = "#7D9BAE"
 	},
 /area/rogue/under/cavewet)
-"Bd" = (
-/obj/structure/stairs/abyss{
-	color = "#7D9BAE"
-	},
-/turf/closed/sea_fog,
-/area/rogue/outdoors/bog)
 "Be" = (
 /obj/structure/fluff/nest,
 /obj/item/gem/turq,
@@ -10960,10 +10863,6 @@
 	color = "#7D9BAE"
 	},
 /area/rogue/under/cavewet)
-"Ea" = (
-/obj/item/clothing/head/helmet/heavy/abyssorgreathelm,
-/turf/closed/sea_fog,
-/area/rogue/outdoors/bog)
 "Eb" = (
 /obj/structure/flora/pillar,
 /obj/structure/fluff/walldeco/church/line{
@@ -13306,10 +13205,6 @@
 /obj/structure/door/weak,
 /turf/open/floor/ruinedwood,
 /area/rogue/indoors/shelter/bog)
-"KC" = (
-/obj/item/clothing/cloak/stabard/templar/abyssor/alt,
-/turf/closed/sea_fog,
-/area/rogue/outdoors/bog)
 "KD" = (
 /obj/structure/closet/crate/chest/neu,
 /obj/item/reagent_containers/powder/salt,
@@ -13354,21 +13249,6 @@
 /obj/effect/mapping_helpers/structure/breaker,
 /turf/open/floor/ruinedwood,
 /area/rogue/indoors/shelter/bog)
-"KG" = (
-/mob/living/simple_animal/hostile/retaliate/wolf{
-	icon_dead = "megacarp_dead";
-	icon_living = "megacarp";
-	icon_state = "megacarp";
-	icon = 'icons/mob/broadMobs.dmi';
-	faction = list("Hostile");
-	name = "Shark";
-	head_butcher = null;
-	perfect_butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 2, /obj/item/alch/sinew = 2, /obj/item/alch/bone = 2);
-	botched_butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 1, /obj/item/alch/bone = 1);
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 2, /obj/item/alch/sinew = 2, /obj/item/alch/bone = 1)
-	},
-/turf/closed/sea_fog,
-/area/rogue/outdoors/bog)
 "KH" = (
 /obj/structure/fluff/walldeco/church/line{
 	dir = 4
@@ -13442,12 +13322,6 @@
 /obj/effect/decal/cleanable/blood/gibs,
 /turf/open/floor/ruinedwood/turned/darker,
 /area/rogue/indoors/shelter/bog)
-"KP" = (
-/obj/structure/rack/underworld{
-	color = "#7D9BAE"
-	},
-/turf/closed/sea_fog,
-/area/rogue/outdoors/bog)
 "KQ" = (
 /obj/structure/bars/pipe{
 	dir = 1
@@ -14520,12 +14394,6 @@
 /obj/structure/flora/pillar,
 /turf/open/transparent/openspace,
 /area/rogue/under/cavewet)
-"NN" = (
-/obj/structure/table/stone_small{
-	color = "#7D9BAE"
-	},
-/turf/open/floor/abyss_sand/path,
-/area/rogue/outdoors/bog)
 "NO" = (
 /obj/structure/table/stone_small{
 	color = "#7D9BAE"
@@ -15640,11 +15508,6 @@
 	color = "#547285"
 	},
 /area/rogue/under/cavewet)
-"QL" = (
-/turf/open/floor/abyss_tile/two{
-	color = "#7D9BAE"
-	},
-/area/rogue/outdoors/bog)
 "QM" = (
 /obj/structure/bars{
 	color = "#7D9BAE"
@@ -15674,11 +15537,6 @@
 	color = "#547285"
 	},
 /area/rogue/under/cavewet)
-"QP" = (
-/turf/open/floor/abyss_tile/three{
-	color = "#7D9BAE"
-	},
-/area/rogue/outdoors/bog)
 "QR" = (
 /obj/structure/fluff/walldeco/church/line{
 	dir = 1
@@ -15988,10 +15846,6 @@
 "RF" = (
 /obj/item/restraints/legcuffs/beartrap/armed/camouflage,
 /turf/open/floor/dirt/road,
-/area/rogue/outdoors/bog)
-"RG" = (
-/obj/structure/flora/kelp,
-/turf/open/floor/abyss_sand/path,
 /area/rogue/outdoors/bog)
 "RH" = (
 /obj/structure/flora/grass/bush/wall/tall{
@@ -17117,12 +16971,6 @@
 	color = "#547285"
 	},
 /area/rogue/under/tomb/indoors/magic)
-"Uu" = (
-/mob/living/simple_animal/hostile/deepone/arm{
-	faction = list("Hostile")
-	},
-/turf/closed/sea_fog,
-/area/rogue/outdoors/bog)
 "Uv" = (
 /obj/structure/fluff/walldeco/church/line{
 	dir = 4
@@ -17832,12 +17680,6 @@
 	color = "#7D9BAE"
 	},
 /area/rogue/under/cavewet)
-"WL" = (
-/obj/structure/door/abyss{
-	color = "#406379"
-	},
-/turf/closed/sea_fog,
-/area/rogue/outdoors/bog)
 "WM" = (
 /obj/structure/chair/bench/couch/right,
 /obj/structure/fluff/walldeco/gear{
@@ -18570,12 +18412,6 @@
 	color = "#7D9BAE"
 	},
 /area/rogue/under/cavewet)
-"YN" = (
-/mob/living/simple_animal/hostile/deepone/spit{
-	faction = list("Hostile")
-	},
-/turf/closed/sea_fog,
-/area/rogue/outdoors/bog)
 "YO" = (
 /turf/open/water/river/dirt{
 	dir = 4
@@ -18944,10 +18780,6 @@
 	},
 /turf/open/floor/concrete,
 /area/rogue/indoors/town/clocktower)
-"ZR" = (
-/obj/structure/flora/pillar,
-/turf/open/floor/abyss_sand/path,
-/area/rogue/outdoors/bog)
 "ZS" = (
 /obj/item/gem/coral,
 /obj/structure/fluff/walldeco/church/line{
@@ -18965,15 +18797,6 @@
 	color = "#29404E"
 	},
 /area/rogue/under/cavewet)
-"ZU" = (
-/mob/living/simple_animal/hostile/retaliate/direbear{
-	dir = 8;
-	color = "#4B758F";
-	name = "Sea Bear";
-	faction = list("Hostile")
-	},
-/turf/closed/sea_fog,
-/area/rogue/outdoors/bog)
 "ZV" = (
 /obj/machinery/light/fueled/firebowl/stumpb,
 /turf/open/floor/abyss_tile/three{
@@ -48037,24 +47860,24 @@ Ao
 Ao
 Ao
 Ao
-vJ
-oM
-lO
-sO
-fe
-tx
 Ao
-Bd
-Bd
-Bd
 Ao
-qR
-qR
-qR
 Ao
-WL
-WL
-WL
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
 Ao
 Ao
 Ao
@@ -48240,11 +48063,11 @@ Ao
 Ao
 Ao
 Ao
-zO
-KC
-fu
-Ea
-lR
+Ao
+Ao
+Ao
+Ao
+Ao
 Ao
 Ao
 Ao
@@ -48444,21 +48267,21 @@ Ao
 Ao
 Ao
 Ao
-ZR
-ZR
-ZR
 Ao
-Tj
-Tj
-Tj
 Ao
-Eu
-Eu
-Eu
 Ao
-bU
-bU
-bU
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
 Ao
 Ao
 Ao
@@ -48848,21 +48671,21 @@ Ao
 Ao
 Ao
 Ao
-en
-en
-en
 Ao
-wH
-wH
-wH
 Ao
-Zm
-Zm
-Zm
 Ao
-vb
-ht
-ht
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Bl
+Bl
 Bl
 Bl
 Bl
@@ -49252,21 +49075,21 @@ Ao
 Ao
 Ao
 Ao
-RG
-RG
-RG
 Ao
-fy
-fy
-fy
 Ao
-Kz
-Kz
-Kz
 Ao
-AJ
-Ih
-iH
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Bl
+Bl
 Bl
 Bl
 Bl
@@ -49656,21 +49479,21 @@ Ao
 Ao
 Ao
 Ao
-jV
-jV
-jV
 Ao
-ui
-ui
-ui
 Ao
-ob
-ob
-ob
 Ao
-QP
-PX
-Nu
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Bl
+Bl
 Bl
 Bl
 Bl
@@ -50060,21 +49883,21 @@ Kz
 Kz
 Ao
 Ao
-mh
-mh
-mh
 Ao
-NN
-NN
-NN
 Ao
-OJ
-OJ
-OJ
 Ao
-QL
-Ru
-bL
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Ao
+Bl
+Bl
 Bl
 Bl
 Bl
@@ -50467,12 +50290,12 @@ Kz
 Ao
 Ao
 Ao
-KP
-KP
 Ao
-rl
 Ao
-YN
+Ao
+Ao
+Ao
+Ao
 Ao
 Ao
 Ao
@@ -50672,9 +50495,9 @@ Ao
 Ao
 Ao
 Ao
-Uu
 Ao
-ZU
+Ao
+Ao
 Ao
 Ao
 Ao
@@ -50876,7 +50699,7 @@ Ao
 Ao
 Ao
 Ao
-KG
+Ao
 Ao
 Ao
 Ao
@@ -51076,7 +50899,7 @@ Kz
 Ao
 Ao
 Ao
-dE
+Ao
 Ao
 Ao
 Ao
@@ -93960,9 +93783,9 @@ Eg
 Eg
 Eg
 ZI
-xv
+kp
 iD
-lA
+lY
 iD
 sZ
 RZ
