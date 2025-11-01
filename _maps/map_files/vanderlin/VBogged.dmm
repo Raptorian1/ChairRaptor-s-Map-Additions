@@ -5037,7 +5037,7 @@
 	butcher_results = list(/obj/item/gear/metal/bronze = 1, /obj/item/natural/silk = 2);
 	head_butcher = null;
 	color = "#E8C4A1";
-	attack_sound = list('sound/misc/elec (1).ogg','sound/misc/elec(2).ogg','sound/misc/elec(3).ogg');
+	attack_sound = list('sound/misc/elec (1).ogg');
 	faction = list("Undead")
 	},
 /turf/open/floor/metal/alt,
@@ -5780,7 +5780,7 @@
 	butcher_results = list(/obj/item/gear/metal/bronze = 1, /obj/item/natural/silk = 2);
 	head_butcher = null;
 	color = "#E8C4A1";
-	attack_sound = list('sound/misc/elec (1).ogg','sound/misc/elec(2).ogg','sound/misc/elec(3).ogg');
+	attack_sound = list('sound/misc/elec (1).ogg');
 	faction = list("Undead")
 	},
 /turf/open/floor/carpet/royalblack,
@@ -6837,7 +6837,7 @@
 	butcher_results = list(/obj/item/gear/metal/bronze = 1, /obj/item/natural/silk = 2);
 	head_butcher = null;
 	color = "#E8C4A1";
-	attack_sound = list('sound/misc/elec (1).ogg','sound/misc/elec(2).ogg','sound/misc/elec(3).ogg');
+	attack_sound = list('sound/misc/elec (1).ogg');
 	faction = list("Undead")
 	},
 /turf/open/floor/metal/alt,
@@ -10623,7 +10623,7 @@
 	butcher_results = list(/obj/item/gear/metal/bronze = 1, /obj/item/natural/silk = 2);
 	head_butcher = null;
 	color = "#E8C4A1";
-	attack_sound = list('sound/misc/elec (1).ogg','sound/misc/elec(2).ogg','sound/misc/elec(3).ogg');
+	attack_sound = list('sound/misc/elec (1).ogg');
 	faction = list("Undead")
 	},
 /turf/open/floor/carpet/royalblack,
@@ -14824,7 +14824,7 @@
 	butcher_results = list(/obj/item/gear/metal/bronze = 1, /obj/item/natural/silk = 2);
 	head_butcher = null;
 	color = "#E8C4A1";
-	attack_sound = list('sound/misc/elec (1).ogg','sound/misc/elec(2).ogg','sound/misc/elec(3).ogg');
+	attack_sound = list('sound/misc/elec (1).ogg');
 	faction = list("Undead")
 	},
 /turf/open/floor/concrete,
@@ -15591,7 +15591,7 @@
 	butcher_results = list(/obj/item/gear/metal/bronze = 1, /obj/item/natural/silk = 2);
 	head_butcher = null;
 	color = "#E8C4A1";
-	attack_sound = list('sound/misc/elec (1).ogg','sound/misc/elec(2).ogg','sound/misc/elec(3).ogg');
+	attack_sound = list('sound/misc/elec (1).ogg');
 	faction = list("Undead")
 	},
 /turf/open/floor/concrete,
