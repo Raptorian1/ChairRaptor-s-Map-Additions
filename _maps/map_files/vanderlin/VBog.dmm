@@ -90,6 +90,19 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/rogue/indoors/ship)
+"ao" = (
+/obj/structure/door/abyss{
+	color = "#406379"
+	},
+/obj/structure/fluff/walldeco/church/line{
+	dir = 4
+	},
+/obj/effect/mapping_helpers/access/locker,
+/obj/structure/trap/shock,
+/turf/open/floor/abyss_tile/three{
+	color = "#29404E"
+	},
+/area/rogue/under/cavewet)
 "ap" = (
 /obj/structure/wild_plant/nospread/blackberry,
 /obj/structure/flora/grass/maneater/real,
@@ -654,6 +667,19 @@
 /obj/structure/fluff/walldeco/bath/wallrope,
 /turf/closed/wall/mineral/tent,
 /area/rogue/indoors/shelter/bog)
+"bU" = (
+/obj/structure/door/abyss{
+	color = "#406379"
+	},
+/obj/structure/fluff/walldeco/church/line{
+	dir = 8
+	},
+/obj/effect/mapping_helpers/access/locker,
+/obj/structure/trap/shock,
+/turf/open/floor/abyss_tile/three{
+	color = "#29404E"
+	},
+/area/rogue/under/cavewet)
 "bV" = (
 /obj/structure/fluff/walldeco/church/line{
 	dir = 4
@@ -5105,6 +5131,8 @@
 /obj/structure/fluff/walldeco/church/line{
 	dir = 1
 	},
+/obj/effect/mapping_helpers/access/locker,
+/obj/structure/trap/shock,
 /turf/open/floor/abyss_tile/three{
 	color = "#29404E"
 	},
@@ -6200,6 +6228,7 @@
 	color = "#406379"
 	},
 /obj/effect/mapping_helpers/access/locker,
+/obj/structure/trap/shock,
 /turf/open/floor/abyss_tile{
 	color = "#547285"
 	},
@@ -9657,6 +9686,15 @@
 /obj/structure/door/red,
 /obj/effect/mapping_helpers/access/locker,
 /turf/open/floor/ruinedwood,
+/area/rogue/under/cavewet)
+"AY" = (
+/obj/structure/door/abyss{
+	color = "#406379"
+	},
+/obj/item/restraints/legcuffs/beartrap/armed/camouflage,
+/turf/open/floor/abyss_tile/two{
+	color = "#7D9BAE"
+	},
 /area/rogue/under/cavewet)
 "AZ" = (
 /obj/structure/table/stone_small{
@@ -15292,6 +15330,7 @@
 /obj/structure/fluff/walldeco/church/line{
 	dir = 4
 	},
+/obj/effect/mapping_helpers/access/locker,
 /turf/open/floor/abyss_tile/three{
 	color = "#29404E"
 	},
@@ -16313,11 +16352,6 @@
 "SK" = (
 /turf/closed/wall/mineral/decorstone,
 /area/rogue/indoors/town/clocktower)
-"SM" = (
-/obj/structure/fluff/steamvent,
-/obj/effect/landmark/start/adventurerlate,
-/turf/open/floor/herringbone,
-/area/rogue/indoors/town/clocktower)
 "SN" = (
 /obj/effect/decal/shadow_floor{
 	dir = 4
@@ -17181,6 +17215,15 @@
 	},
 /turf/open/floor/ruinedwood/alt,
 /area/rogue/indoors/shelter/bog)
+"Vd" = (
+/obj/structure/door/abyss{
+	color = "#406379"
+	},
+/obj/item/restraints/legcuffs/beartrap/armed/camouflage,
+/turf/open/floor/abyss_tile/three{
+	color = "#29404E"
+	},
+/area/rogue/under/cavewet)
 "Ve" = (
 /obj/structure/table/wood/fancy/royalblack,
 /obj/item/reagent_containers/glass/cup/onyxa{
@@ -17921,6 +17964,15 @@
 	color = "#7D9BAE"
 	},
 /area/rogue/under/cavewet)
+"Xt" = (
+/obj/structure/door/abyss{
+	color = "#406379"
+	},
+/obj/effect/mapping_helpers/access/locker,
+/turf/open/floor/abyss_tile/three{
+	color = "#29404E"
+	},
+/area/rogue/under/cavewet)
 "Xu" = (
 /obj/structure/flora/pillar,
 /obj/structure/fluff/walldeco/church/line{
@@ -18022,6 +18074,16 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet/red,
 /area/rogue/indoors/ship)
+"XH" = (
+/obj/structure/door/abyss{
+	color = "#406379"
+	},
+/obj/effect/mapping_helpers/access/locker,
+/obj/structure/trap/shock,
+/turf/open/floor/abyss_tile/three{
+	color = "#547285"
+	},
+/area/rogue/under/cavewet)
 "XJ" = (
 /obj/structure/flora/pillar,
 /turf/open/floor/abyss_tile/three{
@@ -55605,7 +55667,7 @@ ZX
 dB
 kq
 dB
-SM
+na
 dB
 aA
 dB
@@ -79366,7 +79428,7 @@ gg
 ht
 ht
 gg
-rk
+XH
 gg
 ht
 gg
@@ -79969,7 +80031,7 @@ RZ
 ht
 gc
 Nu
-yU
+al
 lf
 Hl
 nU
@@ -80988,7 +81050,7 @@ pT
 gg
 ht
 gg
-Tf
+bU
 gg
 ht
 xz
@@ -81385,7 +81447,7 @@ ht
 gg
 ht
 gg
-Qc
+ao
 gg
 ht
 ht
@@ -81800,7 +81862,7 @@ pl
 pl
 pl
 ZT
-og
+Vd
 JC
 pl
 pl
@@ -84859,7 +84921,7 @@ lf
 PX
 GZ
 bL
-Du
+AY
 PX
 ev
 PX
@@ -118983,7 +119045,7 @@ Ru
 xe
 PX
 GZ
-rk
+Rr
 lf
 PX
 St
@@ -120173,7 +120235,7 @@ nv
 vx
 Cs
 Ih
-rk
+XH
 PX
 Ih
 Ih
@@ -121396,7 +121458,7 @@ gg
 ST
 GZ
 lf
-rk
+Zf
 cU
 Gm
 Li
@@ -125017,7 +125079,7 @@ ht
 gg
 ht
 gg
-og
+Xt
 gg
 gg
 ht
@@ -126838,7 +126900,7 @@ cU
 wr
 ht
 gg
-rk
+Zf
 gg
 ht
 gG
