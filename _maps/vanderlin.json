@@ -15,7 +15,7 @@
 	"other_z": [
 		"_maps/map_files/vanderlin/Vforest.json",
 		"_maps/map_files/vanderlin/vanderlin_mountain.json",
-		"_maps/map_files/vanderlin/VBog.json"
+		"_maps/map_files/vanderlin/vanderling_bog.json"
 	],
 	"minetype": null,
 	"space_empty_levels": 0,
