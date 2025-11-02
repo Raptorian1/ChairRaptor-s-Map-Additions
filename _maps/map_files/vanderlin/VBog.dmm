@@ -16278,6 +16278,12 @@
 	dir = 8
 	},
 /obj/structure/fluff/walldeco/church/line,
+/mob/living/simple_animal/hostile/retaliate/direbear{
+	dir = 8;
+	color = "#4B758F";
+	name = "Sea Bear";
+	faction = list("Hostile")
+	},
 /turf/open/floor/abyss_tile/three{
 	color = "#7D9BAE"
 	},
@@ -46336,8 +46342,8 @@ GI
 Hz
 gg
 gg
-hk
 Zz
+hk
 gg
 sP
 gg
@@ -81471,7 +81477,7 @@ gg
 gg
 Fu
 yh
-YR
+lf
 PX
 NJ
 ZD
