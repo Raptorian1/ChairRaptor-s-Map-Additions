@@ -211,6 +211,10 @@
 /obj/structure/closet/crate/chest/old_crate,
 /turf/open/floor/ruinedwood/turned/darker,
 /area/rogue/outdoors/mountains)
+"aF" = (
+/obj/structure/flora/grass/water/reeds,
+/turf/open/water/blood,
+/area/rogue/under/cavewet)
 "aG" = (
 /obj/item/reagent_containers/food/snacks/fish/swordfish,
 /turf/open/water/ocean,
@@ -297,7 +301,8 @@
 /area/rogue/indoors/shelter/bog)
 "aU" = (
 /mob/living/simple_animal/hostile/deepone{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/closed/sea_fog,
 /area/rogue/outdoors/mountains)
@@ -409,7 +414,6 @@
 	},
 /area/rogue/under/cavewet)
 "bp" = (
-/obj/structure/chair/bench/couch/middle,
 /obj/structure/fluff/walldeco/gear{
 	pixel_x = -4;
 	pixel_y = 29
@@ -421,6 +425,7 @@
 /obj/effect/temp_visual/curse{
 	name = "Shadow of the Past"
 	},
+/obj/structure/chair/bench/couch/middle/alt,
 /turf/open/floor/herringbone,
 /area/rogue/indoors/town/clocktower)
 "bq" = (
@@ -547,7 +552,8 @@
 /area/rogue/under/cavewet)
 "bI" = (
 /mob/living/simple_animal/hostile/deepone/spit{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile{
 	color = "#7D9BAE"
@@ -724,7 +730,8 @@
 /area/rogue/ship/topdeck)
 "bZ" = (
 /mob/living/simple_animal/hostile/deepone/spit{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/tile/kitchen,
 /area/rogue/under/cavewet)
@@ -741,6 +748,18 @@
 /obj/structure/flora/tree,
 /turf/open/floor/dirt,
 /area/rogue/outdoors/bog)
+"cd" = (
+/mob/living/simple_animal/hostile/retaliate/blood{
+	faction = list("Hostile");
+	icon_living = "new state";
+	icon_state = "new state";
+	icon = 'icons/roguetown/underworld/carriageman.dmi';
+	pixel_x = -16;
+	pixel_y = 0;
+	health = 1200
+	},
+/turf/open/floor/tile/diamond/purple,
+/area/rogue/indoors/town/clocktower)
 "ce" = (
 /obj/structure/door,
 /obj/effect/mapping_helpers/structure/breaker,
@@ -802,6 +821,10 @@
 	dir = 8
 	},
 /obj/machinery/light/fueled/firebowl/firebowlb,
+/obj/structure/fluff/walldeco/psybanner{
+	pixel_x = -32;
+	pixel_y = 0
+	},
 /turf/open/floor/abyss_tile/three{
 	color = "#547285"
 	},
@@ -1249,7 +1272,8 @@
 /area/rogue/under/cavewet)
 "dF" = (
 /mob/living/simple_animal/hostile/deepone/arm{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile/two{
 	color = "#7D9BAE"
@@ -1360,6 +1384,23 @@
 	},
 /turf/open/floor/metal/barograte,
 /area/rogue/indoors/town/clocktower)
+"dU" = (
+/mob/living/simple_animal/hostile/retaliate/wolf{
+	icon_dead = "megacarp_dead";
+	icon_living = "megacarp";
+	icon_state = "megacarp";
+	icon = 'icons/mob/broadMobs.dmi';
+	faction = list("Hostile");
+	name = "Shark";
+	head_butcher = null;
+	perfect_butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 2, /obj/item/alch/sinew = 2, /obj/item/alch/bone = 2);
+	botched_butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 1, /obj/item/alch/bone = 1);
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 2, /obj/item/alch/sinew = 2, /obj/item/alch/bone = 1)
+	},
+/turf/open/floor/abyss_tile/three{
+	color = "#547285"
+	},
+/area/rogue/under/cavewet)
 "dV" = (
 /obj/effect/waterfall,
 /turf/open/transparent/openspace,
@@ -1419,7 +1460,8 @@
 /area/rogue/indoors/town/clocktower)
 "ed" = (
 /mob/living/simple_animal/hostile/deepone{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/carpet/royalblack,
 /area/rogue/under/cavewet)
@@ -1533,7 +1575,8 @@
 /area/rogue/indoors/shelter/bog)
 "es" = (
 /mob/living/simple_animal/hostile/deepone/elite{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/water/bath,
 /area/rogue/under/cavewet)
@@ -1728,6 +1771,21 @@
 /obj/structure/flora/tree,
 /turf/open/floor/grass,
 /area/rogue/outdoors/bog)
+"eY" = (
+/obj/item/clothing/cloak/stabard/templar/abyssor,
+/obj/item/clothing/head/helmet/heavy/necked/abyssor,
+/obj/item/clothing/neck/mercmedal/abyssal,
+/obj/item/clothing/gloves/chain/iron,
+/obj/item/clothing/shoes/boots/armor/ironmaille,
+/obj/item/clothing/neck/gorget/hoplite,
+/obj/effect/mapping_helpers/floor_clothing_equipper,
+/mob/living/carbon/human/species/triton/base/skilled/naked,
+/obj/item/clothing/pants/trou/leather/quiltedkilt/colored/blue,
+/obj/item/weapon/sword/gladius,
+/turf/open/floor/abyss_tile{
+	color = "#7D9BAE"
+	},
+/area/rogue/under/cavewet)
 "fa" = (
 /obj/structure/stairs,
 /turf/open/floor/ruinedwood/turned/darker,
@@ -2021,7 +2079,8 @@
 /area/rogue/under/cavewet)
 "fS" = (
 /mob/living/simple_animal/hostile/deepone{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile,
 /area/rogue/outdoors/bog)
@@ -2069,6 +2128,17 @@
 /obj/item/reagent_containers/food/snacks/fish/clownfish,
 /turf/open/floor/abyss_tile/three{
 	color = "#314C5D"
+	},
+/area/rogue/under/cavewet)
+"ga" = (
+/mob/living/carbon/human/species/triton/base/unskilled/naked,
+/obj/effect/mapping_helpers/floor_clothing_equipper,
+/obj/item/clothing/shirt/robe/abyssor,
+/obj/item/clothing/neck/psycross/silver/abyssor,
+/obj/item/clothing/head/padded/abyssor,
+/obj/item/weapon/sword/gladius,
+/turf/open/floor/abyss_tile/three{
+	color = "#7D9BAE"
 	},
 /area/rogue/under/cavewet)
 "gb" = (
@@ -2304,7 +2374,8 @@
 /area/rogue/under/cavewet)
 "gE" = (
 /mob/living/simple_animal/hostile/deepone/arm{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile{
 	color = "#547285"
@@ -2438,7 +2509,8 @@
 	dir = 1
 	},
 /mob/living/simple_animal/hostile/deepone/elite{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile{
 	color = "#314C5D"
@@ -2456,6 +2528,17 @@
 	},
 /turf/open/floor/metal,
 /area/rogue/indoors/town/clocktower)
+"gX" = (
+/mob/living/carbon/human/species/triton/base/unskilled/naked,
+/obj/effect/mapping_helpers/floor_clothing_equipper,
+/obj/item/clothing/shirt/robe/abyssor,
+/obj/item/clothing/neck/psycross/silver/abyssor,
+/obj/item/weapon/polearm/spear/hoplite/abyssal,
+/obj/item/clothing/head/padded/abyssor,
+/turf/open/floor/abyss_tile/three{
+	color = "#7D9BAE"
+	},
+/area/rogue/under/cavewet)
 "gY" = (
 /obj/structure/fluff/railing/border{
 	dir = 4
@@ -2535,6 +2618,7 @@
 	pixel_y = -18
 	},
 /obj/effect/spawner/map_spawner/loot/potion_ingredient,
+/obj/effect/spawner/map_spawner/loot/magic,
 /turf/open/floor/tile/diamond/purple,
 /area/rogue/indoors/town/clocktower)
 "hk" = (
@@ -2916,6 +3000,20 @@
 	},
 /turf/open/floor/metal,
 /area/rogue/indoors/town/clocktower)
+"ih" = (
+/mob/living/carbon/human/species/aasimar/base/very_skilled/naked,
+/obj/effect/mapping_helpers/floor_clothing_equipper,
+/obj/item/clothing/armor/rare/hoplite,
+/obj/item/clothing/head/rare/hoplite,
+/obj/item/clothing/neck/gorget/hoplite,
+/obj/item/clothing/shoes/rare/hoplite,
+/obj/item/clothing/wrists/bracers/rare/hoplite,
+/obj/item/clothing/ring/signet/silver,
+/obj/item/weapon/polearm/spear/hoplite/winged,
+/turf/open/floor/abyss_tile/three{
+	color = "#7D9BAE"
+	},
+/area/rogue/under/cavewet)
 "ii" = (
 /obj/structure/fluff/walldeco/church/line{
 	dir = 4
@@ -2927,7 +3025,8 @@
 /area/rogue/indoors/town/magician)
 "ij" = (
 /mob/living/simple_animal/hostile/deepone{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/ruinedwood/darker,
 /area/rogue/under/cavewet)
@@ -2945,7 +3044,8 @@
 /area/rogue/under/cavewet)
 "il" = (
 /mob/living/simple_animal/hostile/deepone/spit{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile/three{
 	color = "#29404E"
@@ -2968,7 +3068,8 @@
 /area/rogue/under/tomb/indoors/magic)
 "iq" = (
 /mob/living/simple_animal/hostile/deepone{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile/three,
 /area/rogue/outdoors/bog)
@@ -3351,7 +3452,8 @@
 	dir = 1
 	},
 /mob/living/simple_animal/hostile/deepone/arm{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile/three{
 	color = "#7D9BAE"
@@ -3806,7 +3908,8 @@
 "kB" = (
 /obj/structure/chair/stool,
 /mob/living/simple_animal/hostile/deepone{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/ruinedwood,
 /area/rogue/under/cavewet)
@@ -3880,6 +3983,10 @@
 	color = "#7D9BAE"
 	},
 /area/rogue/under/cavewet)
+"kN" = (
+/obj/item/clothing/armor/cuirass/iron/rust,
+/turf/open/floor/grass,
+/area/rogue/outdoors/bog)
 "kP" = (
 /obj/machinery/light/fueled/wallfire/candle/weak,
 /turf/open/floor/ruinedwood/darker,
@@ -4274,7 +4381,8 @@
 /area/rogue/outdoors/bog)
 "lU" = (
 /mob/living/simple_animal/hostile/deepone/spit{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/rooftop/green{
 	dir = 4
@@ -4464,6 +4572,22 @@
 	color = "#7D9BAE"
 	},
 /area/rogue/under/cavewet)
+"mt" = (
+/obj/structure/flora/shells,
+/mob/living/simple_animal/hostile/retaliate/wolf{
+	icon_dead = "megacarp_dead";
+	icon_living = "megacarp";
+	icon_state = "megacarp";
+	icon = 'icons/mob/broadMobs.dmi';
+	faction = list("Hostile");
+	name = "Shark";
+	head_butcher = null;
+	perfect_butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 2, /obj/item/alch/sinew = 2, /obj/item/alch/bone = 2);
+	botched_butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 1, /obj/item/alch/bone = 1);
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 2, /obj/item/alch/sinew = 2, /obj/item/alch/bone = 1)
+	},
+/turf/open/floor/abyss_sand/path,
+/area/rogue/under/cavewet)
 "mu" = (
 /obj/structure/fluff/railing/border{
 	dir = 8
@@ -4489,6 +4613,10 @@
 	color = "#7D9BAE"
 	},
 /turf/open/water/cleanshallow,
+/area/rogue/under/cavewet)
+"mx" = (
+/obj/structure/flora/grass/water,
+/turf/open/water/blood,
 /area/rogue/under/cavewet)
 "my" = (
 /obj/structure/fluff/railing/border{
@@ -4879,6 +5007,7 @@
 /area/rogue/under/cavewet)
 "nu" = (
 /obj/structure/door/weak,
+/obj/effect/mapping_helpers/access/locker,
 /turf/open/floor/ruinedwood/turned,
 /area/rogue/indoors/shelter/bog)
 "nv" = (
@@ -4954,7 +5083,8 @@
 /area/rogue/under/tomb/indoors/magic)
 "nD" = (
 /mob/living/simple_animal/hostile/deepone{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /obj/item/natural/stoneblock,
 /turf/open/floor/abyss_tile/two,
@@ -4990,7 +5120,8 @@
 "nJ" = (
 /obj/item/natural/stone,
 /mob/living/simple_animal/hostile/deepone/spit{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile/three,
 /area/rogue/outdoors/bog)
@@ -5054,23 +5185,13 @@
 /area/rogue/indoors/ship)
 "nU" = (
 /mob/living/simple_animal/hostile/deepone{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile/three{
 	color = "#547285"
 	},
 /area/rogue/under/cavewet)
-"nV" = (
-/mob/living/simple_animal/hostile/retaliate/blood{
-	faction = list("Hostile");
-	icon_living = "new state";
-	icon_state = "new state";
-	icon = 'icons/roguetown/underworld/carriageman.dmi';
-	pixel_x = -16;
-	pixel_y = 0
-	},
-/turf/open/floor/tile/diamond/purple,
-/area/rogue/indoors/town/clocktower)
 "nW" = (
 /obj/structure/fluff/walldeco/church/line{
 	dir = 8
@@ -5162,7 +5283,8 @@
 /area/rogue/outdoors/mountains)
 "oi" = (
 /mob/living/simple_animal/hostile/deepone/arm{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile,
 /area/rogue/outdoors/bog)
@@ -5343,6 +5465,12 @@
 	},
 /turf/open/floor/cobble,
 /area/rogue/outdoors/bog)
+"oM" = (
+/mob/living/simple_animal/hostile/retaliate/swamp_kraken{
+	anchored = 1
+	},
+/turf/open/water/ocean/deep,
+/area/rogue/under/cavewet)
 "oN" = (
 /obj/structure/fluff/walldeco/psybanner,
 /turf/closed/wall/mineral/underbrick{
@@ -5433,6 +5561,21 @@
 "pe" = (
 /obj/structure/fluff/railing/border{
 	dir = 8
+	},
+/mob/living/simple_animal/hostile/retaliate/wolf{
+	icon = 'icons/roguetown/mob/monster/pets.dmi';
+	icon_dead = "gg_dead";
+	icon_living = "gg";
+	icon_state = "gg";
+	name = "Robotic Volf";
+	botched_butcher_results = list(/obj/item/gear/metal/bronze = 1);
+	butcher_results = list(/obj/item/gear/metal/bronze = 2);
+	head_butcher = null;
+	perfect_butcher_results = list(/obj/item/gear/metal/bronze = 2);
+	attack_sound = list('sound/items/beartrap.ogg');
+	faction = list("Undead");
+	desc = "A metalic monster made into that of a doglike form. It's jaw reminds you of a beartrap.";
+	color = "#E8C4A1"
 	},
 /turf/open/floor/tile/diamond/blue,
 /area/rogue/indoors/town/clocktower)
@@ -5785,6 +5928,13 @@
 	color = "#547285"
 	},
 /area/rogue/under/tomb/indoors/magic)
+"qd" = (
+/obj/structure/fluff/steamvent,
+/obj/structure/trap/spike{
+	layer = 2
+	},
+/turf/open/floor/metal,
+/area/rogue/indoors/town/clocktower)
 "qe" = (
 /obj/structure/fluff/nest,
 /obj/item/reagent_containers/food/snacks/cooked/egg{
@@ -5840,7 +5990,8 @@
 /area/rogue/under/tomb/indoors/magic)
 "qj" = (
 /mob/living/simple_animal/hostile/deepone/arm{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile/two{
 	color = "#29404E"
@@ -5923,7 +6074,8 @@
 /area/rogue/under/cavewet)
 "qv" = (
 /mob/living/simple_animal/hostile/deepone/arm{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /obj/machinery/light/fueled/wallfire/candle/blue{
 	pixel_y = -32
@@ -6070,21 +6222,6 @@
 /turf/open/floor/abyss_tile/three{
 	color = "#547285"
 	},
-/area/rogue/under/cavewet)
-"qN" = (
-/mob/living/simple_animal/hostile/retaliate/wolf{
-	icon_dead = "megacarp_dead";
-	icon_living = "megacarp";
-	icon_state = "megacarp";
-	icon = 'icons/mob/broadMobs.dmi';
-	faction = list("Hostile");
-	name = "Shark";
-	head_butcher = null;
-	perfect_butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 2, /obj/item/alch/sinew = 2, /obj/item/alch/bone = 2);
-	botched_butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 1, /obj/item/alch/bone = 1);
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 2, /obj/item/alch/sinew = 2, /obj/item/alch/bone = 1)
-	},
-/turf/open/floor/abyss_sand/path,
 /area/rogue/under/cavewet)
 "qO" = (
 /obj/effect/decal/shadow_floor{
@@ -6584,7 +6721,8 @@
 /area/rogue/under/cavewet)
 "su" = (
 /mob/living/simple_animal/hostile/deepone/arm{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_sand,
 /area/rogue/outdoors/bog)
@@ -6703,7 +6841,7 @@
 /turf/open/floor/metal/barograte,
 /area/rogue/indoors/town/clocktower)
 "sJ" = (
-/mob/living/simple_animal/hostile/retaliate/shade,
+/mob/living/carbon/human/species/skeleton/npc/warrior/skilled,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/clocktower)
 "sK" = (
@@ -6797,24 +6935,6 @@
 /obj/structure/flora/pillar,
 /turf/open/floor/abyss_tile/three,
 /area/rogue/outdoors/bog)
-"sW" = (
-/obj/effect/decal/cleanable/blood/tracks,
-/mob/living/simple_animal/hostile/retaliate/spider{
-	icon_dead = "drone_clock_dead";
-	icon_living = "drone_clock";
-	icon_state = "drone_clock";
-	icon = 'icons/mob/drone.dmi';
-	name = "Robotic Spider";
-	desc = "A metalic creature made to instill a sense of fear onto trespassers. It's fangs producing a shocking strike.";
-	botched_butcher_results = list(/obj/item/gear/metal/bronze = 1, /obj/item/natural/silk = 1);
-	butcher_results = list(/obj/item/gear/metal/bronze = 1, /obj/item/natural/silk = 2);
-	head_butcher = null;
-	color = "#E8C4A1";
-	attack_sound = list('sound/misc/elec (1).ogg');
-	faction = list("Undead")
-	},
-/turf/open/floor/metal/alt,
-/area/rogue/indoors/town/clocktower)
 "sX" = (
 /obj/structure/wild_plant/nospread/raspberry,
 /turf/open/floor/dirt,
@@ -7015,7 +7135,7 @@
 /area/rogue/outdoors/mountains)
 "tC" = (
 /obj/structure/table/wood/crafted,
-/obj/structure/lootable_structure/stockpile/powder_sack,
+/obj/structure/lootable_structure/powder_sack,
 /turf/open/floor/twig,
 /area/rogue/indoors/shelter/bog)
 "tD" = (
@@ -7081,10 +7201,11 @@
 /obj/structure/bars/pipe{
 	dir = 8
 	},
-/obj/structure/trap/fire{
-	layer = 2
-	},
 /obj/structure/fluff/steamvent,
+/obj/structure/trap/wall_projectile{
+	dir = 1;
+	layer = 2.0
+	},
 /turf/open/floor/rooftop{
 	dir = 8
 	},
@@ -7392,7 +7513,8 @@
 	dir = 8
 	},
 /mob/living/simple_animal/hostile/deepone{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile/three{
 	color = "#7D9BAE"
@@ -7414,7 +7536,8 @@
 /area/rogue/ship/topdeck)
 "uJ" = (
 /mob/living/simple_animal/hostile/deepone{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /obj/item/natural/stoneblock,
 /turf/open/floor/abyss_tile/three,
@@ -7443,10 +7566,6 @@
 	},
 /turf/open/floor/herringbone,
 /area/rogue/indoors/town/clocktower)
-"uO" = (
-/mob/living/simple_animal/hostile/retaliate/swamp_kraken,
-/turf/open/water/ocean/deep,
-/area/rogue/under/cavewet)
 "uP" = (
 /obj/item/reagent_containers/glass/cup/wooden,
 /obj/effect/decal/cleanable/dirt,
@@ -7455,7 +7574,8 @@
 /area/rogue/indoors/ship)
 "uQ" = (
 /mob/living/simple_animal/hostile/deepone/elite{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile,
 /area/rogue/outdoors/bog)
@@ -7709,6 +7829,25 @@
 /obj/structure/flora/kelp,
 /turf/open/water/ocean/deep,
 /area/rogue/under/cavewet)
+"vF" = (
+/obj/structure/fluff/walldeco/vinez/red{
+	icon = 'icons/turf/flesh_tile.dmi';
+	icon_state = "flesh_tile-0";
+	layer = 1.9;
+	pixel_x = -17;
+	pixel_y = -18
+	},
+/mob/living/simple_animal/hostile/retaliate/blood{
+	faction = list("Hostile");
+	icon_living = "new state";
+	icon_state = "new state";
+	icon = 'icons/roguetown/underworld/carriageman.dmi';
+	pixel_x = -16;
+	pixel_y = 0;
+	health = 1200
+	},
+/turf/open/floor/tile/diamond/purple,
+/area/rogue/indoors/town/clocktower)
 "vG" = (
 /obj/structure/flora/pillar,
 /turf/open/floor/abyss_tile{
@@ -7732,7 +7871,8 @@
 "vL" = (
 /obj/structure/fluff/walldeco/church/line,
 /mob/living/simple_animal/hostile/deepone/elite{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile{
 	color = "#547285"
@@ -7745,7 +7885,8 @@
 "vN" = (
 /obj/structure/chair/stool,
 /mob/living/simple_animal/hostile/deepone/arm{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/ruinedwood/darker,
 /area/rogue/under/cavewet)
@@ -7822,6 +7963,7 @@
 	},
 /obj/effect/decal/cleanable/blood/old,
 /obj/structure/fluff/steamvent,
+/mob/living/simple_animal/hostile/retaliate/shade,
 /turf/open/floor/metal/barograte,
 /area/rogue/indoors/town/clocktower)
 "wa" = (
@@ -8061,6 +8203,12 @@
 /obj/structure/flora/tree,
 /turf/closed/mineral/random/med,
 /area/rogue/outdoors/bog)
+"wE" = (
+/obj/item/clothing/neck/silveramulet,
+/turf/open/floor/abyss_tile/three{
+	color = "#547285"
+	},
+/area/rogue/under/cavewet)
 "wF" = (
 /obj/structure/wild_plant/nospread/manabloom,
 /turf/open/floor/dirt,
@@ -8126,7 +8274,8 @@
 /area/rogue/under/cavewet)
 "wP" = (
 /mob/living/simple_animal/hostile/deepone/arm{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/transparent/glass,
 /area/rogue/under/cavewet)
@@ -8560,7 +8709,8 @@
 "xZ" = (
 /obj/structure/fluff/nest,
 /mob/living/simple_animal/hostile/deepone{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile/three{
 	color = "#314C5D"
@@ -8670,6 +8820,10 @@
 	color = "#7D9BAE"
 	},
 /area/rogue/indoors/town/magician)
+"ym" = (
+/obj/structure/flora/shells,
+/turf/open/water/ocean,
+/area/rogue/under/cavewet)
 "yn" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/reagent_containers/food/snacks/produce/swampweed_dried,
@@ -8828,9 +8982,9 @@
 /obj/item/clothing/shirt/robe/abyssor,
 /obj/item/clothing/neck/psycross/silver/abyssor,
 /obj/item/clothing/head/crown/circlet/sleepless,
-/obj/item/weapon/polearm/woodstaff/quarterstaff/steel,
 /obj/item/clothing/neck/mana_star,
 /obj/structure/carpet/blue,
+/obj/item/weapon/polearm/woodstaff/naledi,
 /turf/open/floor/abyss_tile{
 	color = "#7D9BAE"
 	},
@@ -8962,14 +9116,16 @@
 "yY" = (
 /obj/item/natural/stoneblock,
 /mob/living/simple_animal/hostile/deepone/arm{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/rooftop/green,
 /area/rogue/under/cavewet)
 "yZ" = (
 /obj/structure/chair/stool,
 /mob/living/simple_animal/hostile/deepone/arm{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/ruinedwood,
 /area/rogue/under/cavewet)
@@ -9291,6 +9447,14 @@
 	pixel_x = 5;
 	pixel_y = -8
 	},
+/mob/living/carbon/human/species/elf/dark/base/very_skilled/naked,
+/obj/effect/mapping_helpers/floor_clothing_equipper,
+/obj/item/clothing/head/crown/circlet/vision,
+/obj/item/clothing/armor/plate/full/zizo,
+/obj/item/clothing/gloves/plate/zizo,
+/obj/item/clothing/shoes/boots/armor/zizo,
+/obj/item/clothing/pants/platelegs/zizo,
+/obj/item/weapon/sword/long/greatsword/zizo,
 /turf/open/floor/tile/diamond/purple,
 /area/rogue/indoors/town/clocktower)
 "Ab" = (
@@ -9576,6 +9740,7 @@
 /area/rogue/under/cavewet)
 "AN" = (
 /obj/structure/closet/crate/chest/steward,
+/obj/item/carvedgem/amber/sun,
 /turf/open/floor/ruinedwood/darker,
 /area/rogue/under/cavewet)
 "AO" = (
@@ -10480,7 +10645,8 @@
 /area/rogue/indoors/town/clocktower)
 "Db" = (
 /mob/living/simple_animal/hostile/deepone{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile{
 	color = "#7D9BAE"
@@ -10505,7 +10671,8 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/fluff/nest,
 /mob/living/simple_animal/hostile/deepone{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile{
 	color = "#7D9BAE"
@@ -10853,6 +11020,10 @@
 	color = "#7D9BAE"
 	},
 /area/rogue/under/cavewet)
+"Ea" = (
+/obj/structure/flora/starfish,
+/turf/open/water/ocean,
+/area/rogue/under/cavewet)
 "Eb" = (
 /obj/structure/flora/pillar,
 /obj/structure/fluff/walldeco/church/line{
@@ -11022,6 +11193,11 @@
 	color = "#29404E"
 	},
 /area/rogue/under/cavewet)
+"Ez" = (
+/obj/effect/decal/cleanable/blood/tracks,
+/mob/living/carbon/human/species/skeleton/npc/warrior,
+/turf/open/floor/metal/alt,
+/area/rogue/indoors/town/clocktower)
 "EA" = (
 /obj/item/chair/stool/bar,
 /obj/item/reagent_containers/food/snacks/cooked/frysteak,
@@ -11058,7 +11234,8 @@
 	dir = 8
 	},
 /mob/living/simple_animal/hostile/deepone/spit{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile{
 	color = "#547285"
@@ -11154,7 +11331,8 @@
 /area/rogue/indoors/town/clocktower)
 "EW" = (
 /mob/living/simple_animal/hostile/deepone{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile/two{
 	color = "#547285"
@@ -11162,7 +11340,8 @@
 /area/rogue/under/cavewet)
 "EX" = (
 /mob/living/simple_animal/hostile/deepone/elite{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/ruinedwood,
 /area/rogue/under/cavewet)
@@ -11219,12 +11398,6 @@
 	dir = 8
 	},
 /area/rogue/outdoors/mountains)
-"Fi" = (
-/obj/structure/lootable_structure/stockpile/fish_barrel,
-/turf/open/floor/abyss_tile/three{
-	color = "#7D9BAE"
-	},
-/area/rogue/under/cavewet)
 "Fj" = (
 /obj/structure/flora/pillar,
 /obj/structure/fluff/walldeco/church/line,
@@ -11233,7 +11406,7 @@
 	},
 /area/rogue/under/cavewet)
 "Fk" = (
-/obj/structure/lootable_structure/stockpile/fish_barrel,
+/obj/structure/lootable_structure/fish_barrel,
 /turf/open/floor/abyss_tile/three{
 	color = "#314C5D"
 	},
@@ -11245,6 +11418,26 @@
 	},
 /obj/structure/carpet/blue,
 /turf/open/floor/abyss_tile{
+	color = "#547285"
+	},
+/area/rogue/under/cavewet)
+"Fm" = (
+/obj/structure/fluff/walldeco/church/line{
+	dir = 8
+	},
+/mob/living/simple_animal/hostile/retaliate/wolf{
+	icon_dead = "megacarp_dead";
+	icon_living = "megacarp";
+	icon_state = "megacarp";
+	icon = 'icons/mob/broadMobs.dmi';
+	faction = list("Hostile");
+	name = "Shark";
+	head_butcher = null;
+	perfect_butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 2, /obj/item/alch/sinew = 2, /obj/item/alch/bone = 2);
+	botched_butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 1, /obj/item/alch/bone = 1);
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 2, /obj/item/alch/sinew = 2, /obj/item/alch/bone = 1)
+	},
+/turf/open/floor/abyss_tile/three{
 	color = "#547285"
 	},
 /area/rogue/under/cavewet)
@@ -11405,7 +11598,8 @@
 /area/rogue/outdoors/bog)
 "FJ" = (
 /mob/living/simple_animal/hostile/deepone/spit{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/water/ocean,
 /area/rogue/under/cavewet)
@@ -11457,7 +11651,8 @@
 /area/rogue/under/cavewet)
 "FQ" = (
 /mob/living/simple_animal/hostile/deepone{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile/two,
 /area/rogue/outdoors/bog)
@@ -12011,7 +12206,8 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/fluff/nest,
 /mob/living/simple_animal/hostile/deepone{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile/three{
 	color = "#547285"
@@ -12235,16 +12431,16 @@
 "HQ" = (
 /mob/living/carbon/human/species/triton/base/unskilled/naked,
 /obj/effect/mapping_helpers/floor_clothing_equipper,
-/obj/item/fishingrod/abyssor_trident,
 /obj/item/clothing/head/fisherhat,
 /obj/item/clothing/shirt/robe/abyssor,
 /obj/item/clothing/neck/psycross/silver/abyssor,
+/obj/item/weapon/polearm/spear/hoplite/abyssal,
 /turf/open/floor/abyss_tile/three{
 	color = "#7D9BAE"
 	},
 /area/rogue/under/cavewet)
 "HR" = (
-/obj/structure/lootable_structure/stockpile/fish_barrel,
+/obj/structure/lootable_structure/fish_barrel,
 /turf/open/floor/ruinedwood,
 /area/rogue/outdoors/bog)
 "HS" = (
@@ -12606,6 +12802,10 @@
 /obj/item/reagent_containers/food/snacks/pie/cooked/meat/fish/good,
 /turf/open/floor/ruinedwood,
 /area/rogue/under/cavewet)
+"IV" = (
+/obj/structure/flora/rock/coral,
+/turf/open/water/ocean,
+/area/rogue/under/cavewet)
 "IW" = (
 /obj/structure/fluff/walldeco/church/line,
 /turf/open/floor/abyss_tile/three{
@@ -12627,7 +12827,8 @@
 	pixel_y = 0
 	},
 /mob/living/simple_animal/hostile/deepone/spit{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile/three{
 	color = "#547285"
@@ -12778,7 +12979,6 @@
 /area/rogue/indoors/shelter/bog)
 "Jt" = (
 /obj/structure/closet/crate/chest/neu_fancy,
-/obj/item/weapon/sword/long/greatsword/zizo,
 /obj/item/clothing/head/helmet/blacksteel/psythorns,
 /obj/structure/fluff/walldeco/vinez/red{
 	icon = 'icons/turf/flesh_tile.dmi';
@@ -12787,6 +12987,10 @@
 	pixel_x = -17;
 	pixel_y = -18
 	},
+/obj/item/clothing/ring/gold/burden,
+/obj/item/statue/gold/cameo,
+/obj/item/clothing/wrists/silverbracelet,
+/obj/item/clothing/ring/silver/dorpel,
 /turf/open/floor/tile/diamond/purple,
 /area/rogue/indoors/town/clocktower)
 "Ju" = (
@@ -12800,7 +13004,8 @@
 /area/rogue/under/cavewet)
 "Jv" = (
 /mob/living/simple_animal/hostile/deepone{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile{
 	color = "#547285"
@@ -12843,6 +13048,23 @@
 	},
 /turf/open/floor/blocks,
 /area/rogue/indoors/town/clocktower)
+"JB" = (
+/obj/item/clothing/cloak/stabard/templar/abyssor,
+/obj/item/clothing/armor/brigandine/abyssor,
+/obj/item/clothing/head/helmet/heavy/necked/abyssor,
+/obj/item/clothing/neck/mercmedal/abyssal,
+/obj/item/clothing/gloves/chain/iron,
+/obj/item/clothing/shoes/boots/armor/ironmaille,
+/obj/item/clothing/neck/gorget/hoplite,
+/obj/effect/mapping_helpers/floor_clothing_equipper,
+/mob/living/carbon/human/species/triton/base/skilled/naked,
+/obj/item/clothing/pants/trou/leather/quiltedkilt/colored/blue,
+/obj/item/weapon/sword/khopesh,
+/obj/item/weapon/shield/tower/buckleriron,
+/turf/open/floor/abyss_tile{
+	color = "#7D9BAE"
+	},
+/area/rogue/under/cavewet)
 "JC" = (
 /obj/structure/fluff/walldeco/church/line,
 /turf/open/floor/abyss_tile/three{
@@ -12855,7 +13077,8 @@
 	dir = 4
 	},
 /mob/living/simple_animal/hostile/deepone/spit{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile{
 	color = "#547285"
@@ -12958,6 +13181,13 @@
 /obj/structure/fluff/psycross/psycrucifix/silver,
 /turf/open/water/ocean,
 /area/rogue/under/cavewet)
+"JU" = (
+/obj/structure/trap/wall_projectile{
+	layer = 2.0
+	},
+/obj/structure/fluff/steamvent,
+/turf/open/floor/rooftop,
+/area/rogue/indoors/town/clocktower)
 "JV" = (
 /obj/structure/table/stone_small{
 	color = "#7D9BAE"
@@ -13195,6 +13425,22 @@
 /obj/structure/door/weak,
 /turf/open/floor/ruinedwood,
 /area/rogue/indoors/shelter/bog)
+"KC" = (
+/obj/structure/flora/ocean_plants,
+/mob/living/simple_animal/hostile/retaliate/wolf{
+	icon_dead = "megacarp_dead";
+	icon_living = "megacarp";
+	icon_state = "megacarp";
+	icon = 'icons/mob/broadMobs.dmi';
+	faction = list("Hostile");
+	name = "Shark";
+	head_butcher = null;
+	perfect_butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 2, /obj/item/alch/sinew = 2, /obj/item/alch/bone = 2);
+	botched_butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 1, /obj/item/alch/bone = 1);
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 2, /obj/item/alch/sinew = 2, /obj/item/alch/bone = 1)
+	},
+/turf/open/floor/abyss_sand/path,
+/area/rogue/under/cavewet)
 "KD" = (
 /obj/structure/closet/crate/chest/neu,
 /obj/item/reagent_containers/powder/salt,
@@ -13466,7 +13712,8 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /mob/living/simple_animal/hostile/deepone/spit{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile{
 	color = "#314C5D"
@@ -13908,7 +14155,8 @@
 /area/rogue/under/cavewet)
 "ME" = (
 /mob/living/simple_animal/hostile/deepone/spit{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/rooftop/green,
 /area/rogue/under/cavewet)
@@ -14062,6 +14310,10 @@
 /obj/structure/flora/driftwood,
 /turf/open/water/ocean,
 /area/rogue/outdoors/bog)
+"MY" = (
+/obj/structure/flora/rock/water,
+/turf/open/water/ocean,
+/area/rogue/under/cavewet)
 "MZ" = (
 /obj/structure/rack/shelf/biggest{
 	color = "#547285"
@@ -14331,6 +14583,13 @@
 /obj/structure/flora/grass/water/reeds,
 /turf/open/water/swamp/deep,
 /area/rogue/outdoors/bog)
+"NE" = (
+/obj/structure/fluff/walldeco/church/line,
+/obj/item/reagent_containers/food/snacks/fish/carp,
+/turf/open/floor/abyss_tile/three{
+	color = "#7D9BAE"
+	},
+/area/rogue/under/cavewet)
 "NF" = (
 /obj/structure/flora/grass/water/reeds,
 /obj/structure/flora/grass/water,
@@ -14487,7 +14746,8 @@
 	dir = 8
 	},
 /mob/living/simple_animal/hostile/deepone{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile{
 	color = "#547285"
@@ -14674,7 +14934,8 @@
 /area/rogue/outdoors/bog/inhumen_camp)
 "OC" = (
 /mob/living/simple_animal/hostile/deepone/spit{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile/three{
 	color = "#29404E";
@@ -14735,6 +14996,10 @@
 	dir = 8
 	},
 /obj/machinery/light/fueled/firebowl/firebowlb,
+/obj/structure/fluff/walldeco/psybanner{
+	pixel_x = -32;
+	pixel_y = 0
+	},
 /turf/open/floor/abyss_tile/three{
 	color = "#547285"
 	},
@@ -15054,7 +15319,8 @@
 /area/rogue/ship/topdeck)
 "Pz" = (
 /mob/living/simple_animal/hostile/deepone/arm{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile/three{
 	color = "#547285"
@@ -15172,7 +15438,7 @@
 /area/rogue/under/tomb/indoors/magic)
 "PQ" = (
 /obj/structure/closet/crate/chest/crafted,
-/obj/item/weapon/sword/sabre/cutlass,
+/obj/item/weapon/sword/long/greatsword/gutsclaymore,
 /turf/open/floor/ruinedwood/darker,
 /area/rogue/under/cavewet)
 "PR" = (
@@ -15311,7 +15577,8 @@
 /area/rogue/under/cavewet)
 "Qh" = (
 /mob/living/simple_animal/hostile/deepone/spit{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile/three{
 	color = "#7D9BAE"
@@ -15555,7 +15822,8 @@
 /area/rogue/indoors/town/clocktower)
 "QV" = (
 /mob/living/simple_animal/hostile/deepone{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile/three{
 	color = "#29404E"
@@ -15832,6 +16100,10 @@
 /obj/item/restraints/legcuffs/beartrap/armed/camouflage,
 /turf/open/floor/dirt/road,
 /area/rogue/outdoors/bog)
+"RG" = (
+/obj/structure/flora/kelp,
+/turf/open/floor/abyss_sand/path,
+/area/rogue/under/cavewet)
 "RH" = (
 /obj/structure/flora/grass/bush/wall/tall{
 	pixel_y = -3;
@@ -15953,7 +16225,8 @@
 /area/rogue/indoors/town/magician)
 "RV" = (
 /mob/living/simple_animal/hostile/deepone/arm{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile{
 	color = "#314C5D"
@@ -15993,7 +16266,8 @@
 /area/rogue/outdoors/mountains)
 "Sa" = (
 /mob/living/simple_animal/hostile/deepone/spit{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile/three{
 	color = "#547285"
@@ -16172,11 +16446,10 @@
 	pixel_x = -17;
 	pixel_y = -18
 	},
-/obj/item/clothing/pants/platelegs/zizo,
-/obj/item/clothing/shoes/boots/armor/zizo,
 /obj/item/clothing/head/helmet/heavy/zizo,
-/obj/item/clothing/gloves/plate/zizo,
-/obj/item/clothing/armor/plate/full/zizo,
+/obj/item/ingot/gold,
+/obj/item/ingot/silverblessed,
+/obj/item/gun/ballistic/revolver/grenadelauncher/airgun/prefilled,
 /turf/open/floor/tile/diamond/purple,
 /area/rogue/indoors/town/clocktower)
 "Sv" = (
@@ -16686,7 +16959,8 @@
 /area/rogue/indoors/town/clocktower)
 "TL" = (
 /mob/living/simple_animal/hostile/deepone/arm{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile/three{
 	color = "#7D9BAE"
@@ -16739,24 +17013,6 @@
 /turf/open/floor/abyss_tile/two{
 	color = "#29404E"
 	},
-/area/rogue/under/cavewet)
-"TU" = (
-/obj/structure/flora/kelp{
-	color = "#880808"
-	},
-/mob/living/simple_animal/hostile/retaliate/wolf{
-	icon_dead = "megacarp_dead";
-	icon_living = "megacarp";
-	icon_state = "megacarp";
-	icon = 'icons/mob/broadMobs.dmi';
-	faction = list("Hostile");
-	name = "Shark";
-	head_butcher = null;
-	perfect_butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 2, /obj/item/alch/sinew = 2, /obj/item/alch/bone = 2);
-	botched_butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 1, /obj/item/alch/bone = 1);
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 2, /obj/item/alch/sinew = 2, /obj/item/alch/bone = 1)
-	},
-/turf/open/water/blood,
 /area/rogue/under/cavewet)
 "TV" = (
 /obj/structure/fluff/walldeco/gear,
@@ -17000,7 +17256,8 @@
 "UF" = (
 /obj/item/natural/glass/shard,
 /mob/living/simple_animal/hostile/deepone{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile/three{
 	color = "#7D9BAE"
@@ -17239,7 +17496,8 @@
 "Vr" = (
 /obj/structure/carpet/blue,
 /mob/living/simple_animal/hostile/deepone/elite{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile/three{
 	color = "#547285"
@@ -17320,6 +17578,10 @@
 	color = "#314C5D"
 	},
 /area/rogue/indoors/town/magician)
+"VF" = (
+/obj/machinery/light/fueled/firebowl/stumpb,
+/turf/open/water/ocean/deep,
+/area/rogue/under/cavewet)
 "VG" = (
 /obj/structure/fluff/railing/border{
 	dir = 5
@@ -17444,11 +17706,11 @@
 /turf/open/floor/grass,
 /area/rogue/outdoors/bog)
 "Wb" = (
+/obj/structure/fluff/steamvent,
 /obj/structure/trap/wall_projectile{
 	dir = 4;
 	layer = 2.0
 	},
-/obj/structure/fluff/steamvent,
 /turf/open/floor/metal/alt,
 /area/rogue/indoors/town/clocktower)
 "Wc" = (
@@ -17667,7 +17929,6 @@
 	},
 /area/rogue/under/cavewet)
 "WM" = (
-/obj/structure/chair/bench/couch/right,
 /obj/structure/fluff/walldeco/gear{
 	pixel_x = 16;
 	pixel_y = 28
@@ -17676,6 +17937,7 @@
 	pixel_x = -3;
 	pixel_y = 33
 	},
+/obj/structure/chair/bench/couch/right/alt,
 /turf/open/floor/herringbone,
 /area/rogue/indoors/town/clocktower)
 "WN" = (
@@ -17746,18 +18008,6 @@
 "WX" = (
 /turf/closed/mineral/bedrock/cold,
 /area/rogue/outdoors/mountains)
-"WY" = (
-/obj/item/weapon/knife/dagger/steel/dirk,
-/obj/item/clothing/gloves/fingerless/shadowgloves,
-/obj/item/clothing/face/shepherd/shadowmask,
-/obj/item/clothing/pants/trou/shadowpants,
-/obj/item/clothing/shoes/boots,
-/obj/effect/mapping_helpers/floor_clothing_equipper,
-/obj/item/clothing/head/crown/circlet/vision,
-/obj/item/clothing/armor/gambeson/shadowrobe,
-/mob/living/carbon/human/species/elf/dark/base/very_skilled/naked,
-/turf/open/floor/tile/diamond/purple,
-/area/rogue/indoors/town/clocktower)
 "WZ" = (
 /obj/item/natural/rock,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -17985,6 +18235,20 @@
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 6
 	},
+/mob/living/simple_animal/hostile/retaliate/spider{
+	icon_dead = "drone_clock_dead";
+	icon_living = "drone_clock";
+	icon_state = "drone_clock";
+	icon = 'icons/mob/drone.dmi';
+	name = "Robotic Spider";
+	desc = "A metalic creature made to instill a sense of fear onto trespassers. It's fangs producing a shocking strike.";
+	botched_butcher_results = list(/obj/item/gear/metal/bronze = 1, /obj/item/natural/silk = 1);
+	butcher_results = list(/obj/item/gear/metal/bronze = 1, /obj/item/natural/silk = 2);
+	head_butcher = null;
+	color = "#E8C4A1";
+	attack_sound = list('sound/misc/elec (1).ogg');
+	faction = list("Undead")
+	},
 /turf/open/floor/metal/alt,
 /area/rogue/indoors/town/clocktower)
 "XD" = (
@@ -18025,6 +18289,15 @@
 /obj/structure/trap/shock,
 /turf/open/floor/abyss_tile/three{
 	color = "#547285"
+	},
+/area/rogue/under/cavewet)
+"XI" = (
+/obj/structure/fluff/walldeco/church/line{
+	dir = 1
+	},
+/obj/item/reagent_containers/food/snacks/fish/shrimp,
+/turf/open/floor/abyss_tile/three{
+	color = "#7D9BAE"
 	},
 /area/rogue/under/cavewet)
 "XJ" = (
@@ -18118,6 +18391,16 @@
 	},
 /obj/effect/spawner/map_spawner/loot/potion_vitals,
 /turf/open/floor/concrete,
+/area/rogue/indoors/town/clocktower)
+"XY" = (
+/obj/structure/fluff/steamvent,
+/obj/structure/trap/wall_projectile{
+	dir = 1;
+	layer = 2.0
+	},
+/turf/open/floor/rooftop{
+	dir = 1
+	},
 /area/rogue/indoors/town/clocktower)
 "XZ" = (
 /obj/structure/flora/pillar,
@@ -18215,6 +18498,10 @@
 	color = "#547285"
 	},
 /area/rogue/indoors/town/magician)
+"Yk" = (
+/obj/item/clothing/gloves/plate/rust,
+/turf/open/floor/dirt,
+/area/rogue/outdoors/bog)
 "Yl" = (
 /obj/structure/fluff/walldeco/church/line{
 	dir = 1
@@ -18438,7 +18725,8 @@
 /area/rogue/outdoors/bog)
 "YR" = (
 /mob/living/simple_animal/hostile/deepone{
-	faction = list("Hostile")
+	faction = list("Hostile");
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/mince/fish = 5, /obj/item/alch/viscera = 2)
 	},
 /turf/open/floor/abyss_tile/three{
 	color = "#7D9BAE"
@@ -18812,10 +19100,6 @@
 /obj/item/weapon/sword/long/greatsword/psydon/relic,
 /turf/open/floor/abyss_sand/path,
 /area/rogue/under/cavewet)
-"ZX" = (
-/obj/structure/fluff/steamvent,
-/turf/open/floor/metal/alt,
-/area/rogue/indoors/town/clocktower)
 "ZY" = (
 /turf/open/floor/woodturned,
 /area/rogue/indoors/ship)
@@ -24060,8 +24344,8 @@ gG
 gG
 eJ
 gG
+QE
 wr
-gG
 gG
 gG
 gG
@@ -24260,11 +24544,11 @@ gG
 gG
 gG
 pT
-cU
+Fu
 QE
 Fu
-wr
-pE
+QE
+ov
 gG
 gG
 gG
@@ -24457,16 +24741,16 @@ gG
 gG
 gG
 gG
-gG
-QE
 wr
-wr
-ov
-QE
-OF
 wr
 QE
 wr
+pE
+ZJ
+Wy
+wr
+wr
+QE
 wr
 pT
 QE
@@ -24658,19 +24942,19 @@ gG
 gG
 gG
 gG
-gG
-QE
+wr
+wr
 OF
 Fu
-pT
-VD
-wr
+PR
+Ea
+ZJ
+ZJ
+ym
 QE
-ov
+cU
 QE
-Fu
-wr
-wr
+QE
 Fu
 wr
 Fu
@@ -24859,17 +25143,17 @@ gG
 gG
 gG
 gG
-gG
 wr
-PR
-pE
 QE
-cU
-wr
-Fu
-wr
-cU
-wr
+PR
+ym
+ZJ
+hk
+ZJ
+hk
+ZJ
+hk
+ZJ
 pT
 wr
 ov
@@ -25063,13 +25347,13 @@ gG
 gG
 wr
 wr
-wr
-QE
-QE
-wr
-ov
-wr
 ZJ
+ZJ
+ZJ
+ZJ
+ym
+ZJ
+OK
 ZJ
 ZJ
 wr
@@ -25263,17 +25547,17 @@ gG
 gG
 gG
 gG
-cU
-ov
 Fu
-wr
-pT
-ZJ
+pE
+Fu
 OK
+MY
+ZJ
+ZJ
 ZJ
 ZJ
 hk
-OK
+ZJ
 ZJ
 ov
 Fu
@@ -25464,21 +25748,21 @@ gG
 gG
 gG
 gG
-ov
+gG
+eJ
 wr
-QE
-QE
-QE
 ZJ
 ZJ
-OK
+ZJ
 ZJ
 OK
 ZJ
 ZJ
 ZJ
+OK
 ZJ
 ZJ
+OK
 ZJ
 cU
 wr
@@ -25666,23 +25950,23 @@ gG
 gG
 gG
 gG
-eJ
+gG
 pT
-QE
+Fu
 Wy
-pE
+ym
 hk
+ZJ
+QE
+Fu
+ZJ
+ZJ
 ZJ
 ZJ
 hk
-Kj
-Kj
-Kj
-OK
-hk
 ZJ
 hk
-OK
+ZJ
 ZJ
 hk
 QE
@@ -25869,22 +26153,22 @@ pE
 QE
 gG
 gG
-QE
+gG
+pE
+Fu
+wr
+ZJ
 wr
 QE
+QE
+wr
+OK
 ZJ
 ZJ
 ZJ
-ZJ
-Kj
-Kj
-Kj
-Kj
-Kj
-Kj
 rY
 ZJ
-ZJ
+OK
 ZJ
 ZJ
 Fu
@@ -26072,19 +26356,19 @@ VD
 gG
 gG
 gG
-cU
+gG
+gG
+RG
 ZJ
-OK
 ZJ
-rY
-Kj
-Kj
-Kj
-Kj
-Kj
-Kj
-Kj
-Kj
+wr
+ZJ
+ZJ
+ZJ
+ZJ
+wr
+wr
+ZJ
 ZJ
 ZJ
 OK
@@ -26275,19 +26559,19 @@ gG
 gG
 gG
 gG
-hk
-ZJ
+gG
+gG
 OK
 ZJ
+hk
+ZJ
 Kj
 Kj
-Kj
-Kj
-Kj
-Kj
-Kj
-Kj
-Kj
+ZJ
+ZJ
+QE
+wr
+ZJ
 ZJ
 hk
 ZJ
@@ -26479,18 +26763,18 @@ gG
 gG
 gG
 gG
+gG
+hk
+gG
+VF
+Kj
+Kj
+Kj
 ZJ
 ZJ
-Kj
-Kj
-Kj
-Kj
-Kj
-Kj
-Kj
-Kj
-Kj
-Kj
+ZJ
+OK
+ZJ
 ZJ
 ZJ
 Wy
@@ -26681,19 +26965,19 @@ gG
 gG
 gG
 gG
+gG
+gG
+gG
+gG
+Kj
+Kj
+Kj
+Kj
 ZJ
-hk
-Kj
-Kj
-Kj
-Kj
-Kj
-Kj
-Kj
-Kj
-Kj
-Kj
-Kj
+ZJ
+ZJ
+ZJ
+OK
 ZJ
 ZJ
 wr
@@ -26883,18 +27167,18 @@ ZJ
 gG
 gG
 ZJ
+gG
+gG
 ZJ
-hk
+gG
+gG
 Kj
 Kj
 Kj
-Kj
-Kj
-uO
-Kj
-Kj
-Kj
-Kj
+ZJ
+wr
+ZJ
+ZJ
 hk
 ZJ
 OK
@@ -27082,21 +27366,21 @@ ov
 ZJ
 ZJ
 ZJ
-OK
-OK
+ZJ
+ZJ
+ZJ
+ZJ
+ZJ
 ZJ
 OK
+ZJ
+oM
 Kj
 Kj
-Kj
-Kj
-Kj
-Kj
-Kj
-Kj
-Kj
-Kj
-Kj
+ZJ
+wr
+QE
+ZJ
 ZJ
 ZJ
 hk
@@ -27284,21 +27568,21 @@ wr
 ZJ
 ZJ
 ZJ
-OK
-OK
 ZJ
-hk
+gG
+gG
+ZJ
+ZJ
+gG
+gG
+gG
 Kj
 Kj
 Kj
-Kj
-Kj
-Kj
-Kj
-Kj
-Kj
-Kj
-Kj
+ZJ
+QE
+wr
+ZJ
 OK
 ZJ
 ZJ
@@ -27488,19 +27772,19 @@ ZJ
 ZJ
 gG
 gG
+gG
+gG
+gG
+gG
+gG
+Kj
+Kj
+Kj
+Kj
 ZJ
+wr
+OK
 ZJ
-ZJ
-Kj
-Kj
-Kj
-Kj
-Kj
-Kj
-Kj
-Kj
-Kj
-Kj
 ZJ
 hk
 wr
@@ -27692,17 +27976,17 @@ gG
 gG
 gG
 OK
+gG
+rY
+ZJ
+Kj
+Kj
+Kj
 ZJ
 ZJ
-Kj
-Kj
-Kj
-Kj
-Kj
-Kj
-Kj
-Kj
-Kj
+ZJ
+ZJ
+ZJ
 ZJ
 OK
 ov
@@ -27891,19 +28175,19 @@ gG
 gG
 gG
 gG
-Fu
-ZJ
+gG
+gG
+hk
 ZJ
 hk
+ZJ
+ZJ
+ZJ
+ZJ
 OK
-rY
-Kj
-Kj
-Kj
-Kj
-Kj
-Kj
-Kj
+ZJ
+ZJ
+ZJ
 rY
 ZJ
 OK
@@ -28092,18 +28376,18 @@ gG
 gG
 gG
 gG
-QE
-wr
+gG
+gG
 hk
 ZJ
 ZJ
 ZJ
+OK
 ZJ
 ZJ
-Kj
-Kj
-Kj
-Kj
+wr
+ZJ
+ZJ
 ZJ
 OK
 ZJ
@@ -28292,19 +28576,19 @@ QZ
 pT
 gG
 gG
-eJ
-cU
-wr
-Wy
-wr
+gG
+gG
+gG
+IV
+ZJ
 ZJ
 OK
 ZJ
-ZJ
-ZJ
-ZJ
 hk
-ZJ
+wr
+QE
+cU
+wr
 ZJ
 ZJ
 ZJ
@@ -28495,19 +28779,19 @@ gG
 gG
 gG
 gG
-QE
-QE
+gG
+gG
 wr
-cU
-QE
-wr
-ZJ
 hk
+ZJ
+ZJ
+ZJ
+ZJ
 OK
+QE
+wr
 ZJ
-ZJ
-ZJ
-ZJ
+OK
 hk
 ZJ
 wr
@@ -28697,16 +28981,16 @@ gG
 gG
 gG
 gG
-wr
+gG
+eJ
 QE
-wr
-QE
-Fu
-wr
-wr
+ZJ
+hk
 ZJ
 ZJ
 hk
+ZJ
+ZJ
 ZJ
 OK
 ZJ
@@ -28901,14 +29185,14 @@ gG
 gG
 gG
 Fu
-pE
-wr
-QE
-wr
 ov
-QE
-Wy
-cU
+ZJ
+ZJ
+OK
+ym
+ZJ
+IV
+hk
 wr
 wr
 OF
@@ -29102,14 +29386,14 @@ gG
 gG
 gG
 gG
-wr
-QE
-PR
-wr
-QE
-wr
 cU
 wr
+pT
+ZJ
+ZJ
+ZJ
+hk
+ZJ
 wr
 pT
 QE
@@ -29305,18 +29589,18 @@ gG
 gG
 gG
 gG
-QE
-Fu
 wr
-OF
-QE
+cU
+wr
+IV
+wr
 VD
-wr
-ov
-wr
+QE
+pE
+QE
 Fu
-wr
-ov
+QE
+pE
 pT
 gG
 gG
@@ -29508,14 +29792,14 @@ gG
 gG
 gG
 gG
-iN
+eJ
 wr
-ov
+pE
 wr
 PR
-QE
-cU
-QE
+wr
+Fu
+wr
 gG
 gG
 gG
@@ -29714,7 +29998,7 @@ gG
 gG
 gG
 Fu
-wr
+QE
 wr
 gG
 gG
@@ -31877,7 +32161,7 @@ RS
 KS
 nZ
 nZ
-tQ
+Cw
 tX
 tX
 ND
@@ -32082,7 +32366,7 @@ KS
 tQ
 tX
 tX
-RI
+ND
 tQ
 tQ
 nZ
@@ -32187,7 +32471,7 @@ KS
 KS
 KS
 KS
-rD
+nZ
 in
 KS
 in
@@ -33704,7 +33988,7 @@ VW
 KS
 nZ
 nZ
-nZ
+rD
 nZ
 nZ
 nZ
@@ -34427,7 +34711,7 @@ tQ
 nZ
 KS
 nZ
-KS
+DB
 nZ
 KS
 tQ
@@ -36554,7 +36838,7 @@ ht
 ht
 Gf
 yN
-kx
+Hz
 Hz
 ht
 ht
@@ -37286,7 +37570,7 @@ eE
 jW
 tQ
 nZ
-nZ
+Yk
 nZ
 nZ
 nZ
@@ -37857,7 +38141,7 @@ KS
 KS
 nZ
 tQ
-tX
+qg
 ND
 tX
 fB
@@ -38300,7 +38584,7 @@ nZ
 nZ
 nZ
 KS
-KS
+kN
 KS
 nZ
 KS
@@ -38465,7 +38749,7 @@ KS
 LL
 tQ
 ND
-qg
+tX
 tQ
 tQ
 KS
@@ -39596,7 +39880,7 @@ Oc
 Hz
 Hz
 Hz
-TU
+Oc
 Tx
 gg
 XU
@@ -41986,7 +42270,7 @@ xa
 lT
 In
 rv
-oi
+Oo
 jV
 vT
 Sy
@@ -44142,7 +44426,7 @@ MO
 lT
 fS
 Oo
-Es
+dY
 Oo
 Oo
 nX
@@ -46933,17 +47217,17 @@ nZ
 KS
 nZ
 nZ
+nZ
+nZ
+KS
+KS
+tQ
+tQ
+KS
+nZ
+KS
+nZ
 rD
-nZ
-KS
-KS
-tQ
-tQ
-KS
-nZ
-KS
-nZ
-nZ
 KS
 KS
 KS
@@ -50868,7 +51152,7 @@ nZ
 nZ
 nZ
 nZ
-nZ
+rD
 RS
 KS
 KS
@@ -53269,7 +53553,7 @@ Nl
 fy
 fS
 Oo
-dY
+Es
 xa
 lT
 lT
@@ -53286,7 +53570,7 @@ KS
 nZ
 KS
 tQ
-rD
+nZ
 to
 nZ
 nZ
@@ -54091,7 +54375,7 @@ nZ
 nZ
 nZ
 KS
-KS
+nZ
 nZ
 KS
 nZ
@@ -54963,14 +55247,14 @@ gG
 gG
 gG
 QE
-qN
+QE
 Fu
 Eb
 Pw
 cL
 PR
 wr
-qN
+QE
 Fu
 PR
 gG
@@ -55366,7 +55650,7 @@ gG
 gG
 gG
 pE
-cU
+KC
 PR
 Kj
 Kj
@@ -55578,7 +55862,7 @@ Kj
 Kj
 Kj
 vE
-pE
+mt
 PR
 gG
 gG
@@ -55606,7 +55890,7 @@ wb
 Ww
 zy
 dB
-ZX
+Wb
 dB
 kq
 dB
@@ -56418,7 +56702,7 @@ ZI
 ZI
 nd
 EG
-Az
+qd
 rP
 Bs
 ZI
@@ -57100,7 +57384,7 @@ nZ
 nZ
 nZ
 KS
-rD
+nZ
 nZ
 nZ
 nZ
@@ -76763,7 +77047,7 @@ ZT
 lf
 Ot
 ht
-Fi
+gQ
 PX
 lf
 GZ
@@ -76968,7 +77252,7 @@ gg
 CW
 el
 PX
-HQ
+gX
 QO
 PX
 Gh
@@ -77175,7 +77459,7 @@ PX
 mf
 ht
 ht
-Fi
+gQ
 zl
 PX
 wl
@@ -77577,7 +77861,7 @@ uv
 ST
 PX
 PX
-Ru
+HT
 ST
 dQ
 PX
@@ -77776,7 +78060,7 @@ QF
 hk
 YS
 GZ
-HQ
+ga
 ST
 PX
 PX
@@ -78385,7 +78669,7 @@ lf
 Ih
 nQ
 YS
-HQ
+gX
 pB
 cP
 ZJ
@@ -79781,7 +80065,7 @@ Pd
 gg
 Sp
 Nu
-xD
+eY
 PX
 CD
 Yx
@@ -80796,12 +81080,12 @@ Jh
 gg
 xp
 Ux
-Hz
+aF
 ZT
 Nu
 Ih
 Ot
-Hz
+mx
 ht
 ht
 yE
@@ -80998,13 +81282,13 @@ gg
 ht
 xz
 qX
-Hz
+mx
 ZT
 lf
 MN
 JC
-Hz
-Hz
+mx
+mx
 yi
 yE
 yE
@@ -81200,13 +81484,13 @@ Nu
 rh
 gg
 gg
-Hz
+mx
 vw
 DG
 PX
 lf
 NJ
-Hz
+aF
 yi
 yE
 yE
@@ -81812,7 +82096,7 @@ pl
 pl
 wP
 pl
-vw
+XI
 PX
 iH
 ST
@@ -82008,7 +82292,7 @@ wB
 wB
 PX
 gg
-lf
+el
 DJ
 pl
 pl
@@ -82414,11 +82698,11 @@ gg
 gg
 Hz
 vw
-xD
+JB
 PX
 Nu
 As
-Hz
+aF
 yi
 yE
 yE
@@ -82614,13 +82898,13 @@ gg
 ht
 gg
 oJ
-Hz
+mx
 ZT
 PX
 nj
 JC
-Hz
-Hz
+mx
+mx
 yi
 yE
 yE
@@ -82803,7 +83087,7 @@ yi
 ba
 sT
 tc
-xD
+JB
 Nu
 UQ
 Ni
@@ -82816,12 +83100,12 @@ BE
 gg
 ht
 gg
-Hz
+aF
 Zt
 PX
 PX
-IW
-Hz
+NE
+aF
 ht
 ht
 yE
@@ -83419,7 +83703,7 @@ Nu
 TR
 pl
 UP
-PX
+wE
 Tw
 ht
 ht
@@ -84049,7 +84333,7 @@ wu
 wB
 iE
 rJ
-iE
+Fm
 wu
 wu
 zY
@@ -85252,11 +85536,11 @@ yE
 yE
 yE
 TQ
-EL
+TQ
 bP
 ho
 ud
-EL
+TQ
 TQ
 yE
 yE
@@ -85647,7 +85931,7 @@ iE
 wB
 rJ
 wB
-PX
+dU
 lf
 IW
 yE
@@ -85845,7 +86129,7 @@ PX
 np
 PX
 UY
-lf
+ga
 kX
 Ru
 rh
@@ -94602,7 +94886,7 @@ rT
 zJ
 kp
 oT
-bM
+JU
 Eg
 RZ
 RZ
@@ -95596,7 +95880,7 @@ RZ
 RZ
 RZ
 BC
-Xm
+XY
 iD
 ZI
 sN
@@ -95811,7 +96095,7 @@ vD
 ZI
 Hj
 dB
-BA
+nO
 rf
 rf
 rO
@@ -96014,7 +96298,7 @@ ZI
 mH
 rf
 kI
-Mh
+Ez
 Mh
 GY
 Vf
@@ -96214,7 +96498,7 @@ rT
 sY
 ZI
 Jf
-sW
+Mh
 XC
 Ft
 QX
@@ -119187,7 +119471,7 @@ Bl
 ht
 Pa
 GZ
-iJ
+ih
 PX
 kX
 ht
@@ -136003,10 +136287,10 @@ RZ
 tr
 Jt
 Lm
-WY
-Lm
 DT
 Lm
+DT
+vF
 Lm
 Lm
 nl
@@ -136409,7 +136693,7 @@ hj
 Lm
 Er
 DT
-nV
+DT
 DT
 DT
 EE
@@ -136814,7 +137098,7 @@ Lm
 Lm
 Lm
 DT
-DT
+cd
 PG
 Lm
 vU
