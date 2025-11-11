@@ -89,6 +89,8 @@
 		/datum/supply_pack/armor/steel/steel_boots,
 		/datum/supply_pack/armor/steel/pegasushelm,
 		/datum/supply_pack/apparel/tabardP,
+		/datum/supply_pack/armor/light/icuirass,
+		/datum/supply_pack/armor/light/shamaniccoat,
 		// Apparel
 		/datum/supply_pack/apparel/leather_vest_random,
 		/datum/supply_pack/apparel/trousers,
