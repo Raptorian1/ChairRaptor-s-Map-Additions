@@ -10,7 +10,7 @@
 
 /datum/supply_pack/tools/chain
 	name = "Chain"
-	cost = 11
+	cost = 25
 	contains = /obj/item/rope/chain
 
 /datum/supply_pack/tools/lockpicks
@@ -72,47 +72,47 @@
 
 /datum/supply_pack/tools/pick
 	name = "Iron Pickaxe"
-	cost = 15
+	cost = 25
 	contains = /obj/item/weapon/pick
 
 /datum/supply_pack/tools/pick
 	name = "Steel Pick"
-	cost = 30
+	cost = 45
 	contains = /obj/item/weapon/pick/steel
 
 /datum/supply_pack/tools/tongs
 	name = "Tongs"
-	cost = 10
+	cost = 20
 	contains = /obj/item/weapon/tongs
 
 /datum/supply_pack/tools/hammer
 	name = "Hammer"
-	cost = 15
+	cost = 25
 	contains = /obj/item/weapon/hammer/iron
 
 /datum/supply_pack/tools/shovel
 	name = "Shovel"
-	cost = 10
+	cost = 25
 	contains = /obj/item/weapon/shovel
 
 /datum/supply_pack/tools/Sickle
 	name = "Sickle"
-	cost = 10
+	cost = 25
 	contains = /obj/item/weapon/sickle
 
 /datum/supply_pack/tools/pitchfork
 	name = "Pitchfork"
-	cost = 10
+	cost = 30
 	contains = /obj/item/weapon/pitchfork
 
 /datum/supply_pack/tools/hoe
 	name = "Hoe"
-	cost = 15
+	cost = 25
 	contains = /obj/item/weapon/hoe
 
 /datum/supply_pack/tools/thresher
 	name = "Thresher"
-	cost = 5
+	cost = 10
 	contains = /obj/item/weapon/thresher
 
 /datum/supply_pack/tools/bucket
@@ -122,12 +122,12 @@
 
 /datum/supply_pack/tools/fryingpan
 	name = "Frying Pan"
-	cost = 10
+	cost = 15
 	contains = /obj/item/cooking/pan
 
 /datum/supply_pack/tools/pot
 	name = "Cooking Pot"
-	cost = 12
+	cost = 10
 	contains = /obj/item/reagent_containers/glass/bucket/pot
 
 /datum/supply_pack/tools/wpipe

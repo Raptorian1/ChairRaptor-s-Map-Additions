@@ -5,27 +5,27 @@
 
 /datum/supply_pack/jewelry/silverring
 	name = "Silver Ring"
-	cost = 37
+	cost = 50
 	contains = /obj/item/clothing/ring/silver
 
 /datum/supply_pack/jewelry/goldring
 	name = "Golden Ring"
-	cost = 75
+	cost = 100
 	contains = /obj/item/clothing/ring/gold
 
 /datum/supply_pack/jewelry/circlet
 	name = "Golden Circlet"
-	cost = 50
+	cost = 100
 	contains = /obj/item/clothing/head/crown/circlet
 
 /datum/supply_pack/jewelry/gemcirclet
 	name = "Decorated Circlet"
-	cost = 80
+	cost = 150
 	contains = /obj/item/clothing/head/crown/nyle
 
 /datum/supply_pack/jewelry/psycross // PSYDON LIVESSS RAHHHHHH
 	name = "Silver Psycross"
-	cost = 60
+	cost = 55
 	contains = /obj/item/clothing/neck/psycross/silver
 
 /datum/supply_pack/jewelry/bglasses
@@ -35,7 +35,7 @@
 
 /datum/supply_pack/jewelry/gmask
 	name = "Golden Halfmask"
-	cost = 60
+	cost = 100
 	contains = /obj/item/clothing/face/lordmask
 
 /datum/supply_pack/jewelry/scom
@@ -45,32 +45,32 @@
 
 /datum/supply_pack/jewelry/nosesilver
 	name = "Nose Ring Silver"
-	cost = 48
+	cost = 50
 	contains = /obj/item/clothing/face/facemask/goldnosechain
 
 /datum/supply_pack/jewelry/nosegold
 	name = "Nose Ring Gold"
-	cost = 74
+	cost = 100
 	contains = /obj/item/clothing/face/facemask/goldnosechain
 
 /datum/supply_pack/jewelry/diademsilver
 	name = "Diadem Silver"
-	cost = 48
+	cost = 50
 	contains = /obj/item/clothing/head/crown/circlet/silverdiadem
 
 /datum/supply_pack/jewelry/diademgold
 	name = "Diadem Gold"
-	cost = 74
+	cost = 100
 	contains = /obj/item/clothing/head/crown/circlet/golddiadem
 
 /datum/supply_pack/jewelry/headdresssilver
 	name = "Headdress Silver"
-	cost = 48
+	cost = 50
 	contains = /obj/item/clothing/head/crown/circlet/silverheaddress
 
 /datum/supply_pack/jewelry/headdressgold
 	name = "Headdress Gold"
-	cost = 74
+	cost = 100
 	contains = /obj/item/clothing/head/crown/circlet/goldheaddress
 
 /datum/supply_pack/jewelry/nyle

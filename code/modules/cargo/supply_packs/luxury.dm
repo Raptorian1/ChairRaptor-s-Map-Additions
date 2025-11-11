@@ -14,17 +14,17 @@
 
 /datum/supply_pack/luxury/silver_plaque_belt
 	name = "Silver Plaque Belt"
-	cost = 30
+	cost = 50
 	contains = /obj/item/storage/belt/leather/plaquesilver
 
 /datum/supply_pack/luxury/gold_plaque_belt
 	name = "Gold Plaque Belt"
-	cost = 50
+	cost = 100
 	contains = /obj/item/storage/belt/leather/plaquegold
 
 /datum/supply_pack/luxury/spectacles_golden
 	name = "Golden Spectacles"
-	cost = 25
+	cost = 100
 	contains = /obj/item/clothing/face/spectacles/golden
 
 /datum/supply_pack/luxury/spectacles_inquisitor

@@ -17,22 +17,22 @@
 
 /datum/supply_pack/weapons/shield/wood
 	name = "Wooden Shield"
-	cost = 10
+	cost = 20
 	contains = /obj/item/weapon/shield/wood
 
 /datum/supply_pack/weapons/shield/towershield
 	name = "Tower Shield"
-	cost = 30
+	cost = 35
 	contains = /obj/item/weapon/shield/tower
 
 /datum/supply_pack/weapons/shield/atgervishield
 	name = "Atgervi Shield"
-	cost = 25
+	cost = 30
 	contains = /obj/item/weapon/shield/atgervi
 
 /datum/supply_pack/weapons/shield/iron
 	name = "Iron Buckler"
-	cost = 15
+	cost = 25
 	contains = /obj/item/weapon/shield/tower/buckleriron
 
 // IRON MELEE WEAPONS
@@ -42,12 +42,12 @@
 
 /datum/supply_pack/weapons/iron/iwodao
 	name = "Iron Wo Dao"
-	cost = 30
+	cost = 25
 	contains = /obj/item/weapon/sword/scimitar/wodao/iron
 
 /datum/supply_pack/weapons/iron/isengese
 	name = "Iron Sengese"
-	cost = 20
+	cost = 25
 	contains = /obj/item/weapon/sword/scimitar/sengese/iron
 
 /datum/supply_pack/weapons/iron/iirumi
@@ -57,47 +57,47 @@
 
 /datum/supply_pack/weapons/iron/idadao
 	name = "Iron Dadao"
-	cost = 30
+	cost = 45
 	contains = /obj/item/weapon/sword/sabre/dadao/iron
 
 /datum/supply_pack/weapons/iron/ihwi
 	name = "Iron Hwi"
-	cost = 30
+	cost = 45
 	contains = /obj/item/weapon/sword/sabre/hwi/iron
 
 /datum/supply_pack/weapons/iron/ikhopesh
 	name = "Iron Khopesh"
-	cost = 20
+	cost = 25
 	contains = /obj/item/weapon/sword/scimitar/lakkarikhopesh/iron
 
 /datum/supply_pack/weapons/iron/ikaskara
 	name = "Iron Kaskara"
-	cost = 30
+	cost = 25
 	contains = /obj/item/weapon/sword/kaskara/iron
 
 /datum/supply_pack/weapons/iron/iida
 	name = "Iron Ida"
-	cost = 20
+	cost = 25
 	contains = /obj/item/weapon/sword/ida/iron
 
 /datum/supply_pack/weapons/iron/iaruval
 	name = "Iron Aruval"
-	cost = 35
+	cost = 70
 	contains = /obj/item/weapon/sword/long/aruval/iron
 
 /datum/supply_pack/weapons/iron/injora
 	name = "Iron Seme"
-	cost = 12
+	cost = 15
 	contains = /obj/item/weapon/knife/njora/iron
 
 /datum/supply_pack/weapons/iron/irungu
 	name = "Iron Rungu"
-	cost = 20
+	cost = 25
 	contains = /obj/item/weapon/mace/rungu/iron
 
 /datum/supply_pack/weapons/iron/insapo
 	name = "Iron Kasuyu"
-	cost = 20
+	cost = 25
 	contains = /obj/item/weapon/axe/nsapo/iron
 
 /datum/supply_pack/weapons/iron/ijile
@@ -107,12 +107,12 @@
 
 /datum/supply_pack/weapons/iron/ikukri
 	name = "Iron Kukri"
-	cost = 12
+	cost = 15
 	contains = /obj/item/weapon/knife/dagger/kukri/iron
 
 /datum/supply_pack/weapons/iron/ishishpar
 	name = "Iron Shishpar"
-	cost = 35
+	cost = 45
 	contains = /obj/item/weapon/mace/shishpar/iron
 
 /datum/supply_pack/weapons/iron/iassegai
@@ -132,27 +132,27 @@
 
 /datum/supply_pack/weapons/steel/sengese
 	name = "Steel Sengese"
-	cost = 45
+	cost = 50
 	contains = /obj/item/weapon/sword/scimitar/sengese
 
 /datum/supply_pack/weapons/steel/irumi
 	name = "Steel Irumi"
-	cost = 50
+	cost = 60
 	contains = /obj/item/weapon/whip/urumi
 
 /datum/supply_pack/weapons/steel/dadao
 	name = "Steel Dadao"
-	cost = 50
+	cost = 90
 	contains = /obj/item/weapon/sword/sabre/dadao
 
 /datum/supply_pack/weapons/steel/hwi
 	name = "Steel Hwi"
-	cost = 50
+	cost = 90
 	contains = /obj/item/weapon/sword/sabre/hwi
 
 /datum/supply_pack/weapons/steel/khopesh
 	name = "Steel Khopesh"
-	cost = 60
+	cost = 50
 	contains = /obj/item/weapon/sword/scimitar/lakkarikhopesh
 
 /datum/supply_pack/weapons/steel/kaskara
@@ -167,42 +167,42 @@
 
 /datum/supply_pack/weapons/steel/aruval
 	name = "Steel Aruval"
-	cost = 65
+	cost = 125
 	contains = /obj/item/weapon/sword/long/aruval
 
 /datum/supply_pack/weapons/steel/njora
 	name = "Steel Seme"
-	cost = 22
+	cost = 25
 	contains = /obj/item/weapon/knife/njora/steel
 
 /datum/supply_pack/weapons/steel/rungu
 	name = "Steel Rungu"
-	cost = 60
+	cost = 50
 	contains = /obj/item/weapon/mace/steel/rungu
 
 /datum/supply_pack/weapons/steel/jile
 	name = "Steel Jile"
-	cost = 22
+	cost = 25
 	contains = /obj/item/weapon/knife/jile/steel
 
 /datum/supply_pack/weapons/steel/kukri
 	name = "Steel Kukri"
-	cost = 25
+	cost = 45
 	contains = /obj/item/weapon/knife/dagger/kukri/steel
 
 /datum/supply_pack/weapons/steel/shishpar
 	name = "Steel Shishpar"
-	cost = 75
+	cost = 90
 	contains = /obj/item/weapon/mace/steel/shishpar
 
 /datum/supply_pack/weapons/steel/assegai
 	name = "Steel Assegai"
-	cost = 75
+	cost = 60
 	contains = /obj/item/weapon/polearm/spear/steel/assegai
 
 /datum/supply_pack/weapons/steel/atgervi
 	name = "Steel Atgervi Axe"
-	cost = 55
+	cost = 60
 	contains = /obj/item/weapon/axe/steel/atgervi
 
 /*
@@ -255,12 +255,12 @@
 
 /datum/supply_pack/weapons/ranged/tossbladeiron
 	name = "Iron Tossblade Belt"
-	cost = 50
+	cost = 60
 	contains = /obj/item/storage/belt/leather/knifebelt/black/iron
 
 /datum/supply_pack/weapons/ranged/tossbladesteel
 	name = "Steel Tossblade Belt"
-	cost = 80
+	cost = 120
 	contains = /obj/item/storage/belt/leather/knifebelt/black/steel
 
 /datum/supply_pack/weapons/ranged/whip
