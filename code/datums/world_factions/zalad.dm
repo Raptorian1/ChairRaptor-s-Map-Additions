@@ -38,12 +38,16 @@
 		/datum/supply_pack/apparel/simpleshoes,
 		/datum/supply_pack/apparel/shortshirt_random,
 		/datum/supply_pack/apparel/tunic_random,
+		/datum/supply_pack/apparel/skirt,
+		/datum/supply_pack/apparel/shalal,
+		/datum/supply_pack/apparel/keffiyeh,
 		// Food essentials
 		/datum/supply_pack/food/meat,
 		/datum/supply_pack/food/cheese,
 		/datum/supply_pack/food/pepper,
 		/datum/supply_pack/food/honey,
 		/datum/supply_pack/luxury/premiun_cutlery,
+		/datum/supply_pack/food/saltseeds,
 		// Tools for survival
 		/datum/supply_pack/tools/candles,
 		/datum/supply_pack/tools/flint,
@@ -77,15 +81,30 @@
 		/datum/supply_pack/apparel/raincloak_furcloak_brown,
 		/datum/supply_pack/apparel/dress_gen_random,
 		/datum/supply_pack/armor/light/lightleather_armor,
+		/datum/supply_pack/apparel/poncho,
+		/datum/supply_pack/apparel/dress_pretty,
+		/datum/supply_pack/apparel/ladycloth,
+		/datum/supply_pack/apparel/clothcoif,
+		/datum/supply_pack/apparel/banditcloth,
+		/datum/supply_pack/apparel/watch_boots,
+		/datum/supply_pack/apparel/desertcloak,
 		// Weapons
 		/datum/supply_pack/weapons/iron/ijile,
 		/datum/supply_pack/weapons/iron/ikukri,
 		/datum/supply_pack/weapons/steel/kaskara,
 		/datum/supply_pack/weapons/ranged/whip,
 		/datum/supply_pack/weapons/steel/irumi,
+		/datum/supply_pack/weapons/iron/ikhopesh,
 		// Food & Drink
 		/datum/supply_pack/food/drinks/beer,
 		/datum/supply_pack/food/drinks/onin,
+		/datum/supply_pack/food/jelly1,
+		/datum/supply_pack/food/jelly2,
+		/datum/supply_pack/food/jelly3,
+		/datum/supply_pack/food/jelly4,
+		/datum/supply_pack/food/jelly5,
+		/datum/supply_pack/food/redtallow,
+		/datum/supply_pack/food/tallow,
 		// Tools
 		/datum/supply_pack/tools/lamptern,
 		/datum/supply_pack/tools/dyebin,
@@ -110,6 +129,11 @@
 		/datum/supply_pack/apparel/robe,
 		/datum/supply_pack/apparel/armordress,
 		/datum/supply_pack/armor/light/studleather,
+		/datum/supply_pack/armor/light/lakkariancap,
+		/datum/supply_pack/armor/steel/steppehelm,
+		/datum/supply_pack/armor/steel/steppemask,
+		/datum/supply_pack/armor/steel/beastmask,
+		/datum/supply_pack/armor/steel/slamellar,
 		// Weapons
 		/datum/supply_pack/weapons/iron/iassegai,
 		/datum/supply_pack/weapons/ranged/shortbow,
@@ -120,9 +144,9 @@
 		/datum/supply_pack/weapons/ammo/arrowquiver,
 		/datum/supply_pack/weapons/shield/wood,
 		/datum/supply_pack/weapons/ammo/Blowpouch,
-
 		// Food
 		/datum/supply_pack/food/drinks/spottedhen,
+		/datum/supply_pack/food/roastedcoffee,
 		// Materials
 		/datum/supply_pack/rawmats/silk,
 		// Seeds
@@ -148,6 +172,11 @@
 		/datum/supply_pack/jewelry/psycross,
 		/datum/supply_pack/jewelry/bglasses,
 		/datum/supply_pack/jewelry/gmask,
+		/datum/supply_pack/apparel/exoticsilkbelt,
+		/datum/supply_pack/apparel/exoticsilkmask,
+		/datum/supply_pack/apparel/exoticsilkbra,
+		/datum/supply_pack/apparel/anklets,
+		/datum/supply_pack/apparel/henhelm,
 		/datum/supply_pack/jewelry/scom
 	)
 
