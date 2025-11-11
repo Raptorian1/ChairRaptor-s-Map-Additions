@@ -185,6 +185,8 @@
 		/datum/supply_pack/weapons/steel/jile,
 		/datum/supply_pack/weapons/steel/shishpar,
 		/datum/supply_pack/weapons/steel/assegai,
+		/datum/supply_pack/weapons/steel/sengese,
+		/datum/supply_pack/weapons/steel/dadao,
 		// Jewelry
 		/datum/supply_pack/jewelry/silverring,
 		// Luxury goods

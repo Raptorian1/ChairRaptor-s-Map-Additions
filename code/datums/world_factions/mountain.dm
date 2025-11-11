@@ -112,6 +112,8 @@
 		/datum/supply_pack/weapons/shield/towershield,
 		/datum/supply_pack/weapons/iron/ihwi,
 		/datum/supply_pack/weapons/steel/ida,
+		/datum/supply_pack/weapons/iron/injora,
+		/datum/supply_pack/weapons/iron/ishishpar,
 		// Food & Drink
 		/datum/supply_pack/food/drinks/butterhair,
 		/datum/supply_pack/food/drinks/stonebeard,
