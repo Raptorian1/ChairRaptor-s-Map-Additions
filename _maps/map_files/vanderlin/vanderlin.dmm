@@ -21572,10 +21572,6 @@
 /obj/structure/bookcase/random/myths,
 /turf/open/floor/woodturned/nosmooth,
 /area/rogue/indoors/town/manor/squire)
-"lsK" = (
-/obj/machinery/light/fueled/hearth,
-/turf/open/floor/tile/kitchen,
-/area/rogue/indoors/town/manor)
 "lta" = (
 /obj/structure/table/wood{
 	dir = 1;
@@ -55663,7 +55659,7 @@ vgJ
 vgJ
 vgJ
 rim
-lsK
+gtB
 eaE
 iKk
 rim
