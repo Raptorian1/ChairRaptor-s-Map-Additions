@@ -25008,12 +25008,14 @@
 /area/rogue/indoors/town/manor/halls/e)
 "njI" = (
 /obj/structure/fluff/railing/border{
-	pixel_y = 27
+	pixel_y = 27;
+	density = 0
 	},
 /obj/structure/fluff/railing/border{
 	dir = 10;
 	pixel_y = 27;
-	pixel_x = 27
+	pixel_x = 27;
+	density = 0
 	},
 /turf/open/floor/ruinedwood/two,
 /area/rogue/indoors/town/shop)
@@ -27779,6 +27781,10 @@
 /obj/item/weapon/mace/cudgel{
 	pixel_x = 6;
 	pixel_y = -4
+	},
+/obj/item/clothing/head/helmet/leather/tricorn{
+	pixel_x = 5;
+	pixel_y = -14
 	},
 /turf/open/floor/ruinedwood/platform,
 /area/rogue/under/cavewet)
