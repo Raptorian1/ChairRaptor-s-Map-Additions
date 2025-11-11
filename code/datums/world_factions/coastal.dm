@@ -88,7 +88,7 @@
 		/datum/supply_pack/apparel/silkdress_random,
 		/datum/supply_pack/apparel/tabard,
 		/datum/supply_pack/apparel/halfcloak_random,
-		/datum/supply_pack/apparel/luxurymage,
+		/datum/supply_pack/apparel/magedyes,
 		// Exotic foods
 		/datum/supply_pack/food/angler,
 		/datum/supply_pack/food/drinks/winezaladin,
@@ -102,7 +102,7 @@
 		/datum/supply_pack/instruments/viola,
 		// Trade goods
 		/datum/supply_pack/narcotics/perfume,
-		/datum/supply_pack/jewelry/nomag,
+		/datum/supply_pack/jewelry/scom,
 		// Seeds
 		/datum/supply_pack/seeds/tangerine,
 		/datum/supply_pack/seeds/mango,

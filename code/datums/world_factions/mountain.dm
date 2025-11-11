@@ -33,7 +33,7 @@
 	common_pool = list(
 		// Armor - Heavy focus on practical protective gear
 		/datum/supply_pack/armor/light/skullcap,
-		/datum/supply_pack/armor/light/minerhelmet,
+		/datum/supply_pack/apparel/minershelm,
 		/datum/supply_pack/armor/light/poth,
 		/datum/supply_pack/armor/steel/nasalh,
 		/datum/supply_pack/armor/light/chaincoif_iron,
@@ -79,7 +79,7 @@
 	)
 	uncommon_pool = list(
 		// Better armor
-		/datum/supply_pack/armor/light/cuirass_iron,
+		/datum/supply_pack/armor/light/ifull_plate,
 		/datum/supply_pack/armor/light/chainmail_iron,
 		/datum/supply_pack/armor/steel/chaincoif_steel,
 		/datum/supply_pack/armor/steel/chainlegs_steel,
@@ -91,11 +91,11 @@
 		/datum/supply_pack/apparel/leather_vest_random,
 		/datum/supply_pack/apparel/trousers,
 		// Weapons - Dwarven combat gear
-		/datum/supply_pack/weapons/steel/baxe,
-		/datum/supply_pack/weapons/iron/mace,
-		/datum/supply_pack/weapons/steel/smace,
-		/datum/supply_pack/weapons/iron/shortsword,
-		/datum/supply_pack/weapons/iron/sword_iron,
+		/datum/supply_pack/weapons/steel/irumi,
+		/datum/supply_pack/weapons/iron/irungu,
+		/datum/supply_pack/weapons/steel/rungu,
+		/datum/supply_pack/weapons/iron/iida,
+		/datum/supply_pack/weapons/iron/iwodao,
 		/datum/supply_pack/weapons/shield/iron,
 		/datum/supply_pack/weapons/shield/towershield,
 		// Food & Drink
@@ -122,16 +122,16 @@
 		// Apparel
 		/datum/supply_pack/apparel/ridingboots,
 		// Weapons
-		/datum/supply_pack/weapons/iron/greatsword,
-		/datum/supply_pack/weapons/steel/halberd,
-		/datum/supply_pack/weapons/steel/sword,
-		/datum/supply_pack/weapons/iron/greatmace,
-		/datum/supply_pack/weapons/iron/flail,
-		/datum/supply_pack/weapons/iron/axe,
-		/datum/supply_pack/weapons/iron/bardiche,
-		/datum/supply_pack/weapons/steel/greatsword,
-		/datum/supply_pack/weapons/steel/greatmace,
-		/datum/supply_pack/weapons/steel/saxe,
+		/datum/supply_pack/weapons/iron/iaruval,
+		/datum/supply_pack/weapons/steel/kaskara,
+		/datum/supply_pack/weapons/steel/wodao,
+		/datum/supply_pack/weapons/iron/ikaskara,
+		/datum/supply_pack/weapons/iron/iirumi,
+		/datum/supply_pack/weapons/iron/insapo,
+		/datum/supply_pack/weapons/iron/isengese,
+		/datum/supply_pack/weapons/steel/hwi,
+		/datum/supply_pack/weapons/steel/njora,
+		/datum/supply_pack/weapons/steel/kukri,
 		// Food & Luxury
 		/datum/supply_pack/food/drinks/voddena,
 		/datum/supply_pack/jewelry/circlet,

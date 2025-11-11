@@ -45,6 +45,9 @@
 #define ACCESS_AT_ARMS "at_arms"
 #define ACCESS_GUEST "guest"
 #define ACCESS_PHYSICIAN "physician"
+#define ACCESS_NOBLE3 "noble3"
+#define ACCESS_NOBLE2 "noble2"
+#define ACCESS_NOBLE1 "noble1"
 
 // Shops
 #define ACCESS_SHOP_I "shop1"

@@ -5,7 +5,7 @@
 
 /datum/supply_pack/jewelry/silverring
 	name = "Silver Ring"
-	cost = 40
+	cost = 37
 	contains = /obj/item/clothing/ring/silver
 
 /datum/supply_pack/jewelry/goldring
@@ -20,43 +20,55 @@
 
 /datum/supply_pack/jewelry/gemcirclet
 	name = "Decorated Circlet"
-	cost = 100
+	cost = 80
 	contains = /obj/item/clothing/head/crown/nyle
-
-/datum/supply_pack/jewelry/nomag
-	name = "Ring of Null Magic"
-	cost = 240
-	contains = /obj/item/clothing/ring/active/nomag
-
-/datum/supply_pack/jewelry/mercator
-	name = "Mercator Eye"
-	cost = 200
-	contains = /obj/item/clothing/neck/mercator
 
 /datum/supply_pack/jewelry/psycross // PSYDON LIVESSS RAHHHHHH
 	name = "Silver Psycross"
-	cost = 150
+	cost = 60
 	contains = /obj/item/clothing/neck/psycross/silver
 
 /datum/supply_pack/jewelry/bglasses
 	name = "Onyx Glasses"
-	cost = 150
+	cost = 50
 	contains = /obj/item/clothing/face/spectacles/sglasses
 
 /datum/supply_pack/jewelry/gmask
 	name = "Golden Halfmask"
-	cost = 100
+	cost = 60
 	contains = /obj/item/clothing/face/lordmask
 
 /datum/supply_pack/jewelry/scom
 	name = "SCOM ring"
-	cost = 200
+	cost = 80
 	contains = /obj/item/scomstone
 
+/datum/supply_pack/jewelry/nosesilver
+	name = "Nose Ring Silver"
+	cost = 48
+	contains = /obj/item/clothing/face/facemask/goldnosechain
 
+/datum/supply_pack/jewelry/nosegold
+	name = "Nose Ring Gold"
+	cost = 74
+	contains = /obj/item/clothing/face/facemask/goldnosechain
 
+/datum/supply_pack/jewelry/diademsilver
+	name = "Diadem Silver"
+	cost = 48
+	contains = /obj/item/clothing/head/crown/circlet/silverdiadem
 
-/datum/supply_pack/jewelry/consort_crown
-	name = "Jewel of Nyle"
-	cost = 300
-	contains = /obj/item/clothing/head/crown/nyle/consortcrown
+/datum/supply_pack/jewelry/diademgold
+	name = "Diadem Gold"
+	cost = 74
+	contains = /obj/item/clothing/head/crown/circlet/golddiadem
+
+/datum/supply_pack/jewelry/headdresssilver
+	name = "Headdress Silver"
+	cost = 48
+	contains = /obj/item/clothing/head/crown/circlet/silverheaddress
+
+/datum/supply_pack/jewelry/headdressgold
+	name = "Headdress Gold"
+	cost = 74
+	contains = /obj/item/clothing/head/crown/circlet/goldheaddress
