@@ -31,7 +31,9 @@
 /obj/structure/fluff/railing/border{
 	dir = 10
 	},
-/obj/structure/curtain/bounty/dir,
+/obj/structure/curtain/bounty/dir{
+	dir = 1
+	},
 /turf/open/floor/ruinedwood/spiral,
 /area/rogue/indoors/town/theatre)
 "aaU" = (
@@ -7735,7 +7737,9 @@
 /turf/open/water/cleanshallow,
 /area/rogue/under/town/sewer)
 "ecN" = (
-/obj/structure/curtain/bounty/dir,
+/obj/structure/curtain/bounty/dir{
+	dir = 1
+	},
 /turf/open/floor/ruinedwood/spiral,
 /area/rogue/indoors/town/theatre)
 "ecY" = (
@@ -11323,7 +11327,7 @@
 	layer = 2.8
 	},
 /obj/structure/curtain/bounty/dir{
-	dir = 8
+	dir = 4
 	},
 /turf/open/floor/tile,
 /area/rogue/indoors/town/shop)
@@ -19324,7 +19328,9 @@
 /area/rogue/indoors/town/manor/phys)
 "kcA" = (
 /obj/structure/fluff/railing/border,
-/obj/structure/curtain/bounty/dir,
+/obj/structure/curtain/bounty/dir{
+	dir = 1
+	},
 /turf/open/floor/ruinedwood/spiral,
 /area/rogue/indoors/town/theatre)
 "kcN" = (
@@ -19358,7 +19364,7 @@
 	dir = 4
 	},
 /obj/structure/curtain/bounty/dir{
-	dir = 8
+	dir = 4
 	},
 /turf/open/floor/ruinedwood/two,
 /area/rogue/indoors/town/shop)
@@ -19371,7 +19377,9 @@
 /obj/structure/fluff/railing/border{
 	dir = 6
 	},
-/obj/structure/curtain/bounty/dir,
+/obj/structure/curtain/bounty/dir{
+	dir = 1
+	},
 /turf/open/floor/ruinedwood/spiral,
 /area/rogue/indoors/town/theatre)
 "kdO" = (
@@ -30863,6 +30871,14 @@
 /obj/structure/fluff/walldeco/wantedposter,
 /turf/open/floor/blocks,
 /area/rogue/outdoors/town)
+"qrN" = (
+/obj/structure/window/openclose/reinforced,
+/obj/structure/curtain/bounty/dir,
+/obj/structure/bars{
+	layer = 2.8
+	},
+/turf/open/floor/ruinedwood/two,
+/area/rogue/indoors/town/shop)
 "qrT" = (
 /obj/structure/stairs/stone{
 	dir = 1
@@ -40303,9 +40319,11 @@
 /obj/structure/window/openclose/reinforced{
 	dir = 1
 	},
-/obj/structure/curtain/bounty/dir,
 /obj/structure/bars{
 	layer = 2.8
+	},
+/obj/structure/curtain/bounty/dir{
+	dir = 1
 	},
 /turf/open/floor/ruinedwood/two,
 /area/rogue/indoors/town/shop)
@@ -43553,12 +43571,10 @@
 /area/rogue/indoors/town/church/chapel)
 "xjz" = (
 /obj/structure/window/openclose/reinforced,
-/obj/structure/curtain/bounty/dir{
-	dir = 1
-	},
 /obj/structure/bars{
 	layer = 2.8
 	},
+/obj/structure/curtain/bounty/dir,
 /turf/open/floor/ruinedwood/two,
 /area/rogue/indoors/town/shop)
 "xjL" = (
@@ -131495,7 +131511,7 @@ uVx
 uVx
 uVx
 tip
-xjz
+qrN
 hsE
 xoA
 iKS
