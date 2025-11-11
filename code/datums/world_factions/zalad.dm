@@ -24,6 +24,7 @@
 		/datum/supply_pack/food/drinks/water,
 		/datum/supply_pack/food/hardtack,
 		/datum/supply_pack/apparel/leather_belt,
+		/datum/supply_pack/rawmats/silk,
 		/datum/supply_pack/storage/sack
 	)
 	common_pool = list(
@@ -158,8 +159,7 @@
 		/datum/supply_pack/food/drinks/spottedhen,
 		/datum/supply_pack/food/roastedcoffee,
 		// Materials
-		/datum/supply_pack/rawmats/silk,
-		// Seeds
+			// Seeds
 		/datum/supply_pack/seeds/sunflowers,
 		/datum/supply_pack/seeds/plum,
 		/datum/supply_pack/seeds/strawberry,

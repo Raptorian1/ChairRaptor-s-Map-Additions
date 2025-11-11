@@ -11559,8 +11559,10 @@
 /turf/open/floor/ruinedwood/alt,
 /area/rogue/indoors/town/shop)
 "gbu" = (
-/obj/structure/dye_bin,
 /obj/machinery/light/fueled/wallfire/candle,
+/obj/effect/landmark/start/grabber{
+	dir = 8
+	},
 /turf/open/floor/ruinedwood/two,
 /area/rogue/indoors/town/shop)
 "gbC" = (
@@ -23333,7 +23335,14 @@
 /turf/open/floor/dirt,
 /area/rogue/outdoors/woods_safe)
 "mtg" = (
-/obj/structure/dye_bin/luxury,
+/obj/structure/dye_bin/luxury{
+	pixel_x = 5;
+	pixel_y = 6
+	},
+/obj/structure/dye_bin{
+	pixel_x = -7;
+	pixel_y = -1
+	},
 /turf/open/floor/ruinedwood/two,
 /area/rogue/indoors/town/shop)
 "mtm" = (
@@ -26013,10 +26022,6 @@
 /obj/structure/closet/crate/chest/old_crate,
 /turf/open/floor/ruinedwood/alt,
 /area/rogue/indoors/town/shop)
-"nIL" = (
-/obj/machinery/light/fueled/torchholder/metal_torch/west,
-/turf/open/transparent/openspace,
-/area/rogue/outdoors/river)
 "nJb" = (
 /obj/machinery/light/fueled/wallfire/candle{
 	pixel_y = -32
@@ -28810,14 +28815,7 @@
 /turf/open/floor/cobble/alt,
 /area/rogue/under/town/sewer)
 "pjF" = (
-/obj/structure/fluff/clock{
-	pixel_x = 0;
-	pixel_y = 24;
-	density = 0
-	},
-/obj/effect/landmark/start/grabber{
-	dir = 4
-	},
+/obj/structure/fluff/clock,
 /turf/open/floor/ruinedwood/two,
 /area/rogue/indoors/town/shop)
 "pjL" = (
@@ -91270,7 +91268,7 @@ bmK
 lfy
 tSx
 xYa
-xYa
+fhC
 vnJ
 acW
 vnJ
@@ -91674,7 +91672,7 @@ mll
 psU
 tAM
 xYa
-nIL
+xYa
 vnJ
 qoK
 qoK
@@ -91875,7 +91873,7 @@ plC
 wJG
 rAm
 aeQ
-xYa
+fhC
 gTP
 vnJ
 vnJ
