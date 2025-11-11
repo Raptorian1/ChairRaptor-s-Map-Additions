@@ -17743,6 +17743,7 @@
 /area/rogue/indoors/butchershop)
 "jlO" = (
 /obj/structure/table/wood/fancy/royalblue,
+/obj/item/book/secret/ledger,
 /obj/item/gem/green,
 /turf/open/floor/tile,
 /area/rogue/indoors/town/shop)
