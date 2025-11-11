@@ -20,7 +20,7 @@
 	var/faction_color = "#FFFFFF" // Color for UI theming
 
 	// Reputation thresholds and bonuses
-	var/list/reputation_thresholds = list(0, 100, 300, 600, 1000, 1500, 2500) // Rep levels
+	var/list/reputation_thresholds = list(0, 100, 200, 400, 600, 800, 1000) // Rep levels
 	var/bounty_rep_reward_base = 50 // Base rep for completing bounties
 	var/supply_rep_reward_base = 25 // Base rep for buying supplies
 
