@@ -136,6 +136,10 @@
 	pixel_x = -6;
 	pixel_y = 8
 	},
+/obj/machinery/light/fueled/wallfire/candle{
+	pixel_x = 32;
+	pixel_y = 0
+	},
 /turf/open/floor/tile,
 /area/rogue/indoors/town/shop)
 "adr" = (
@@ -2559,6 +2563,7 @@
 	pixel_y = 15;
 	density = 0
 	},
+/obj/machinery/light/fueled/wallfire/candle,
 /turf/open/floor/ruinedwood/two,
 /area/rogue/indoors/town/shop)
 "bnZ" = (
@@ -7768,6 +7773,13 @@
 /obj/structure/rack/shelf/biggest,
 /turf/open/floor/herringbone,
 /area/rogue/indoors/town)
+"edr" = (
+/mob/living/simple_animal/pet/cat/black{
+	name = "Garfield";
+	desc = "The mascot of the cost-effective merchant's guild; where all your dreams come true. Just for me and you!."
+	},
+/turf/open/floor/tile/diamond/blue,
+/area/rogue/indoors/town/shop)
 "eds" = (
 /turf/open/floor/carpet/lord/left,
 /area/rogue/indoors/town/manor/lord_appt)
@@ -8922,6 +8934,7 @@
 /obj/structure/chair/wood/alt/chair_noble{
 	dir = 4
 	},
+/obj/machinery/light/fueled/wallfire/candle,
 /turf/open/floor/ruinedwood/two,
 /area/rogue/indoors/town/shop)
 "eJj" = (
@@ -10862,6 +10875,9 @@
 "fHV" = (
 /obj/structure/table/wood/fancy/blue,
 /obj/item/clothing/face/spectacles/sglasses,
+/obj/machinery/light/fueled/wallfire/candle{
+	pixel_y = -32
+	},
 /turf/open/floor/ruinedwood/two,
 /area/rogue/indoors/town/shop)
 "fIh" = (
@@ -11945,6 +11961,9 @@
 	},
 /obj/structure/fluff/railing/border{
 	dir = 8
+	},
+/obj/machinery/light/fueled/wallfire/candle{
+	pixel_y = -32
 	},
 /turf/open/floor/ruinedwood/two,
 /area/rogue/indoors/town/shop)
@@ -19843,6 +19862,7 @@
 	pixel_x = -9;
 	pixel_y = -7
 	},
+/obj/machinery/light/fueled/wallfire/candle,
 /turf/open/floor/tile/diamond/purple,
 /area/rogue/indoors/town/shop)
 "kpo" = (
@@ -28208,6 +28228,10 @@
 	pixel_x = -6;
 	pixel_y = 10
 	},
+/obj/machinery/light/fueled/wallfire/candle{
+	pixel_x = 32;
+	pixel_y = 0
+	},
 /turf/open/floor/tile,
 /area/rogue/indoors/town/shop)
 "oQZ" = (
@@ -30201,6 +30225,9 @@
 /area/rogue/indoors/town/garrison)
 "pZq" = (
 /obj/structure/fake_machine/scomm/r,
+/obj/machinery/light/fueled/wallfire/candle{
+	pixel_y = -32
+	},
 /turf/open/floor/tile/diamond/blue,
 /area/rogue/indoors/town/shop)
 "pZE" = (
@@ -31090,6 +31117,16 @@
 /obj/machinery/light/fueled/wallfire/candle/r,
 /turf/open/floor/woodturned,
 /area/rogue/indoors/town/manor/halls/e)
+"qCb" = (
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/obj/machinery/light/fueled/wallfire/candle{
+	pixel_x = 32;
+	pixel_y = 0
+	},
+/turf/open/floor/ruinedwood/two,
+/area/rogue/indoors/town/shop)
 "qCm" = (
 /obj/structure/chair/stool,
 /turf/open/floor/blocks/paving,
@@ -43441,6 +43478,9 @@
 "xjj" = (
 /obj/structure/table/wood/reinforced_alt{
 	dir = 8
+	},
+/obj/machinery/light/fueled/wallfire/candle{
+	pixel_y = -32
 	},
 /turf/open/floor/tile/diamond/purple,
 /area/rogue/indoors/town/shop)
@@ -89617,7 +89657,7 @@ gbs
 gbs
 nIv
 mVA
-dCj
+kiB
 dCj
 dCj
 sQS
@@ -110444,7 +110484,7 @@ dws
 dws
 kYj
 cKz
-cKz
+qCb
 qgu
 wIa
 qju
@@ -130221,7 +130261,7 @@ tip
 tip
 xjz
 fJg
-fJg
+edr
 fJg
 vAZ
 lnm
@@ -131031,7 +131071,7 @@ xoA
 xoA
 xoA
 xoA
-dCj
+iKS
 vnJ
 vgJ
 vgJ
@@ -131430,7 +131470,7 @@ tip
 xjz
 hsE
 xoA
-dCj
+iKS
 qoK
 iom
 qMh

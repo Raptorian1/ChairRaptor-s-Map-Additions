@@ -137,6 +137,11 @@
 		/datum/supply_pack/armor/steel/steppemask,
 		/datum/supply_pack/armor/steel/beastmask,
 		/datum/supply_pack/armor/steel/slamellar,
+		/datum/supply_pack/armor/steel/zplatehelm,
+		/datum/supply_pack/armor/steel/zsallet,
+		/datum/supply_pack/armor/steel/zplatearmor,
+		/datum/supply_pack/armor/steel/zplategloves,
+		/datum/supply_pack/armor/steel/zplateboots,
 		// Weapons
 		/datum/supply_pack/weapons/iron/iassegai,
 		/datum/supply_pack/weapons/ranged/shortbow,
@@ -148,6 +153,7 @@
 		/datum/supply_pack/weapons/shield/wood,
 		/datum/supply_pack/weapons/ammo/Blowpouch,
 		/datum/supply_pack/weapons/steel/khopesh,
+		/datum/supply_pack/weapons/steel/steppesabre,
 		// Food
 		/datum/supply_pack/food/drinks/spottedhen,
 		/datum/supply_pack/food/roastedcoffee,

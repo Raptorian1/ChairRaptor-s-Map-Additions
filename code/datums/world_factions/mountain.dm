@@ -116,6 +116,8 @@
 		/datum/supply_pack/weapons/steel/ida,
 		/datum/supply_pack/weapons/iron/injora,
 		/datum/supply_pack/weapons/iron/ishishpar,
+		/datum/supply_pack/weapons/iron/iwaraxe,
+		/datum/supply_pack/weapons/iron/iflail,
 		// Food & Drink
 		/datum/supply_pack/food/drinks/butterhair,
 		/datum/supply_pack/food/drinks/stonebeard,
@@ -161,6 +163,12 @@
 		/datum/supply_pack/weapons/steel/njora,
 		/datum/supply_pack/weapons/steel/kukri,
 		/datum/supply_pack/weapons/ranged/slurbow,
+		/datum/supply_pack/weapons/steel/paxe,
+		/datum/supply_pack/weapons/steel/sbattleaxe,
+		/datum/supply_pack/weapons/steel/knuckles,
+		/datum/supply_pack/weapons/steel/sflail,
+		/datum/supply_pack/weapons/steel/doublesgreataxe,
+		/datum/supply_pack/weapons/steel/sgreataxe,
 		// Food & Luxury
 		/datum/supply_pack/food/drinks/voddena,
 		/datum/supply_pack/jewelry/circlet,

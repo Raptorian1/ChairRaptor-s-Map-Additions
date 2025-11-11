@@ -109,6 +109,7 @@
 		/datum/supply_pack/apparel/thigh_boots,
 		/datum/supply_pack/apparel/black_gloves,
 		/datum/supply_pack/apparel/fancy_hat,
+		/datum/supply_pack/weapons/iron/navaja,
 		// Exotic foods
 		/datum/supply_pack/food/angler,
 		/datum/supply_pack/food/drinks/winezaladin,
@@ -188,6 +189,9 @@
 		/datum/supply_pack/weapons/steel/assegai,
 		/datum/supply_pack/weapons/steel/sengese,
 		/datum/supply_pack/weapons/steel/dadao,
+		/datum/supply_pack/weapons/steel/scutlass,
+		/datum/supply_pack/weapons/steel/mulyeog,
+		/datum/supply_pack/weapons/steel/nimcha,
 		// Jewelry
 		/datum/supply_pack/jewelry/silverring,
 		// Luxury goods
