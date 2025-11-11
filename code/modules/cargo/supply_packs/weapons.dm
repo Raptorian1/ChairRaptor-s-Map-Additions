@@ -120,6 +120,21 @@
 	cost = 35
 	contains = /obj/item/weapon/polearm/spear/assegai
 
+/datum/supply_pack/weapons/iron/iwaraxe
+	name = "Iron War Axe"
+	cost = 50
+	contains = /obj/item/weapon/polearm/halberd/bardiche/warcutter
+
+/datum/supply_pack/weapons/iron/navaja
+	name = "Navaja"
+	cost = 25
+	contains = /obj/item/weapon/knife/dagger/navaja
+
+/datum/supply_pack/weapons/iron/iflail
+	name = "Iron Flail"
+	cost = 30
+	contains = /obj/item/weapon/flail
+
 // STEEL MELEE WEAPONS
 
 /datum/supply_pack/weapons/steel
@@ -204,6 +219,56 @@
 	name = "Steel Atgervi Axe"
 	cost = 60
 	contains = /obj/item/weapon/axe/steel/atgervi
+
+/datum/supply_pack/weapons/steel/paxe
+	name = "Pickaxe"
+	cost = 90
+	contains = /obj/item/weapon/pick/paxe
+
+/datum/supply_pack/weapons/steel/sbattleaxe
+	name = "Steel Battle Axe"
+	cost = 60
+	contains = /obj/item/weapon/axe/battle
+
+/datum/supply_pack/weapons/steel/knuckles
+	name = "Steel Knuckles"
+	cost = 45
+	contains = /obj/item/weapon/knuckles
+
+/datum/supply_pack/weapons/steel/sflail
+	name = "Steel Flail"
+	cost = 50
+	contains = /obj/item/weapon/flail/sflail
+
+/datum/supply_pack/weapons/steel/doublesgreataxe
+	name = "Double-Headed Steel Greataxe"
+	cost = 120
+	contains = /obj/item/weapon/greataxe/steel/doublehead
+
+/datum/supply_pack/weapons/steel/sgreataxe
+	name = "Steel Greataxe"
+	cost = 90
+	contains = /obj/item/weapon/greataxe/steel
+
+/datum/supply_pack/weapons/steel/scutlass
+	name = "Cutlass"
+	cost = 50
+	contains = /obj/item/weapon/sword/sabre/cutlass
+
+/datum/supply_pack/weapons/steel/mulyeog
+	name = "Mulyeog"
+	cost = 80
+	contains = /obj/item/weapon/sword/sabre/mulyeog
+
+/datum/supply_pack/weapons/steel/nimcha
+	name = "Nimcha"
+	cost = 80
+	contains = /obj/item/weapon/sword/rapier/nimcha
+
+/datum/supply_pack/weapons/steel/steppesabre
+	name = "Steppe Sabre"
+	cost = 80
+	contains = /obj/item/weapon/sword/long/rider/steppe
 
 /*
 /datum/supply_pack/weapons/nets

@@ -161,6 +161,16 @@
 	cost = 90
 	contains = /obj/item/clothing/head/helmet/visored/hounskull
 
+/datum/supply_pack/armor/steel/zplatehelm
+	name = "Zalad Plate Helm"
+	cost = 90
+	contains = /obj/item/clothing/head/rare/zaladplate
+
+/datum/supply_pack/armor/steel/zsallet
+	name = "Zalad Sallet"
+	cost = 60
+	contains = /obj/item/clothing/head/helmet/sallet/zalad
+
 /datum/supply_pack/armor/steel/nasalh
 	name = "Nasal Helmet"
 	cost = 45
@@ -230,6 +240,11 @@
 	cost = 100
 	contains = /obj/item/clothing/armor/medium/scale/steppe
 
+/datum/supply_pack/armor/steel/zplatearmor
+	name = "Zalad Plate"
+	cost = 140
+	contains = /obj/item/clothing/armor/rare/zaladplate
+
 /datum/supply_pack/armor/steel/cuirass
 	name = "Steel Cuirass"
 	cost = 55
@@ -279,6 +294,11 @@
 	cost = 45
 	contains = /obj/item/clothing/wrists/bracers
 
+/datum/supply_pack/armor/steel/zplategloves
+	name = "Zalad Plate Gloves"
+	cost = 55
+	contains = /obj/item/clothing/armor/rare/zaladplate
+
 /datum/supply_pack/armor/steel/plate_gloves
 	name = "Heavy Plate Gloves"
 	cost = 50
@@ -307,3 +327,8 @@
 	name = "Plate Boots"
 	cost = 50
 	contains = /obj/item/clothing/shoes/boots/armor
+
+/datum/supply_pack/armor/steel/zplateboots
+	name = "Zalad Plate Boots"
+	cost = 55
+	contains = /obj/item/clothing/shoes/boots/rare/zaladplate
