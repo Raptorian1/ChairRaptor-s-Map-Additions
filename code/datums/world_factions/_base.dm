@@ -13,10 +13,10 @@
 	var/list/bounty_items = list() // Items this faction wants with multipliers
 	var/list/bounty_refresh_times = list() // When each bounty expires
 	var/next_supply_rotation = 0 // When supply packs refresh
-	var/supply_rotation_interval = 30 MINUTES // How often supplies rotate
+	var/supply_rotation_interval = 15 MINUTES // How often supplies rotate
 	var/bounty_rotation_interval = 15 MINUTES // How often bounties rotate
-	var/base_max_bounties = 5 // Base maximum number of active bounties
-	var/base_max_supply_packs = 15 // Base maximum supply packs available at once
+	var/base_max_bounties = 10 // Base maximum number of active bounties
+	var/base_max_supply_packs = 30 // Base maximum supply packs available at once
 	var/faction_color = "#FFFFFF" // Color for UI theming
 
 	// Reputation thresholds and bonuses
