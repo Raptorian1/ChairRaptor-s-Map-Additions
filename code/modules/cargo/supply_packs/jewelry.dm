@@ -72,3 +72,13 @@
 	name = "Headdress Gold"
 	cost = 74
 	contains = /obj/item/clothing/head/crown/circlet/goldheaddress
+
+/datum/supply_pack/jewelry/nyle
+	name = "Nyle Crown"
+	cost = 180
+	contains = /obj/item/clothing/head/crown/nyle/consortcrown
+
+/datum/supply_pack/jewelry/mercatoreye
+	name = "Mercator's Eye"
+	cost = 55
+	contains = /obj/item/clothing/neck/mercator

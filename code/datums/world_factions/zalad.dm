@@ -178,6 +178,7 @@
 		/datum/supply_pack/apparel/exoticsilkbra,
 		/datum/supply_pack/apparel/anklets,
 		/datum/supply_pack/apparel/henhelm,
+		/datum/supply_pack/jewelry/nyle,
 		/datum/supply_pack/jewelry/scom
 	)
 

@@ -159,6 +159,7 @@
 		/datum/supply_pack/apparel/craftcoat,
 		/datum/supply_pack/apparel/kitsunemask,
 		/datum/supply_pack/apparel/onimask,
+		/datum/supply_pack/jewelry/mercatoreye,
 		// Exotic seafood
 		/datum/supply_pack/food/clownfish,
 		/datum/supply_pack/food/drinks/winevalorred,
