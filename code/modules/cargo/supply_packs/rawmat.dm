@@ -17,7 +17,7 @@
 
 /datum/supply_pack/rawmats/copper
 	name = "Copper Ore (4)"
-	cost = 10
+	cost = 20
 	contains = list(
 		/obj/item/ore/copper,
 		/obj/item/ore/copper,
@@ -27,7 +27,7 @@
 
 /datum/supply_pack/rawmats/tin
 	name = "Tin Ore (4)"
-	cost = 20
+	cost = 35
 	contains = list(/obj/item/ore/tin,
 		/obj/item/ore/tin,
 		/obj/item/ore/tin,
@@ -36,7 +36,7 @@
 
 /datum/supply_pack/rawmats/iron
 	name = "Iron Ore (4)"
-	cost = 25
+	cost = 40
 	contains = list(
 		/obj/item/ore/iron,
 		/obj/item/ore/iron,

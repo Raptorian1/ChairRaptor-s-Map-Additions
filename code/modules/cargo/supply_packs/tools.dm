@@ -176,12 +176,12 @@
 
 /datum/supply_pack/tools/medical/health
 	name = "Healing Potion"
-	cost = 25
+	cost = 50
 	contains = /obj/item/reagent_containers/glass/bottle/healthpot
 
 /datum/supply_pack/tools/medical/mana
 	name = "Mana Potion"
-	cost = 25
+	cost = 50
 	contains = /obj/item/reagent_containers/glass/bottle/manapot
 
 /datum/supply_pack/tools/medical/surgerybag

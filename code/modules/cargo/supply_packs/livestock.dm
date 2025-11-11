@@ -5,7 +5,7 @@
 
 /datum/supply_pack/livestock/saiga
 	name = "Saigabuck"
-	cost = 100
+	cost = 120
 	contains = list(
 					/mob/living/simple_animal/hostile/retaliate/saigabuck/tame/saddled,
 				)
@@ -20,7 +20,7 @@
 
 /datum/supply_pack/livestock/cow
 	name = "Cow"
-	cost = 55
+	cost = 80
 	contains = list(
 					/mob/living/simple_animal/hostile/retaliate/cow,
 				)
@@ -41,7 +41,7 @@
 
 /datum/supply_pack/livestock/pig
 	name = "Pig"
-	cost = 55
+	cost = 65
 	contains = list(
 					/mob/living/simple_animal/hostile/retaliate/trufflepig,
 				)

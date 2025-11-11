@@ -325,7 +325,7 @@
 
 /datum/supply_pack/weapons/ammo/powder
 	name = "Blast Powder"
-	cost = 100
+	cost = 200
 	contains = /obj/item/reagent_containers/powder/blastpowder
 
 /datum/supply_pack/weapons/ammo/arrows

@@ -40,7 +40,7 @@
 
 /datum/supply_pack/jewelry/scom
 	name = "SCOM ring"
-	cost = 80
+	cost = 200
 	contains = /obj/item/scomstone
 
 /datum/supply_pack/jewelry/nosesilver
@@ -75,10 +75,10 @@
 
 /datum/supply_pack/jewelry/nyle
 	name = "Nyle Crown"
-	cost = 180
+	cost = 200
 	contains = /obj/item/clothing/head/crown/nyle/consortcrown
 
 /datum/supply_pack/jewelry/mercatoreye
 	name = "Mercator's Eye"
-	cost = 55
+	cost = 150
 	contains = /obj/item/clothing/neck/mercator

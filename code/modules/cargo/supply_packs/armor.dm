@@ -62,35 +62,40 @@
 	cost = 50
 	contains = /obj/item/clothing/armor/leather/advanced
 
-/datum/supply_pack/armor/light/ihalf_plate
-	name = "Iron Half-plate"
+/datum/supply_pack/armor/light/icuirass
+	name = "Iron Cuirass"
 	cost = 30
 	contains = /obj/item/clothing/armor/cuirass/iron
 
-/datum/supply_pack/armor/light/ifull_plate
-	name = "Iron Plate Armor"
-	cost = 60
+/datum/supply_pack/armor/light/ihalf_plate
+	name = "Iron Half-plate"
+	cost = 50
 	contains = /obj/item/clothing/armor/plate/iron
 
 /datum/supply_pack/armor/light/ifull_plate
+	name = "Iron Plate Armor"
+	cost = 80
+	contains = /obj/item/clothing/armor/plate/full/iron
+
+/datum/supply_pack/armor/light/lakkarianarmor
 	name = "Lakkarian Armor"
 	cost = 30
-	contains = /obj/item/clothing/armor/cuirass/iron
+	contains = /obj/item/clothing/armor/gambeson/heavy/lakkarijupon
 
-/datum/supply_pack/armor/light/ifull_plate
+/datum/supply_pack/armor/light/stepperobes
 	name = "Steppe Robes"
 	cost = 18
-	contains = /obj/item/clothing/armor/cuirass/iron
+	contains = /obj/item/clothing/armor/gambeson/light/steppe
 
-/datum/supply_pack/armor/light/ifull_plate
+/datum/supply_pack/armor/light/steppehidearmor
 	name = "Steppe Hide Armor"
 	cost = 26
-	contains = /obj/item/clothing/armor/cuirass/iron
+	contains = /obj/item/clothing/armor/leather/hide/steppe
 
-/datum/supply_pack/armor/light/ifull_plate
+/datum/supply_pack/armor/light/shamaniccoat
 	name = "Shamanic Coat"
 	cost = 28
-	contains = /obj/item/clothing/armor/cuirass/iron
+	contains = /obj/item/clothing/armor/leather/heavy/atgervi
 
 // SHIRT ARMOR
 
@@ -153,47 +158,47 @@
 // HELMETS
 /datum/supply_pack/armor/steel/hounskull
 	name = "Hounskull Helmet"
-	cost = 66
+	cost = 80
 	contains = /obj/item/clothing/head/helmet/visored/hounskull
 
 /datum/supply_pack/armor/steel/nasalh
 	name = "Nasal Helmet"
-	cost = 40
+	cost = 50
 	contains = /obj/item/clothing/head/helmet/nasal
 
 /datum/supply_pack/armor/steel/sallet
 	name = "Sallet Helmet"
-	cost = 40
+	cost = 50
 	contains = /obj/item/clothing/head/helmet/sallet
 
 /datum/supply_pack/armor/steel/visorsallet
 	name = "Visored Sallet"
-	cost = 55
+	cost = 65
 	contains = /obj/item/clothing/head/helmet/visored/sallet
 
 /datum/supply_pack/armor/steel/buckethelm
 	name = "Great Helm"
-	cost = 55
+	cost = 75
 	contains = /obj/item/clothing/head/helmet/heavy/bucket
 
 /datum/supply_pack/armor/steel/pegasushelm
 	name = "Pegasus Knight Helm"
-	cost = 60
+	cost = 75
 	contains = /obj/item/clothing/head/helmet/pegasusknight
 
 /datum/supply_pack/armor/steel/elvenhelm
 	name = "Elf Sallet"
-	cost = 60
+	cost = 80
 	contains = /obj/item/clothing/head/helmet/sallet/elven
 
 /datum/supply_pack/armor/steel/atgervihelm
 	name = "Atgervi Helm"
-	cost = 50
+	cost = 80
 	contains = /obj/item/clothing/head/helmet/bascinet/atgervi
 
 /datum/supply_pack/armor/steel/steppehelm
 	name = "Steppe Bascinet"
-	cost = 45
+	cost = 55
 	contains = /obj/item/clothing/head/helmet/bascinet/steppe
 
 // MASK COIF NECK
@@ -205,24 +210,24 @@
 
 /datum/supply_pack/armor/steel/steppemask
 	name = "Steppe Mask"
-	cost = 5
+	cost = 60
 	contains = /obj/item/clothing/face/facemask/steel/steppe
 
 /datum/supply_pack/armor/steel/beastmask
 	name = "Steppe Beast Mask"
-	cost = 50
+	cost = 65
 	contains = /obj/item/clothing/face/facemask/steel/steppebeast
 
 /datum/supply_pack/armor/steel/chaincoif_steel
 	name = "Steel Chain Coif"
-	cost = 30
+	cost = 45
 	contains = /obj/item/clothing/neck/chaincoif
 
 // ARMOR
 
 /datum/supply_pack/armor/steel/slamellar
 	name = "Steel Lamellar"
-	cost = 55
+	cost = 65
 	contains = /obj/item/clothing/armor/medium/scale/steppe
 
 /datum/supply_pack/armor/steel/cuirass
@@ -232,73 +237,73 @@
 
 /datum/supply_pack/armor/steel/brigandine
 	name = "Brigandine"
-	cost = 50
+	cost = 80
 	contains = /obj/item/clothing/armor/brigandine
 
 /datum/supply_pack/armor/steel/coatofplates
 	name = "Coat Of Plates"
-	cost = 60
+	cost = 100
 	contains = /obj/item/clothing/armor/brigandine/coatplates
 
 /datum/supply_pack/armor/steel/half_plate // so heavy users have something to buy
 	name = "Steel Half-plate"
-	cost = 100
+	cost = 120
 	contains = /obj/item/clothing/armor/plate
 
 /datum/supply_pack/armor/steel/elvenplate
-	name = "Elven Half-plate"
-	cost = 110
+	name = "Elven Cuirass"
+	cost = 100
 	contains = /obj/item/clothing/armor/cuirass/rare/elven
 
 // SHIRT ARMOR
 
 /datum/supply_pack/armor/steel/atgervichest
 	name = "Atgervi Hauberk"
-	cost = 50
+	cost = 85
 	contains = /obj/item/clothing/armor/chainmail/hauberk/atgervi
 
 /datum/supply_pack/armor/steel/chainmail
 	name = "Steel Chainmail"
-	cost = 40
+	cost = 50
 	contains = /obj/item/clothing/armor/chainmail
 
 /datum/supply_pack/armor/steel/chainmail_hauberk
 	name = "Hauberk"
-	cost = 50
+	cost = 75
 	contains = /obj/item/clothing/armor/chainmail/hauberk
 
 // ARMS
 
 /datum/supply_pack/armor/steel/bracers
 	name = "Steel Bracers"
-	cost = 35
+	cost = 45
 	contains = /obj/item/clothing/wrists/bracers
 
 /datum/supply_pack/armor/steel/plate_gloves
 	name = "Heavy Plate Gloves"
-	cost = 45
+	cost = 70
 	contains = /obj/item/clothing/gloves/plate
 
 /datum/supply_pack/armor/steel/atgervigloves
 	name = "Atgervi Gloves"
-	cost = 50
+	cost = 60
 	contains = /obj/item/clothing/gloves/plate/atgervi
 
 // PANTS
 
 /datum/supply_pack/armor/steel/chainlegs_steel
 	name = "Steel Chain Chausses"
-	cost = 45
+	cost = 60
 	contains = /obj/item/clothing/pants/chainlegs
 
 /datum/supply_pack/armor/steel/chainkilt_steel
 	name = "Steel Chain Kilt"
-	cost = 45
+	cost = 60
 	contains = /obj/item/clothing/pants/chainlegs/kilt
 
 // BOOTS
 
 /datum/supply_pack/armor/steel/steel_boots
 	name = "Plate Boots"
-	cost = 45
+	cost = 50
 	contains = /obj/item/clothing/shoes/boots/armor
