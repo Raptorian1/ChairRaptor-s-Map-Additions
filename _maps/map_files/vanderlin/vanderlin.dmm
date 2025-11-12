@@ -3218,6 +3218,10 @@
 /obj/structure/stairs{
 	dir = 8
 	},
+/obj/structure/fluff/railing/border,
+/obj/structure/fluff/railing/border{
+	dir = 6
+	},
 /turf/open/floor/ruinedwood/two,
 /area/rogue/indoors/town/shop)
 "bGi" = (
@@ -6888,6 +6892,10 @@
 	pixel_x = 1;
 	pixel_y = 7
 	},
+/obj/structure/fluff/railing/wood{
+	dir = 4;
+	pixel_x = 1
+	},
 /turf/open/floor/cobble,
 /area/rogue/outdoors/town)
 "dGn" = (
@@ -9711,6 +9719,12 @@
 /obj/structure/fluff/railing/wood,
 /turf/open/floor/blocks/stonered,
 /area/rogue/indoors/town/dwarfin)
+"fbr" = (
+/obj/structure/fluff/railing/border{
+	dir = 6
+	},
+/turf/open/floor/ruinedwood/two,
+/area/rogue/indoors/town/shop)
 "fbt" = (
 /turf/closed/wall/mineral/wooddark/end{
 	dir = 8
@@ -19210,6 +19224,18 @@
 /obj/structure/water_pipe,
 /turf/closed/wall/mineral/pipe,
 /area/rogue/indoors/town)
+"jVn" = (
+/obj/structure/fluff/railing/wood{
+	dir = 4
+	},
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_x = 1;
+	pixel_y = 7
+	},
+/turf/open/floor/cobblerock,
+/area/rogue/outdoors/town)
 "jVv" = (
 /obj/effect/landmark/start/minor_noble,
 /obj/structure/chair/wood/alt/chair_noble,
@@ -32683,6 +32709,10 @@
 	dir = 8
 	},
 /obj/machinery/light/fueled/wallfire/candle,
+/obj/structure/fluff/railing/border,
+/obj/structure/fluff/railing/border{
+	dir = 6
+	},
 /turf/open/floor/ruinedwood/two,
 /area/rogue/indoors/town/shop)
 "rlY" = (
@@ -36807,20 +36837,7 @@
 /area/rogue/under/town/caverogue)
 "trZ" = (
 /obj/structure/fluff/railing/border{
-	pixel_y = 27
-	},
-/obj/structure/fluff/railing/border{
 	dir = 4
-	},
-/obj/structure/fluff/railing/border{
-	dir = 5;
-	pixel_x = 0;
-	pixel_y = 3
-	},
-/obj/structure/fluff/railing/border{
-	dir = 6;
-	pixel_x = -29;
-	pixel_y = 27
 	},
 /turf/open/floor/ruinedwood/two,
 /area/rogue/indoors/town/shop)
@@ -44549,19 +44566,6 @@
 /obj/machinery/light/fueled/oven/west,
 /turf/open/floor/woodturned,
 /area/rogue/indoors/town/magician)
-"xHF" = (
-/obj/structure/fluff/railing/border{
-	pixel_y = 27;
-	density = 0
-	},
-/obj/structure/fluff/railing/border{
-	dir = 10;
-	pixel_y = 27;
-	pixel_x = 27;
-	density = 0
-	},
-/turf/open/floor/ruinedwood/two,
-/area/rogue/indoors/town/shop)
 "xHQ" = (
 /obj/structure/fermentation_keg,
 /turf/open/floor/carpet/red,
@@ -110132,7 +110136,7 @@ iSk
 iSk
 iSk
 iSk
-cnK
+jVn
 cnK
 uSV
 uSV
@@ -111936,7 +111940,7 @@ hxP
 kdE
 kdE
 bFS
-xHF
+fPN
 rmK
 aOz
 aOz
@@ -151932,7 +151936,7 @@ acx
 pTg
 xbE
 uMW
-fPN
+fbr
 fPN
 hxP
 hxP
