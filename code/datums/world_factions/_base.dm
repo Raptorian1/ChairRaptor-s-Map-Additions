@@ -40,10 +40,10 @@
 	var/exotic_weight = 5
 
 	// How many items from each pool to select (beyond essentials) - base values
-	var/base_common_picks = 8
-	var/base_uncommon_picks = 4
-	var/base_rare_picks = 2
-	var/base_exotic_picks = 1
+	var/base_common_picks = 20
+	var/base_uncommon_picks = 12
+	var/base_rare_picks = 8
+	var/base_exotic_picks = 4
 
 	var/list/allowed_maps = list()
 
