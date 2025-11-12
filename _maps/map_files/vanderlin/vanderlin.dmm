@@ -722,6 +722,11 @@
 	dir = 4
 	},
 /area/rogue/outdoors/mountains)
+"aqH" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/fermentation_keg,
+/turf/open/floor/carpet/green,
+/area/rogue/indoors/town)
 "aqK" = (
 /turf/open/floor/carpet/red,
 /area/rogue/indoors/town/garrison)
@@ -1580,6 +1585,10 @@
 	},
 /turf/open/floor/wood,
 /area/rogue/indoors/town)
+"aNy" = (
+/obj/machinery/light/fueled/torchholder/metal_torch/east,
+/turf/open/floor/blocks,
+/area/rogue/outdoors/town)
 "aNz" = (
 /obj/structure/door/window,
 /obj/effect/mapping_helpers/access/locker,
@@ -3528,6 +3537,14 @@
 	},
 /turf/open/floor/cobble,
 /area/rogue/outdoors/town)
+"bNP" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/closet/crate/crafted_closet/inn/chest,
+/obj/effect/decal/cleanable/sigil/NE,
+/obj/structure/carpet/purple,
+/turf/open/floor/tile/kitchen,
+/area/rogue/indoors/town)
 "bNV" = (
 /obj/structure/chair/stool{
 	pixel_y = 5
@@ -4484,7 +4501,13 @@
 /obj/structure/carpet/purple,
 /turf/open/floor/churchmarble,
 /area/rogue/indoors/town/church)
+"cob" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/sigil/SE,
+/turf/open/floor/tile/kitchen,
+/area/rogue/indoors/town)
 "coU" = (
+/obj/structure/fermentation_keg,
 /turf/open/floor/tile/masonic/single,
 /area/rogue/indoors/town)
 "coZ" = (
@@ -6271,6 +6294,13 @@
 	},
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/town/roofs)
+"dqm" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/closet/crate/chest/crafted,
+/turf/open/floor/ruinedwood/darker,
+/area/rogue/indoors/town)
 "dqq" = (
 /obj/structure/fluff/railing/border,
 /turf/open/floor/cobble,
@@ -7203,6 +7233,10 @@
 /obj/item/candle/yellow/lit/infinite,
 /turf/open/floor/tile/masonic/spiral,
 /area/rogue/under/town/basement)
+"dOT" = (
+/obj/structure/fermentation_keg,
+/turf/open/floor/carpet/green,
+/area/rogue/indoors/town)
 "dOY" = (
 /obj/structure/door/violet{
 	name = "Abandoned Warehouse"
@@ -7274,6 +7308,12 @@
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/cobblerock,
 /area/rogue/under/town/sewer)
+"dRc" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/closet/crate/chest/wicker,
+/turf/open/floor/tile/masonic/single,
+/area/rogue/indoors/town)
 "dRd" = (
 /turf/closed/wall/mineral/wooddark/end{
 	dir = 8
@@ -9470,6 +9510,7 @@
 "eVs" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/closet/crate/chest/old_crate,
 /turf/open/floor/tile/masonic/single,
 /area/rogue/indoors/town)
 "eVz" = (
@@ -11276,6 +11317,11 @@
 /obj/effect/landmark/events/animal_migration_point,
 /turf/open/floor/ruinedwood/darker,
 /area/rogue/outdoors/river)
+"fPv" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/bin/water/gross,
+/turf/open/floor/ruinedwood/turned/darker,
+/area/rogue/indoors/town)
 "fPz" = (
 /obj/structure/stairs/stone{
 	dir = 4
@@ -12549,6 +12595,11 @@
 	},
 /turf/open/floor/churchbrick,
 /area/rogue/indoors/inq/import)
+"gyB" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/closet/crate/crafted_closet/inn/chest,
+/turf/open/floor/tile/kitchen,
+/area/rogue/indoors/town)
 "gyI" = (
 /obj/structure/bars,
 /turf/open/floor/cobblerock,
@@ -13739,6 +13790,10 @@
 /obj/machinery/light/fueled/firebowl/standing/blue,
 /turf/open/floor/dirt,
 /area/rogue/outdoors/river)
+"hcy" = (
+/obj/structure/closet/crate/chest/wicker,
+/turf/open/floor/tile/kitchen,
+/area/rogue/indoors/town)
 "hds" = (
 /obj/structure/fluff/walldeco/church/line{
 	dir = 1
@@ -17603,6 +17658,10 @@
 	},
 /turf/open/floor/naturalstone,
 /area/rogue/under/cave)
+"jeW" = (
+/obj/structure/fermentation_keg,
+/turf/open/floor/ruinedwood/darker,
+/area/rogue/indoors/town)
 "jfg" = (
 /obj/structure/table/wood/plain_alt,
 /turf/open/floor/tile,
@@ -19078,6 +19137,12 @@
 "jTa" = (
 /turf/open/floor/carpet/purple,
 /area/rogue/indoors/town/magician)
+"jTj" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/closet/crate/crafted_closet/inn/chest,
+/turf/open/floor/tile/masonic/single,
+/area/rogue/indoors/town)
 "jTn" = (
 /obj/structure/rack/shelf/biggest,
 /obj/item/reagent_containers/glass/bottle/beer/hagwoodbitter,
@@ -19750,7 +19815,9 @@
 "kiK" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet/purple,
+/obj/effect/decal/cleanable/sigil/W,
+/obj/structure/carpet/purple,
+/turf/open/floor/tile/kitchen,
 /area/rogue/indoors/town)
 "kiO" = (
 /turf/closed/wall/mineral/wood,
@@ -20803,6 +20870,11 @@
 /obj/structure/flora/grass,
 /turf/open/floor/grass,
 /area/rogue/under/town/caverogue)
+"kSy" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/closet/crate/crafted_closet/inn/chest,
+/turf/open/floor/tile/masonic/single,
+/area/rogue/indoors/town)
 "kSS" = (
 /obj/structure/fluff/walldeco/vinez,
 /turf/closed/wall/mineral/stone,
@@ -23108,7 +23180,9 @@
 /area/rogue/indoors/town/tavern)
 "mkS" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet/purple,
+/obj/effect/decal/cleanable/sigil/S,
+/obj/structure/carpet/purple,
+/turf/open/floor/tile/kitchen,
 /area/rogue/indoors/town)
 "mlm" = (
 /turf/closed/wall/mineral/pipe,
@@ -23792,6 +23866,12 @@
 	},
 /obj/structure/fluff/wallclock,
 /turf/closed/basic,
+/area/rogue/indoors/town)
+"mDv" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/fermentation_keg,
+/turf/open/floor/tile/masonic/single,
 /area/rogue/indoors/town)
 "mDG" = (
 /obj/machinery/light/fueled/torchholder{
@@ -25920,6 +26000,13 @@
 /obj/item/storage/backpack/satchel/cloth,
 /turf/open/floor/cobble,
 /area/rogue/indoors/dungeon)
+"nHS" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/sigil/NW,
+/obj/structure/carpet/purple,
+/turf/open/floor/tile/kitchen,
+/area/rogue/indoors/town)
 "nHT" = (
 /obj/machinery/light/fueled/wallfire/candle/blue/r,
 /turf/open/floor/greenstone,
@@ -27475,6 +27562,10 @@
 /obj/structure/flora/grass/bush/wall,
 /turf/open/floor/dirt,
 /area/rogue/under/cavewet)
+"ouI" = (
+/obj/structure/closet/crate/coffin,
+/turf/open/floor/tile/kitchen,
+/area/rogue/indoors/town)
 "ouN" = (
 /obj/structure/fermentation_keg/water{
 	anchored = 1;
@@ -29351,6 +29442,10 @@
 	},
 /turf/open/floor/tile,
 /area/rogue/indoors/town/shop)
+"puJ" = (
+/obj/item/bin/water/gross,
+/turf/open/floor/tile/kitchen,
+/area/rogue/indoors/town)
 "pvw" = (
 /obj/structure/stairs{
 	dir = 1
@@ -29823,6 +29918,13 @@
 /obj/effect/mapping_helpers/access/keyset/church/grave,
 /turf/open/floor/cobble,
 /area/rogue/indoors/town/church)
+"pIp" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/fermentation_keg,
+/obj/effect/decal/cleanable/sigil/N,
+/obj/structure/carpet/purple,
+/turf/open/floor/tile/kitchen,
+/area/rogue/indoors/town)
 "pIz" = (
 /obj/structure/closet/crate/chest/old_crate,
 /turf/open/floor/blocks/newstone/alt,
@@ -31094,6 +31196,13 @@
 /obj/machinery/light/fueled/torchholder/l,
 /turf/open/floor/wood,
 /area/rogue/indoors/town)
+"qvv" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/sigil/E,
+/obj/structure/carpet/purple,
+/turf/open/floor/tile/kitchen,
+/area/rogue/indoors/town)
 "qvx" = (
 /mob/living/simple_animal/pet/cat/black{
 	name = "Garfield";
@@ -31469,7 +31578,9 @@
 /obj/structure/mannequin/male,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet/purple,
+/obj/effect/decal/cleanable/sigil,
+/obj/structure/carpet/purple,
+/turf/open/floor/tile/kitchen,
 /area/rogue/indoors/town)
 "qGn" = (
 /turf/open/water/swamp/deep,
@@ -36499,7 +36610,9 @@
 /turf/closed/wall/mineral/pipe,
 /area/rogue/indoors/town/clocktower)
 "tpk" = (
-/turf/open/floor/carpet/purple,
+/obj/effect/decal/cleanable/sigil/SW,
+/obj/structure/carpet/purple,
+/turf/open/floor/tile/kitchen,
 /area/rogue/indoors/town)
 "tpx" = (
 /obj/structure/closet/crate/chest/neu_iron,
@@ -37936,6 +38049,10 @@
 /obj/effect/decal/cleanable/debris/wood,
 /turf/open/floor/metal,
 /area/rogue/indoors/town/clocktower)
+"ubQ" = (
+/obj/machinery/light/fueled/torchholder/metal_torch/east,
+/turf/open/floor/cobble,
+/area/rogue/outdoors/town)
 "ubV" = (
 /obj/structure/stairs,
 /turf/open/floor/ruinedwood/darker,
@@ -39516,6 +39633,12 @@
 	},
 /turf/open/floor/blocks/stonered/tiny,
 /area/rogue/indoors/town/dwarfin)
+"vbq" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/fermentation_keg,
+/turf/open/floor/tile/kitchen,
+/area/rogue/indoors/town)
 "vbD" = (
 /obj/structure/door{
 	lockid = "apartment19";
@@ -42511,6 +42634,10 @@
 	},
 /turf/closed/wall/mineral/wooddark,
 /area/rogue/indoors/town/tavern)
+"wGg" = (
+/obj/structure/closet/crate/crafted_closet/inn/chest,
+/turf/open/floor/carpet/green,
+/area/rogue/indoors/town)
 "wGi" = (
 /obj/structure/fluff/walldeco/bath/wallpipes,
 /turf/open/floor/blocks/stonered/tiny,
@@ -107373,10 +107500,10 @@ ehF
 ehF
 dLb
 nlk
-mAY
+gyB
 iyK
 jbH
-jbH
+puJ
 nlk
 nlk
 kHx
@@ -107576,7 +107703,7 @@ elp
 dLb
 nlk
 nZQ
-kiK
+nHS
 kiK
 tpk
 jbH
@@ -107778,7 +107905,7 @@ elp
 hDy
 nlk
 vTw
-mkS
+pIp
 qGd
 mkS
 mAY
@@ -107979,10 +108106,10 @@ ehF
 elp
 dLb
 nlk
-jbH
-kiK
-kiK
-mAY
+hcy
+bNP
+qvv
+cob
 gkr
 nlk
 nlk
@@ -108181,11 +108308,11 @@ ehF
 ehF
 sRp
 nlk
-mAY
+gyB
+vbq
+vbq
 iyK
-iyK
-iyK
-jbH
+ouI
 nlk
 tiA
 qqE
@@ -108584,7 +108711,7 @@ tQB
 lsl
 ehF
 rnJ
-jUj
+aqH
 lTJ
 uFg
 pBa
@@ -108786,7 +108913,7 @@ oEf
 lsl
 lsl
 rnJ
-feg
+wGg
 cll
 pVg
 uFg
@@ -108794,8 +108921,8 @@ uFg
 jUj
 fvJ
 oaU
-eVs
-oaU
+mDv
+kSy
 nlk
 lsl
 kpg
@@ -108989,14 +109116,14 @@ lsl
 elp
 rnJ
 rnJ
-feg
-snm
+dOT
+dqm
 snm
 pVg
 jUj
 fvJ
 eVs
-eVs
+mDv
 coU
 nlk
 lsl
@@ -109191,14 +109318,14 @@ elp
 elp
 gpj
 rnJ
-feg
-pBa
+wGg
+jeW
 uFg
 pVg
 lTJ
 rnJ
-eVs
-eVs
+jTj
+dRc
 kmq
 nlk
 lsl
@@ -109594,13 +109721,13 @@ oLd
 oLd
 elp
 elp
-elp
-elp
-lsl
-elp
-elp
+ubQ
 elp
 lsl
+elp
+elp
+elp
+aNy
 elp
 elp
 elp
@@ -147981,7 +148108,7 @@ ocA
 ocA
 jEL
 qEb
-esI
+fPv
 esI
 uFz
 unK
