@@ -3666,6 +3666,14 @@
 /obj/structure/chair/wood/alt/fancy,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/magician)
+"bRM" = (
+/obj/structure/fake_machine/merchantvend{
+	pixel_x = 0;
+	pixel_y = -32;
+	density = 0
+	},
+/turf/open/floor/tile,
+/area/rogue/indoors/town/shop)
 "bRP" = (
 /turf/closed/wall/mineral/pipe,
 /area/rogue/under/cavewet)
@@ -17097,7 +17105,6 @@
 	pixel_y = 15;
 	density = 0
 	},
-/obj/machinery/light/fueled/wallfire/candle,
 /turf/open/floor/ruinedwood/two,
 /area/rogue/indoors/town/shop)
 "iRg" = (
@@ -31295,6 +31302,7 @@
 /area/rogue/indoors/town/manor)
 "qxo" = (
 /obj/structure/fluff/clock,
+/obj/machinery/light/fueled/wallfire/candle,
 /turf/open/floor/ruinedwood/two,
 /area/rogue/indoors/town/shop)
 "qxw" = (
@@ -90897,7 +90905,7 @@ iZQ
 oNp
 hgG
 wkM
-ohp
+bRM
 qoK
 iQZ
 rfp
