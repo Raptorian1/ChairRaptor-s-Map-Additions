@@ -5264,6 +5264,11 @@
 /area/rogue/outdoors/river)
 "cNf" = (
 /obj/structure/closet/crate/chest/crate,
+/obj/item/flashlight/flare/torch/lantern,
+/obj/item/flashlight/flare/torch/metal,
+/obj/item/flashlight/flare/torch/prelit,
+/obj/item/flashlight/flare/torch/prelit,
+/obj/item/flashlight/flare/torch/metal,
 /turf/open/floor/concrete,
 /area/rogue/indoors/town/shop)
 "cNG" = (
@@ -7341,6 +7346,20 @@
 	},
 /turf/open/floor/tile,
 /area/rogue/indoors/town/manor/feast)
+"dRl" = (
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_x = 1;
+	pixel_y = 7
+	},
+/obj/machinery/light/fueled/firebowl/stump{
+	pixel_x = -1;
+	pixel_y = 18;
+	density = 0
+	},
+/turf/open/floor/ruinedwood/turned/darker,
+/area/rogue/outdoors/beach)
 "dRm" = (
 /obj/structure/throne{
 	name = "Throne of Vanderlin"
@@ -19017,6 +19036,9 @@
 	},
 /obj/effect/mapping_helpers/access/locker,
 /obj/effect/mapping_helpers/access/keyset/town/merchant,
+/obj/structure/bars/passage/shutter/open{
+	redstone_id = "Merchant2"
+	},
 /turf/open/floor/ruinedwood/chevron,
 /area/rogue/indoors/town/shop)
 "jQi" = (
@@ -27271,6 +27293,11 @@
 	pixel_x = -6;
 	pixel_y = 4
 	},
+/obj/structure/lever/wall{
+	pixel_x = -2;
+	pixel_y = 29;
+	redstone_id = "Merchant1"
+	},
 /turf/open/floor/ruinedwood/two,
 /area/rogue/indoors/town/shop)
 "onr" = (
@@ -33678,6 +33705,11 @@
 	pixel_y = 7
 	},
 /obj/structure/rack/shelf/biggest,
+/obj/structure/lever/wall{
+	pixel_x = 32;
+	pixel_y = 0;
+	redstone_id = "Merchant2"
+	},
 /turf/open/floor/ruinedwood/chevron,
 /area/rogue/indoors/town/shop)
 "rMl" = (
@@ -41859,6 +41891,9 @@
 	},
 /obj/effect/mapping_helpers/access/locker,
 /obj/effect/mapping_helpers/access/keyset/town/merchant,
+/obj/structure/bars/passage/shutter/open{
+	redstone_id = "Merchant1"
+	},
 /turf/open/floor/ruinedwood/two,
 /area/rogue/indoors/town/shop)
 "wlM" = (
@@ -49484,7 +49519,7 @@ ieG
 ieG
 ieG
 ieG
-mnT
+dRl
 fMv
 fMv
 pzO
