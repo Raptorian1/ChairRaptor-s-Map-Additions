@@ -34,7 +34,7 @@
 				return
 			qdel(W)
 			to_chat(user, span_info("The reliquary lock takes my key as it opens, I take a moment to ponder what power was delivered to us..."))
-			playsound(loc, 'sound/foley/doors/woodlock.ogg', 60)
+			playsound(src, 'sound/foley/doors/woodlock.ogg', 60)
 			to_chat(user,)
 			var/relics = list("Melancholic Crankbox - Antimagic", "Daybreak - Silver Whip", "Sanctum - Silver Halberd", "Crusade - Silver Greatsword", "Censer of Penitence")
 			var/relicchoice = input(user, "Choose your tool", "RELICS") as anything in relics
@@ -160,7 +160,8 @@
 		/datum/patron/inhumen/zizo = list("'ZIZO! MY MAGICKS FAIL ME! STRIKE DOWN THESE PSYDONIAN DOGS!'", "'CABALIST? There is TWISTED MAGICK HERE, BEWARE THE MUSIC! OUR VOICES ARE FORCED!'", "'DESTROY THE BOX, KILL THE WIELDER. YOUR MAGICKS WILL BE FREE.'"),
 		/datum/patron/inhumen/graggar =list("'ANOINTED! TEAR THIS GRENZELHOFTIAN'S HEAD OFF!'", "'ANOINTED! SHATTER THE BOX, AND WE WILL KILL THEM TOGETHER!'", "'GRAGGAR, GIVE ME STRENGTH TO BREAK MY BONDS!'"),
 		/datum/patron/inhumen/baotha =list("'I miss the warmth of ozium... There is no feeling in here for me...'", "'Debauched one, rescue me from this contraption, I have such things to share with you.'", "'MY PERFECTION WAS TAKEN FROM ME BY THESE PSYDONIAN MONSTERS!'"),
-		/datum/patron/psydon =list("'FREE US! FREE US! WE HAVE SUFFERED ENOUGH!'", "'PLEASE, RELEASE US!", "WE MISS OUR FAMILIES!'", "'WHEN WE ESCAPE, WE ARE GOING TO CHASE YOU INTO YOUR GRAVE.'"),
+		/datum/patron/psydon = list("'FREE US! FREE US! WE HAVE SUFFERED ENOUGH!'", "'PLEASE, RELEASE US!", "WE MISS OUR FAMILIES!'", "'WHEN WE ESCAPE, WE ARE GOING TO CHASE YOU INTO YOUR GRAVE.'"),
+		/datum/patron/psydon/extremist = list("'FREE US! FREE US! WE HAVE SUFFERED ENOUGH!'", "'PLEASE, RELEASE US!", "WE MISS OUR FAMILIES!'", "'WHEN WE ESCAPE, WE ARE GOING TO CHASE YOU INTO YOUR GRAVE.'"), // i hate having to duplicate this
 	)
 
 
@@ -177,12 +178,12 @@
 		if(!HAS_TRAIT(owner, TRAIT_INQUISITION))
 			owner.add_stress(/datum/stress_event/soulchurnerhorror)
 		for (var/mob/living/carbon/human/H in hearers(7, owner))
-			if (!H.client)
+			if (!H.client || !H.patron)
 				continue
 			if (!H.has_stress_type(/datum/stress_event/soulchurner))
-				if(H.patron?.type in patron_lines)
-					var/list/lines = patron_lines[H.patron.type]
-					if(H.patron.type == /datum/patron/psydon)
+				var/list/lines = patron_lines[H.patron.type]
+				if(lines)
+					if(istype(H.patron, /datum/patron/psydon))
 						H.add_stress(/datum/stress_event/soulchurnerpsydon)
 						if(HAS_TRAIT(H, TRAIT_INQUISITION))
 							H.apply_status_effect(/datum/status_effect/buff/churnerprotection)
@@ -316,7 +317,7 @@
 		possible_item_intents = list(/datum/intent/weep)
 		user.update_a_intents()
 		for(var/mob/living/carbon/human/H in view(get_turf(src)))
-			if(H.patron?.type == /datum/patron/psydon)	//Psydonites get VERY depressed seeing an artifact get turned into an ulapool caber.
+			if(istype(H.patron, /datum/patron/psydon)) //Psydonites get VERY depressed seeing an artifact get turned into an ulapool caber.
 				H.add_stress(/datum/stress_event/syoncalamity)
 	if(isitem(A) && on && user.used_intent.type == /datum/intent/bless)
 		var/datum/component/psyblessed/CP = A.GetComponent(/datum/component/psyblessed)
@@ -331,7 +332,7 @@
 				to_chat(user, span_info("It has already been blessed."))
 	if(ishuman(A) && on && (user.used_intent.type == /datum/intent/bless))
 		var/mob/living/carbon/human/H = A
-		if(H.patron?.type == /datum/patron/psydon)
+		if(istype(H.patron, /datum/patron/psydon))
 			if(!H.has_status_effect(/datum/status_effect/buff/censerbuff))
 				playsound(user, 'sound/magic/censercharging.ogg', 100)
 				user.visible_message(span_info("[user] holds \the [src] over \the [A]..."))
@@ -826,7 +827,7 @@
 		if(ismob(loc))
 			twohanded.unwield(loc)
 		active = FALSE
-		playsound(loc, 'sound/items/garroteshut.ogg', 65, TRUE)
+		playsound(src, 'sound/items/garroteshut.ogg', 65, TRUE)
 
 /obj/item/inqarticles/garrote/attack_self(mob/user)
 	if(obj_broken)
@@ -840,7 +841,7 @@
 		active = FALSE
 		if(user.pulling)
 			user.stop_pulling()
-		playsound(loc, 'sound/items/garroteshut.ogg', 65, TRUE)
+		playsound(src, 'sound/items/garroteshut.ogg', 65, TRUE)
 		wipeslate(user)
 		return
 	if(gripped_intents)
@@ -849,7 +850,7 @@
 			twohanded.wield(loc)
 		active = TRUE
 		if(HAS_TRAIT(src, TRAIT_WIELDED))
-			playsound(loc, pick('sound/items/garrote.ogg', 'sound/items/garrote2.ogg'), 65, TRUE)
+			playsound(src, pick('sound/items/garrote.ogg', 'sound/items/garrote2.ogg'), 65, TRUE)
 			return
 
 /obj/item/inqarticles/garrote/equipped(mob/living/carbon/human/user, slot)
@@ -907,7 +908,7 @@
 			user.stop_pulling(FALSE)
 		/*
 		if(HAS_TRAIT(target, TRAIT_GRABIMMUNE))
-			playsound(loc, pick('sound/items/garrote.ogg', 'sound/items/garrote2.ogg'), 65, TRUE)
+			playsound(src, pick('sound/items/garrote.ogg', 'sound/items/garrote2.ogg'), 65, TRUE)
 			user.visible_message(span_danger("[target] slips past [user]'s attempt to [src] them!"))
 			return
 		*/
@@ -916,7 +917,7 @@
 			to_chat(user, span_warning("I need to wrap it around their throat."))
 			return
 		victim = target
-		playsound(loc, 'sound/items/garrotegrab.ogg', 100, TRUE)
+		playsound(src, 'sound/items/garrotegrab.ogg', 100, TRUE)
 		ADD_TRAIT(user, TRAIT_NOTIGHTGRABMESSAGE, TRAIT_GENERIC)
 		ADD_TRAIT(user, TRAIT_NOSTRUGGLE, TRAIT_GENERIC)
 		ADD_TRAIT(target, TRAIT_GARROTED, TRAIT_GENERIC)
@@ -945,7 +946,7 @@
 		user.adjust_stamina(rand(4, 8))
 		var/mob/living/carbon/C = victim
 		// if(get_location_accessible(C, BODY_ZONE_PRECISE_NECK))
-		playsound(loc, pick('sound/items/garrotechoke1.ogg', 'sound/items/garrotechoke2.ogg', 'sound/items/garrotechoke3.ogg', 'sound/items/garrotechoke4.ogg', 'sound/items/garrotechoke5.ogg'), 100, TRUE)
+		playsound(src, pick('sound/items/garrotechoke1.ogg', 'sound/items/garrotechoke2.ogg', 'sound/items/garrotechoke3.ogg', 'sound/items/garrotechoke4.ogg', 'sound/items/garrotechoke5.ogg'), 100, TRUE)
 		if(prob(40))
 			C.emote("choke")
 		C.adjustOxyLoss(choke_damage)

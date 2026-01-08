@@ -392,7 +392,7 @@
 	AdjustImmobilized(-60)
 	set_resting(FALSE)
 
-	playsound(loc, 'sound/blank.ogg', 50, TRUE, -1)
+	playsound(src, 'sound/blank.ogg', 50, TRUE, -1)
 
 
 /mob/living/carbon/flash_act(intensity = 1, override_blindness_check = 0, affect_silicon = 0, visual = 0)
@@ -422,7 +422,7 @@
 
 		if(eyes.damage > 10)
 			blind_eyes(damage)
-			blur_eyes(damage * rand(3, 6))
+			set_eye_blur_if_lower(damage * rand(6 SECONDS, 12 SECONDS))
 
 			if(eyes.damage > 20)
 				if(prob(eyes.damage - 20))

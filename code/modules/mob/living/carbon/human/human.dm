@@ -14,6 +14,38 @@
 				if(do_after(user, 5 SECONDS, src))
 					var/obj/item/bodypart/part = src.get_bodypart(BODY_ZONE_PRECISE_NECK)
 					part.add_wound(/datum/wound/artery/neck)
+		else if(user.pulledby)
+			if(ishuman(user.pulledby) && isliving(user))
+				var/mob/living/carbon/human/grabber = user.pulledby
+				var/mob/living/grabbed = user
+				if(grabbed.has_status_effect(/datum/status_effect/grab_counter_cd))
+					to_chat(user, span_warning("I already tried to counter someone grab recently!"))
+					return
+				var/skill_diff = 0
+				var/modifier = 1
+				if(user.mind)
+					skill_diff += (user.get_skill_level(/datum/skill/combat/wrestling))
+				if(grabber.mind)
+					skill_diff -= (grabber.get_skill_level(/datum/skill/combat/wrestling))
+				skill_diff = max(skill_diff, 1)
+				var/base_chance = 20
+				if(HAS_TRAIT(user, TRAIT_RESTRAINED))
+					modifier -= 0.5
+				var/counter_chance = (base_chance * skill_diff) * modifier
+				counter_chance = CLAMP(counter_chance, 5, 95)
+				if(prob(counter_chance))
+					grabber.Stun(10)
+					grabber.stop_pulling()
+					to_chat(user, span_notice("[grabber] fell for my grab counter!"))
+					to_chat(grabber, span_danger("I fall for [src]'s grab counter!"))
+				else
+					grabbed.Stun(20)
+					var/fail_message = "[grabber] did not fall for my grab counter..."
+					if(user.client?.prefs.showrolls)
+						fail_message += " [counter_chance]%"
+					to_chat(grabber, span_notice("[src] failed to counter my grab!"))
+					to_chat(user, span_warning(fail_message))
+				grabbed.apply_status_effect(/datum/status_effect/grab_counter_cd)
 	else
 		if(held_item && (user.zone_selected == BODY_ZONE_PRECISE_MOUTH))
 			if(held_item.get_sharpness() && held_item.wlength == WLENGTH_SHORT)
@@ -45,6 +77,56 @@
 								V.add_stress(/datum/stress_event/dwarfshaved)
 					else
 						held_item.melee_attack_chain(user, src, params)
+		else if(held_item && (user.zone_selected == BODY_ZONE_PRECISE_R_FOOT || user.zone_selected == BODY_ZONE_PRECISE_L_FOOT))
+			var/obj/item/clothing/shoes/shoes_check
+			var/mob/living/carbon/target
+			if(user == src)
+				return
+			else if(iscarbon(src))
+				target = src
+				shoes_check = locate(/obj/item/clothing/shoes) in list(target.shoes)
+			if(shoes_check)
+				if(istype(held_item, /obj/item/natural/cloth) && user?.used_intent?.type == INTENT_USE && shoes_check.polished == 0)
+					var/obj/item/natural/cloth/cloth_check = held_item
+					if(cloth_check.reagents.total_volume < 0.1)
+						to_chat(user, span_warning("[cloth_check] is too dry to polish with!"))
+						return
+					var/DirtyWater = cloth_check.reagents.get_reagent_amount(/datum/reagent/water/gross)
+					if(DirtyWater)
+						to_chat(user, span_warning("[cloth_check] water is too dirty to polish anything with it!"))
+						return
+					to_chat(user, ("You start polishing the [shoes_check] with the [cloth_check]"))
+					user.visible_message(span_notice("[user] starts to polish the [shoes_check] of [src]."))
+					if(do_after(user, 2 SECONDS, src))
+						cloth_check.reagents.remove_all(1)
+						shoes_check.polished = 1
+						shoes_check.AddComponent(/datum/component/particle_spewer/sparkle)
+						addtimer(CALLBACK(shoes_check, TYPE_PROC_REF(/obj/item/clothing/shoes, lose_shine)), 15 MINUTES)
+						if(HAS_TRAIT(user, TRAIT_NOBLE))
+							user.add_stress(/datum/stress_event/noble_polishing_shoe)
+						target.add_stress(/datum/stress_event/shiny_shoes)
+						to_chat(user, ("You polished the [shoes_check]."))
+					return
+				else if(istype(held_item, /obj/item/natural/cloth) && user?.used_intent?.type == INTENT_USE && shoes_check.polished == 1)
+					to_chat(user, span_notice("The [shoes_check] are already polished."))
+					return
+				if(istype(held_item, /obj/item/reagent_containers/food/snacks/fat) && user?.used_intent?.type == INTENT_USE && shoes_check.polished == 1)
+					to_chat(user, ("You start polishing the [shoes_check] with the animal"))
+					user.visible_message(span_notice("[user] starts to polish the [shoes_check] of [src]."))
+					if(do_after(user, 2 SECONDS, src))
+						shoes_check.polished = 2
+						if(HAS_TRAIT(user, TRAIT_NOBLE))
+							user.add_stress(/datum/stress_event/noble_polishing_shoe)
+						var/datum/component/particle_spewer = shoes_check.GetComponent(/datum/component/particle_spewer/sparkle)
+						if(particle_spewer)
+							qdel(particle_spewer)
+						shoes_check.AddComponent(/datum/component/particle_spewer/sparkle, shine_more = TRUE)
+						addtimer(CALLBACK(shoes_check, TYPE_PROC_REF(/obj/item/clothing/shoes, lose_shine)), 15 MINUTES)
+						target.add_stress(/datum/stress_event/extra_shiny_shoes)
+						to_chat(user, ("You polished the [shoes_check]."))
+					return
+				if(istype(held_item, /obj/item/reagent_containers/food/snacks/fat) && user?.used_intent?.type == INTENT_USE && shoes_check.polished == 2)
+					to_chat(user, ("You can't possibily make it shine more."))
 
 /mob/living/carbon/human/Initialize()
 	// verbs += /mob/living/proc/mob_sleep
@@ -382,43 +464,70 @@
 	if(dna?.species?.update_health_hud())
 		return
 	else
-		if(hud_used.bloods && !stamina_only)
+		if(hud_used.bloods)
 			var/bloodloss = ((BLOOD_VOLUME_NORMAL - blood_volume) / BLOOD_VOLUME_NORMAL) * 100
 
-			var/burnhead = 0
-			var/brutehead = 0
-			var/obj/item/bodypart/head = get_bodypart(BODY_ZONE_HEAD)
-			if(head)
-				burnhead = (head.burn_dam / head.max_damage) * 100
-				brutehead = (head.brute_dam / head.max_damage) * 100
-
 			var/toxloss = getToxLoss()
-			var/oxloss = getOxyLoss()
+			var/oxyloss = getOxyLoss()
+			var/painpercent = (get_complex_pain() / (STAEND * 12)) * 100
 
-			var/hungloss = nutrition*-1 //this is smart i think
 
 			var/usedloss = 0
 			if(bloodloss > 0)
 				usedloss = bloodloss
-			if(burnhead > usedloss)
-				usedloss = burnhead
-			if(brutehead > usedloss)
-				usedloss = brutehead
-			if(toxloss > usedloss)
-				usedloss = toxloss
-			if(oxloss > usedloss)
-				usedloss = oxloss
-			if(hungloss > usedloss)
-				usedloss = hungloss
 
+			hud_used.bloods.cut_overlays()
 			if(usedloss <= 0)
 				hud_used.bloods.icon_state = "dam0"
+				if(toxloss > 0)
+					var/toxoverlay
+					switch(toxloss)
+						if(1 to 20)
+							toxoverlay = "toxloss20"
+						if(21 to 49)
+							toxoverlay = "toxloss40"
+						if(50 to 79)
+							toxoverlay = "toxloss60"
+						if(80 to 99)
+							toxoverlay = "toxloss80"
+						if(100 to 999)
+							toxoverlay = "toxloss100"
+					hud_used.bloods.add_overlay(toxoverlay)
+
+				if(oxyloss > 0)
+					var/oxyoverlay
+					switch(oxyloss)
+						if(1 to 20)
+							oxyoverlay = "oxyloss20"
+						if(21 to 49)
+							oxyoverlay = "oxyloss40"
+						if(50 to 79)
+							oxyoverlay = "oxyloss60"
+						if(80 to 99)
+							oxyoverlay = "oxyloss80"
+						if(100 to 999)
+							oxyoverlay = "oxyloss100"
+					hud_used.bloods.add_overlay(oxyoverlay)
 			else
 				var/used = round(usedloss, 10)
 				if(used <= 80)
 					hud_used.bloods.icon_state = "dam[used]"
 				else
 					hud_used.bloods.icon_state = "damelse"
+			if(painpercent > 0)
+				var/painoverlay
+				switch(painpercent)
+					if(1 to 29)
+						painoverlay = "painloss20"
+					if(30 to 59)
+						painoverlay = "painloss40"
+					if(60 to 79)
+						painoverlay = "painloss60"
+					if(80 to 99)
+						painoverlay = "painloss80"
+					if(100 to 999)
+						painoverlay = "painloss100"
+				hud_used.bloods.add_overlay(painoverlay)
 			SEND_SIGNAL(src, COMSIG_MOB_HEALTHHUD_UPDATE, hud_used.bloods.icon_state)
 
 		if(hud_used.stamina)
@@ -699,7 +808,7 @@
 
 /mob/living/carbon/human/do_after_coefficent()
 	. = ..()
-	. *= physiology.do_after_speed
+	. *= physiology?.do_after_speed
 
 /mob/living/carbon/human/updatehealth(amount)
 	. = ..()
@@ -802,6 +911,11 @@
 		ADD_TRAIT(src, TRAIT_FACELESS, TRAIT_GENERIC)
 	else
 		REMOVE_TRAIT(src, TRAIT_FACELESS, TRAIT_GENERIC)
+
+	if(HAS_TRAIT(target, TRAIT_ABOMINATION))
+		ADD_TRAIT(src, TRAIT_ABOMINATION, TRAIT_GENERIC)
+	else
+		REMOVE_TRAIT(src, TRAIT_ABOMINATION, TRAIT_GENERIC)
 
 	regenerate_icons()
 
@@ -925,3 +1039,19 @@
 		return
 
 	message_admins("[ADMIN_LOOKUPFLW_PP(src)] is a [mind.assigned_role.get_informed_title(src)] and has been disconnected for more than 30 seconds!")
+
+/mob/living/carbon/human/nobles_seen_servant_work()
+	if(!is_servant_job(mind.assigned_role))
+		return
+
+	var/list/nobles = list()
+	for(var/mob/living/carbon/human/target as anything in viewers(6, src))
+		if(!target.mind || target.stat != CONSCIOUS)
+			continue
+		if(!HAS_TRAIT(target, TRAIT_NOBLE))
+			continue
+		nobles += target
+	if(length(nobles))
+		for(var/mob/living/carbon/human/target as anything in nobles)
+			if(!target.has_stress_type(/datum/stress_event/noble_seen_servant_work))
+				target.add_stress(/datum/stress_event/noble_seen_servant_work)

@@ -177,7 +177,7 @@
 /datum/special_trait/too_smart/on_apply(mob/living/carbon/human/character, silent)
 	character.change_stat(STATKEY_INT, 5)
 	ADD_TRAIT(character, TRAIT_BAD_MOOD, "[type]")
-	character.set_flaw(/datum/charflaw/paranoid)
+	character.add_quirk(/datum/quirk/vice/paranoid)
 
 /datum/special_trait/bookworm
 	name = "Bookworm"
@@ -210,7 +210,7 @@
 	name = "Psydon's Drunkest Rider"
 	greet_text = span_notice("I ride! None of the laws shall stop me for that is Psydon's divine will!")
 	req_text = "Worship Psydon"
-	allowed_patrons = list(/datum/patron/psydon)
+	allowed_patrons = list(/datum/patron/psydon, /datum/patron/psydon/extremist)
 	weight = 100
 
 /datum/special_trait/psydons_rider/on_apply(mob/living/carbon/human/character, silent)
@@ -398,6 +398,7 @@
 
 /datum/special_trait/gourmand/on_apply(mob/living/carbon/human/character, silent)
 	ADD_TRAIT(character, TRAIT_NASTY_EATER, "[type]")
+	ADD_TRAIT(character, TRAIT_ROT_EATER, "[type]")
 
 /datum/special_trait/lucky
 	name = "Fortune's Grace"
@@ -471,9 +472,9 @@
 	allowed_ages = list(AGE_MIDDLEAGED, AGE_OLD)
 
 /datum/special_trait/war_veteran/on_apply(mob/living/carbon/human/character, silent)
-	character.set_flaw(/datum/charflaw/limbloss/arm_l)
-	character.set_flaw(/datum/charflaw/noeyel)
-	character.set_flaw(/datum/charflaw/old_war_wound)
+	character.add_quirk(/datum/quirk/vice/wooden_arm_left)
+	character.add_quirk(/datum/quirk/vice/cyclops_left)
+	character.add_quirk(/datum/quirk/vice/old_war_wound)
 	character.clamped_adjust_skillrank(/datum/skill/combat/swords, 4, 4, TRUE)
 	character.clamped_adjust_skillrank(/datum/skill/combat/polearms, 4, 4, TRUE)
 	character.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
@@ -484,7 +485,7 @@
 	weight = 25
 
 /datum/special_trait/sadistic/on_apply(mob/living/carbon/human/character, silent)
-	character.set_flaw(/datum/charflaw/addiction/maniac)
+	character.add_quirk(/datum/quirk/vice/maniac)
 	character.verbs |= /mob/living/carbon/human/proc/torture_victim
 	character.mind.special_items["Chains"] = /obj/item/rope/chain
 
@@ -764,7 +765,7 @@
 	name = "Devout Knight"
 	greet_text = span_notice("I am a devoted warrior of the Ten, and my equipments lie hidden in their resting place, ready to be donned when the call comes.")
 	allowed_jobs = list(/datum/job/royalknight)
-	allowed_flaw = /datum/charflaw/addiction/godfearing
+	allowed_flaw = /datum/quirk/vice/godfearing
 	allowed_patrons = ALL_TEMPLE_PATRONS
 	req_text = "Be a Royal knight, With the Flaw 'devout follower' and be a follower of the ten."
 	weight = 50
@@ -829,7 +830,7 @@
 			psycross = /obj/item/clothing/neck/psycross/silver/malum
 			helmet = /obj/item/clothing/head/helmet/heavy/necked/malumhelm
 			cloak = /obj/item/clothing/cloak/templar/malumite
-			weapon = /obj/item/weapon/mace/goden/steel/malum
+			weapon = /obj/item/weapon/hammer/sledgehammer/war/malum
 			character.cmode_music = 'sound/music/cmode/adventurer/CombatOutlander2.ogg'
 			character.clamped_adjust_skillrank(/datum/skill/combat/axesmaces, 4, 4, TRUE)
 		if(/datum/patron/divine/abyssor)
@@ -965,3 +966,20 @@
 	var/datum/inspiration/I = new /datum/inspiration(character)
 	I.grant_inspiration(character, bard_tier = BARD_T2)
 	character.adjust_skillrank(/datum/skill/misc/music, 4, TRUE)
+
+/datum/special_trait/baothan
+	name = "Adored by Baotha"
+	greet_text = span_notice("Baotha adore me so much that she gave me some goodies, dope tbh.")
+	weight = 10
+	allowed_patrons = list(/datum/patron/inhumen/baotha)
+	req_text = "Have Baotha as your Patron and do not be a Iconoclast, a profane paladin or a inhumen cleric"
+	restricted_jobs = list(/datum/job/advclass/wretch/heretic, /datum/job/advclass/combat/inhumencleric, /datum/job/advclass/combat/profanepaladin)
+
+/datum/special_trait/baothan/on_apply(mob/living/carbon/human/character, silent)
+	var/holder = character.patron?.devotion_holder
+	if(holder)
+		var/datum/devotion/devotion = new holder()
+		devotion.make_churching()
+		devotion.grant_to(character)
+	character.mind.special_items["Baotha's Gift"] = /obj/item/clothing/head/corruptflower
+	character.AddComponent(/datum/component/theme_music)
