@@ -280,9 +280,7 @@
 	if(!T)
 		return
 
-	var/mob/living/simple_animal/hostile/retaliate/bigrat/new_rat = new(T)
-	new_rat.name = "[H.real_name] (rat)"
-	new_rat.real_name = new_rat.name
+	var/mob/living/simple_animal/hostile/retaliate/smallrat/new_rat = new(T)
 
 	if(H.mind)
 		H.mind.transfer_to(new_rat)
@@ -291,6 +289,7 @@
 
 	// Make the rat unable to do much
 	ADD_TRAIT(new_rat, TRAIT_PACIFISM, TRAIT_GENERIC)
+	ADD_TRAIT(new_rat, TRAIT_MUTE, TRAIT_GENERIC)
 	new_rat.melee_damage_lower = 0
 	new_rat.melee_damage_upper = 0
 	new_rat.obj_damage = 0
@@ -381,8 +380,9 @@
 	H.apply_status_effect(/datum/status_effect/tremor_grip_loss)
 
 	// Shake the screen slightly for immersion
-	animate(H.client, pixel_x = rand(-2, 2), pixel_y = rand(-2, 2), time = 2)
-	addtimer(CALLBACK(src, PROC_REF(reset_screen_shake), H), 2)
+	if(H.client)
+		animate(H.client, pixel_x = rand(-2, 2), pixel_y = rand(-2, 2), time = 2)
+		addtimer(CALLBACK(src, PROC_REF(reset_screen_shake), H), 2)
 
 /datum/quirk/vice/tremors/proc/reset_screen_shake(mob/living/carbon/human/H)
 	if(H?.client)

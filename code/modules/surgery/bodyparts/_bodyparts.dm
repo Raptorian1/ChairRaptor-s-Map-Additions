@@ -11,6 +11,8 @@
 	layer = BELOW_MOB_LAYER //so it isn't hidden behind objects when on the floor
 	var/mob/living/carbon/owner
 	var/mob/living/carbon/original_owner
+	/// a cache of the original owner's DNA unique identifier. only gets updated from shit like changeling absorb so it carries between owners
+	var/fingerprint
 	var/status = BODYPART_ORGANIC
 
 	var/static_icon = FALSE
@@ -156,20 +158,24 @@
 	else
 		return list(/datum/intent/grab/move, /datum/intent/grab/shove)
 
-/obj/item/bodypart/onbite(mob/living/carbon/human/user)
-	if((user.mind && user.mind.has_antag_datum(/datum/antagonist/zombie)) || istype(user.dna.species, /datum/species/werewolf))
-		if(user.has_status_effect(/datum/status_effect/debuff/silver_curse))
-			to_chat(user, span_notice("My power is weakened, I cannot heal!"))
-			return
-		if(do_after(user, 5 SECONDS, src))
-			user.visible_message("<span class='warning'>[user] consumes [src]!</span>",\
-							"<span class='notice'>I consume [src]!</span>")
-			playsound(user, pick(dismemsound), 100, FALSE, -1)
-			new /obj/effect/gibspawner/generic(get_turf(src), user)
-			user.reagents.add_reagent(/datum/reagent/medicine/healthpot, 30)
-			qdel(src)
+/obj/item/bodypart/onbite(mob/living/user)
+	. = ..()
+	if(!.)
 		return
-	return ..()
+	if(status != BODYPART_ORGANIC)
+		return TRUE
+	if((user.mind && user.mind.has_antag_datum(/datum/antagonist/zombie)) || is_species(/datum/species/werewolf))
+		if(user.has_status_effect(/datum/status_effect/debuff/silver_bane))
+			to_chat(user, span_notice("My power is weakened, I cannot heal!"))
+			return TRUE
+		if(!do_after(user, 5 SECONDS, src))
+			return TRUE
+		user.visible_message(span_warning("[user] consumes [src]!"),\
+						span_notice("I consume [src]!"))
+		playsound(user, pick(dismemsound), 100, FALSE, -1)
+		new /obj/effect/gibspawner/generic(get_turf(src), user)
+		user.reagents.add_reagent(/datum/reagent/medicine/healthpot, 30)
+		qdel(src)
 
 /obj/item/bodypart/MiddleClick(mob/living/user, params)
 	var/obj/item/held_item = user.get_active_held_item()
@@ -429,6 +435,13 @@
 	if(owner)
 		owner.update_health_hud() //update the healthdoll
 		owner.update_body()
+
+/obj/item/bodypart/proc/reset_fingerprint()
+	if(status != BODYPART_ORGANIC)
+		fingerprint = null
+		return
+	if(owner?.dna?.unique_identity)
+		fingerprint = md5(owner.dna.unique_identity)
 
 ///Proc to change the value of the `owner` variable and react to the event of its change.
 /obj/item/bodypart/proc/set_owner(mob/living/carbon/new_owner)
