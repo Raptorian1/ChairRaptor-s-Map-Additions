@@ -53,7 +53,7 @@
 	wdefense = BAD_PARRY
 	wbalance = DODGE_CHANCE_NORMAL
 	armor_penetration = 0
-	possible_item_intents = list(DAGGER_CUT, CLEAVER_CHOP)
+	possible_item_intents = list(DAGGER_CUT, DAGGER_CHOP)
 	slot_flags = ITEM_SLOT_HIP
 	parrysound = list('sound/combat/parry/bladed/bladedmedium (1).ogg','sound/combat/parry/bladed/bladedmedium (2).ogg','sound/combat/parry/bladed/bladedmedium (3).ogg')
 	swingsound = list('sound/combat/wooshes/bladed/wooshmed (1).ogg','sound/combat/wooshes/bladed/wooshmed (2).ogg','sound/combat/wooshes/bladed/wooshmed (3).ogg')
@@ -130,7 +130,7 @@
 	. = ..()
 	icon_state = "[initial(icon_state)][heated ? "_hot" : ""]"
 
-/obj/item/weapon/surgery/cautery/pre_attack(atom/A, mob/living/user, params)
+/obj/item/weapon/surgery/cautery/pre_attack(atom/A, mob/living/user, list/modifiers)
 	if(!istype(user.a_intent, INTENT_USE))
 		return ..()
 	var/heating = 0
@@ -182,8 +182,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	thrown_bclass = BCLASS_BLUNT
 
-
-/obj/item/weapon/surgery/hammer/pre_attack(atom/A, mob/living/user, params)
+/obj/item/weapon/surgery/hammer/pre_attack(atom/A, mob/living/user, list/modifiers)
 	if(!istype(user.a_intent, INTENT_USE))
 		return ..()
 	if(user.get_skill_level(/datum/skill/misc/medicine) < 1)

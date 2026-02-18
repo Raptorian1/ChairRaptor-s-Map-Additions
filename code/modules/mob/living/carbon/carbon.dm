@@ -94,7 +94,7 @@
 	else
 		mode() // Activate held item
 
-/mob/living/attackby(obj/item/I, mob/user, params)
+/mob/living/carbon/attackby(obj/item/I, mob/user, list/modifiers)
 	if(!user.cmode && (istype(user.rmb_intent, /datum/rmb_intent/weak) || istype(user.rmb_intent, /datum/rmb_intent/strong)))
 		var/try_to_fail = !istype(user.rmb_intent, /datum/rmb_intent/weak)
 		var/list/possible_steps = list()
@@ -117,13 +117,7 @@
 		if(I.item_flags & SURGICAL_TOOL)
 			to_chat(user, span_warning("You're unable to perform surgery!"))
 			return TRUE
-	/*
-	for(var/datum/surgery/S in surgeries)
-		if(!(body_position != LYING_DOWN) || !S.lying_required)
-			if(S.self_operable || user != src)
-				if(S.next_step(user, user.used_intent))
-					return 1
-	*/
+
 	return ..()
 
 /mob/living/carbon/throw_impact(atom/hit_atom, datum/thrownthing/throwingdatum)
@@ -178,7 +172,6 @@
 
 /mob/proc/throw_item(atom/target, offhand = FALSE)
 	SEND_SIGNAL(src, COMSIG_MOB_THROW, target)
-	return
 
 /mob/living/carbon/throw_item(atom/target, offhand = FALSE)
 	. = ..()
@@ -444,9 +437,8 @@
 	visible_message(span_danger("[src] manages to [cuff_break ? "break" : "remove"] [I]!"))
 	to_chat(src, span_notice("You successfully [cuff_break ? "break" : "remove"] [I]."))
 
-	if(istype(I, /obj/item/net))
-		if(has_status_effect(/datum/status_effect/debuff/netted))
-			remove_status_effect(/datum/status_effect/debuff/netted)
+	if(istype(I, /obj/item/rope/net))
+		remove_status_effect(/datum/status_effect/debuff/netted)
 
 	if(cuff_break)
 		. = !((I == handcuffed) || (I == legcuffed))
@@ -508,18 +500,15 @@
 			used = 1
 		return used
 
-/mob/living/Stat()
-	..()
-	if(!client)
-		return
-	if(statpanel("Stats"))
-		stat("STR: \Roman[STASTR]")
-		stat("PER: \Roman[STAPER]")
-		stat("INT: \Roman[STAINT]")
-		stat("CON: \Roman[STACON]")
-		stat("END: \Roman[STAEND]")
-		stat("SPD: \Roman[STASPD]")
-		stat("PATRON: [uppertext(patron)]")
+/mob/living/get_status_tab_items()
+	. = ..()
+	. += "STR: \Roman[STASTR]"
+	. += "PER: \Roman[STAPER]"
+	. += "INT: \Roman[STAINT]"
+	. += "CON: \Roman[STACON]"
+	. += "END: \Roman[STAEND]"
+	. += "SPD: \Roman[STASPD]"
+	. += "PATRON: [uppertext(patron.name)]"
 
 /mob/living/carbon/attack_ui(slot)
 	if(!has_hand_for_held_index(active_hand_index))

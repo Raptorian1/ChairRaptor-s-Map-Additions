@@ -32,7 +32,7 @@
 	associated_skill = /datum/skill/combat/whipsflails
 
 /obj/item/weapon/thresher/military
-	name = "military flail"
+	name = "studded flail"
 	desc = "Crushes skulls, or grain."
 	icon_state = "military"
 	force = DAMAGE_WEAK_FLAIL - 5
@@ -104,7 +104,7 @@
 			if("onbelt")
 				return list("shrink" = 0.4,"sx" = -2,"sy" = -5,"nx" = 4,"ny" = -5,"wx" = 0,"wy" = -5,"ex" = 2,"ey" = -5,"nturn" = 0,"sturn" = 0,"wturn" = 0,"eturn" = 0,"nflip" = 0,"sflip" = 0,"wflip" = 0,"eflip" = 0,"northabove" = 0,"southabove" = 1,"eastabove" = 1,"westabove" = 0)
 
-/obj/item/weapon/thresher/afterattack(obj/target, mob/user, proximity)
+/obj/item/weapon/thresher/afterattack(obj/target, mob/user, proximity, list/modifiers)
 	if(user.used_intent.type == /datum/intent/flailthresh)
 		if(!proximity)
 			return
@@ -322,7 +322,7 @@
 	force = DAMAGE_STAFF
 	force_wielded = DAMAGE_SPEAR_WIELD - 3
 	throwforce = DAMAGE_SPEAR
-	wdefense = MEDIOCRE_PARRY
+	wdefense = AVERAGE_PARRY
 	wlength = WLENGTH_LONG
 	possible_item_intents = list(POLEARM_THRUST, POLEARM_BASH)
 	gripped_intents = list(DUMP_INTENT,POLEARM_BASH,POLEARM_THRUST)
@@ -411,7 +411,7 @@
 	misscost = 0
 	no_attack = TRUE
 
-/obj/item/weapon/pitchfork/afterattack(obj/target, mob/user, proximity)
+/obj/item/weapon/pitchfork/afterattack(obj/target, mob/user, proximity, list/modifiers)
 	if((!proximity) || (!HAS_TRAIT(src, TRAIT_WIELDED)))
 		return ..()
 	if(isopenturf(target))
